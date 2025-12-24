@@ -21,3 +21,15 @@ function newYear(character) {
 };
 console.log(newYear('Дед Мороз'));
 console.log(newYear('Снегурочка'));
+
+//Еще один вариант
+
+// function newYear(character) {
+//   const text = '!';
+//     if (character === 'Дед Мороз')
+//       return `${character}${text} ${character}${text} ${character}${text}`
+//     else character === 'Снегурочка'
+//       return `${character}${text} ${character}${text} ${character}${text}`
+// };
+// console.log(newYear('Дед Мороз'));
+// console.log(newYear('Снегурочка'));
