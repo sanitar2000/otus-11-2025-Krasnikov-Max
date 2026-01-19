@@ -107,7 +107,7 @@ describe('getTotal', () => {
     [[], 0, 0, 'пустой список товаров'],
     [[], 50, 0, 'пустой список + скидка'],
     [[{ price: 10, quantity: 0 }], 0, 0, 'товар с quantity=0'],
-    [[{ price: 10, quantity: 0 },{ price: 20, quantity: 0 }], 20, 0, 'несколько товаров с quantity=0'],
+    [[{ price: 10, quantity: 0 },{ price: 20, quantity: 0 }], 20, 0,'несколько товаров с quantity=0'],
     [[{ price: 0, quantity: 10 }], 0, 0, 'цена товара = 0']
   ])('обрабатывает %s со скидкой %i%% → ожидает %i (%s)', (items, discount, expected) => {
     const result = getTotal(items, discount)
