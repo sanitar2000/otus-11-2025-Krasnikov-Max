@@ -32,7 +32,7 @@ const config = {
   // ],
 
   // Indicates which provider should be used to instrument code for coverage
-  coverageProvider: "v8",
+  coverageProvider: 'v8'
 
   // A list of reporter names that Jest uses when writing coverage reports
   // coverageReporters: [
@@ -195,6 +195,6 @@ const config = {
 
   // Whether to use watchman for file crawling
   // watchman: true,
-};
+}
 
-module.exports = config;
+module.exports = config
