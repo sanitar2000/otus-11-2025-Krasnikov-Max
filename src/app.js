@@ -38,3 +38,28 @@ export const getTotal = (items = [], discount = 0) => {
   const total = items.reduce((acc, { price, quantity }) => acc + price * quantity, 0)
   return total * (1 - discount / 100)
 }
+
+// Функция getScore принимает объект с никами и баллами, возвращает сумму всех баллов
+function getScore(scores) {
+    let total = 0;
+    
+    // Перебираем все значения объекта и суммируем их
+    for (let key in scores) {
+        // Проверяем, что значение является числом
+        if (typeof scores[key] === 'number' && !isNaN(scores[key])) {
+            total += scores[key];
+        }
+    }
+    
+    return total;
+}
+
+// Пример использования:
+const studentScores = {
+    "Max": 85,
+    "Alex": 92,
+    "Masha": 78,
+    "Gosha": 95
+};
+
+console.log(getScore(studentScores)); // Выведет: 350 (85 + 92 + 78 + 95)
