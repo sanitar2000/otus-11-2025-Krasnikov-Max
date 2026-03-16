@@ -44,16 +44,12 @@ describe('Account API Tests', () => {
             // Проверяем что есть сообщение об ошибке
             expect(response.data).toBeDefined();
             
-            // Проверяем что сообщение об ошибке указывает на существующего пользователя
-            const errorMessage = JSON.stringify(response.data).toLowerCase();
-            const hasUserExistsMessage = 
-                errorMessage.includes('user exists') ||
-                errorMessage.includes('already exists') ||
-                errorMessage.includes('duplicate') ||
-                errorMessage.includes('пользователь существует') ||
-                errorMessage.includes('уже существует');
+            // Проверяем что сообщение об ошибке указывает на существующего пользователя           
+            const errorMessage = JSON.stringify(response.data).toLowerCase();       
             
-            expect(hasUserExistsMessage).toBeTruthy();
+            expect(errorMessage).toMatch(
+                /user exists|already exists|duplicate|пользователь существует|уже существует/i
+            );
         });
 
         test('Должна быть ошибка при создании пользователя со слабым паролем', async () => {
@@ -194,28 +190,39 @@ describe('Account API Tests', () => {
 });
 
     describe('Авторизация', () => {
-        test('Должен успешно авторизовать пользователя с верными учетными данными', async () => {
-            // Пропускаем если нет тестового пользователя
-            if (!testUser) {
-                console.log('Пропускаем тест: нет тестового пользователя');
-                return;
-            }
+    test('Должен успешно авторизовать пользователя с верными учетными данными', async () => {
+        // Только эта проверка - если нет тестового пользователя, тест падает
+        if (!testUser) {
+            throw new Error('Тестовый пользователь не создан. Проверьте beforeAll hook');
+        }
 
-            const response = await accountController.authorizeUser({
-                userName: testUser.userName,
-                password: testUser.password
-            });
-
-            expect(response).toBeDefined();
-            
-            // Эндпоинт авторизации может вернуть 200 с true/false или просто статус
-            if (response.status === 200) {
-                const isAuthorized = response.data === true || response.status === 200;
-                expect(isAuthorized).toBeTruthy();
-            } else {
-                expect(response.status).toBe(200);
-            }
+        const response = await accountController.authorizeUser({
+            userName: testUser.userName,
+            password: testUser.password
         });
+
+        // Здесь только обычные expect без throw
+        expect(response).toBeDefined();
+        expect(response.status).toBe(200);
+        
+        if (typeof response.data === 'boolean') {
+            expect(response.data).toBe(true);
+        } else if (response.data && typeof response.data === 'object') {
+            const isSuccess = 
+                response.data.status === 'Success' ||
+                response.data.status === 'success' ||
+                response.data.success === true ||
+                response.data.authorized === true;
+            
+            expect(isSuccess).toBeTruthy();
+            
+            if (response.data.message) {
+                expect(response.data.message.toLowerCase()).not.toContain('fail');
+                expect(response.data.message.toLowerCase()).not.toContain('error');
+                expect(response.data.message.toLowerCase()).not.toContain('invalid');
+            }
+        }
+    });
 
         test('Должна быть ошибка при авторизации с неверными учетными данными', async () => {
             const response = await accountController.authorizeUser({

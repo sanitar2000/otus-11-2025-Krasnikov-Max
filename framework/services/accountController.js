@@ -1,74 +1,53 @@
-const axios = require('axios');
+const httpClient = require('../services/httpClient');
 const config = require('../config/config');
 
 class AccountController {
     constructor() {
-        this.baseURL = config.baseURL;
         this.endpoints = config.endpoints.account;
     }
 
     async createUser(userData) {
-        try {
-            const response = await axios.post(
-                `${this.baseURL}${this.endpoints.user}`,
-                userData
-            );
-            return response;
-        } catch (error) {
-            return error.response;
-        }
+        const response = await httpClient.post(
+            this.endpoints.user,
+            userData
+        );
+        return response;
     }
 
     async generateToken(credentials) {
-        try {
-            const response = await axios.post(
-                `${this.baseURL}${this.endpoints.generateToken}`,
-                credentials
-            );
-            return response;
-        } catch (error) {
-            return error.response;
-        }
+        const response = await httpClient.post(
+            this.endpoints.generateToken,
+            credentials
+        );
+        return response;
     }
 
     async authorizeUser(credentials) {
-        try {
-            const response = await axios.post(
-                `${this.baseURL}${this.endpoints.authorized}`,
-                credentials
-            );
-            return response;
-        } catch (error) {
-            return error.response;
-        }
+        const response = await httpClient.post(
+            this.endpoints.authorized,
+            credentials
+        );
+        return response;
     }
 
     async getUser(userId, token) {
-        try {
-            const response = await axios.get(
-                `${this.baseURL}${this.endpoints.user}/${userId}`,
-                {
-                    headers: { 'Authorization': `Bearer ${token}` }
-                }
-            );
-            return response;
-        } catch (error) {
-            return error.response;
-        }
+        const response = await httpClient.get(
+            `${this.endpoints.user}/${userId}`,
+            {
+                headers: token ? { 'Authorization': `Bearer ${token}` } : {}
+            }
+        );
+        return response;
     }
 
     async deleteUser(userId, token) {
-        try {
-            const response = await axios.delete(
-                `${this.baseURL}${this.endpoints.user}/${userId}`,
-                {
-                    headers: { 'Authorization': `Bearer ${token}` }
-                }
-            );
-            return response;
-        } catch (error) {
-            return error.response;
-        }
+        const response = await httpClient.delete(
+            `${this.endpoints.user}/${userId}`,
+            {
+                headers: token ? { 'Authorization': `Bearer ${token}` } : {}
+            }
+        );
+        return response;
     }
 }
 
