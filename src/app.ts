@@ -1,65 +1,49 @@
 /**
  * Проверка имени пользователя
- * @param {string} name
- * @returns {boolean}
+ * @param name - имя пользователя
+ * @returns {boolean} - валидное имя или нет
  */
-export const nameIsValid = name => typeof name === 'string' && name.length >= 2 && /^[a-z]+$/.test(name)
+export const nameIsValid = (name?: string): boolean => {
+  return typeof name === 'string' && name.length >= 2 && /^[a-z]+$/.test(name);
+};
 
 /**
  * Удаление пробелов из строки
- *
- * @param {string} text
- * @returns {string}
+ * @param text - входная строка
+ * @returns {string} - строка без пробелов
  */
-export const fullTrim = text => (text ?? '').replace(/\s+/g, '')
+export const fullTrim = (text?: string | null): string => {
+  return (text ?? '').replace(/\s+/g, '');
+};
+
+// Интерфейс для товара в корзине
+export interface CartItem {
+  quantity: number;
+  name?: string;
+  price: number;
+}
 
 /**
  * Подсчёт суммы заказа
- *
- * @param {[{quantity: number, name?: string, price: number}]} items
- * @param {number} discount
- * @returns {number}
+ * @param items - массив товаров
+ * @param discount - скидка в процентах (0-99)
+ * @returns {number} - итоговая сумма
  * @throws Вернёт ошибку, если скидка не число и больше 99 или меньше 0
+ *
  * @example getTotal([{ price: 10, quantity: 10 }]) // 100
  * @example getTotal([{ price: 10, quantity: 1 }]) // 10
  * @example getTotal([{ price: 10, quantity: 1 }, { price: 10, quantity: 9 }]) // 100
- * @example getTotal([{ price: 10, quantity: 0 }], { price: 10, quantity: 9 }) // 90
  * @example getTotal([{ price: 10, quantity: 10 }], 10) // 90
- * @example getTotal([{ price: 10, quantity: 10 }], 100) // 0
+ * @example getTotal([{ price: 10, quantity: 10 }], 100) // throws error
  */
-export const getTotal = (items = [], discount = 0) => {
+export const getTotal = (items: CartItem[] = [], discount = 0): number => {
   if (typeof discount !== 'number') {
-    throw new Error('Скидка должна быть числом')
+    throw new Error('Скидка должна быть числом');
   }
   if (discount < 0 || discount >= 100) {
-    throw new Error('Процент скидки должен быть от 0 до 99')
+    throw new Error('Процент скидки должен быть от 0 до 99');
   }
 
-  const total = items.reduce((acc, { price, quantity }) => acc + price * quantity, 0)
-  return total * (1 - discount / 100)
-}
-
-// Функция getScore принимает объект с никами и баллами, возвращает сумму всех баллов
-function getScore(scores) {
-    let total = 0;
-    
-    // Перебираем все значения объекта и суммируем их
-    for (let key in scores) {
-        // Проверяем, что значение является числом
-        if (typeof scores[key] === 'number' && !isNaN(scores[key])) {
-            total += scores[key];
-        }
-    }
-    
-    return total;
-}
-
-// Пример использования:
-const studentScores = {
-    "Max": 85,
-    "Alex": 92,
-    "Masha": 78,
-    "Gosha": 95
+  const total = items.reduce((acc, { price, quantity }) => acc + price * quantity, 0);
+  return total * (1 - discount / 100);
 };
-
-console.log(getScore(studentScores)); // Выведет: 350 (85 + 92 + 78 + 95)

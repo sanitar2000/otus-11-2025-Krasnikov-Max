@@ -1,54 +1,156 @@
-const httpClient = require('../services/httpClient');
-const config = require('../config/config');
+import httpClient from './httpClient';
+import config from '../config/config';
 
-class AccountController {
-    constructor() {
-        this.endpoints = config.endpoints.account;
-    }
-
-    async createUser(userData) {
-        const response = await httpClient.post(
-            this.endpoints.user,
-            userData
-        );
-        return response;
-    }
-
-    async generateToken(credentials) {
-        const response = await httpClient.post(
-            this.endpoints.generateToken,
-            credentials
-        );
-        return response;
-    }
-
-    async authorizeUser(credentials) {
-        const response = await httpClient.post(
-            this.endpoints.authorized,
-            credentials
-        );
-        return response;
-    }
-
-    async getUser(userId, token) {
-        const response = await httpClient.get(
-            `${this.endpoints.user}/${userId}`,
-            {
-                headers: token ? { 'Authorization': `Bearer ${token}` } : {}
-            }
-        );
-        return response;
-    }
-
-    async deleteUser(userId, token) {
-        const response = await httpClient.delete(
-            `${this.endpoints.user}/${userId}`,
-            {
-                headers: token ? { 'Authorization': `Bearer ${token}` } : {}
-            }
-        );
-        return response;
-    }
+// Типы для данных пользователя
+interface UserData {
+  userName: string;
+  password: string;
 }
 
-module.exports = AccountController;
+interface Credentials {
+  userName: string;
+  password: string;
+}
+
+interface ApiResponse<T = any> {
+  status: number;
+  data: T;
+}
+
+interface UserResponse {
+  userID?: string;
+  userId?: string;
+  username?: string;
+  userName?: string;
+  token?: string;
+  status?: string;
+  message?: string;
+  books?: any[];
+}
+
+interface Endpoints {
+  authorized: string;
+  generateToken: string;
+  user: string;
+}
+
+class AccountController {
+  private endpoints: Endpoints;
+
+  constructor() {
+    this.endpoints = config.endpoints.account;
+  }
+
+  async createUser(userData: UserData): Promise<ApiResponse<UserResponse>> {
+    try {
+      const response = await httpClient.post<UserResponse>(this.endpoints.user, userData);
+      return {
+        status: response.status,
+        data: response.data,
+      };
+    } catch (error: any) {
+      if (error.response) {
+        return {
+          status: error.response.status,
+          data: error.response.data,
+        };
+      }
+      throw error;
+    }
+  }
+
+  async generateToken(credentials: Credentials): Promise<ApiResponse<UserResponse>> {
+    try {
+      const response = await httpClient.post<UserResponse>(
+        this.endpoints.generateToken,
+        credentials
+      );
+      return {
+        status: response.status,
+        data: response.data,
+      };
+    } catch (error: any) {
+      if (error.response) {
+        return {
+          status: error.response.status,
+          data: error.response.data,
+        };
+      }
+      throw error;
+    }
+  }
+
+  async authorizeUser(credentials: Credentials): Promise<ApiResponse<boolean | UserResponse>> {
+    try {
+      const response = await httpClient.post<boolean | UserResponse>(
+        this.endpoints.authorized,
+        credentials
+      );
+      return {
+        status: response.status,
+        data: response.data,
+      };
+    } catch (error: any) {
+      if (error.response) {
+        return {
+          status: error.response.status,
+          data: error.response.data,
+        };
+      }
+      throw error;
+    }
+  }
+
+  async getUser(userId: string, token: string | null): Promise<ApiResponse<UserResponse>> {
+    try {
+      const options = token
+        ? {
+            headers: { Authorization: `Bearer ${token}` },
+          }
+        : {};
+
+      const response = await httpClient.get<UserResponse>(
+        `${this.endpoints.user}/${userId}`,
+        options
+      );
+      return {
+        status: response.status,
+        data: response.data,
+      };
+    } catch (error: any) {
+      if (error.response) {
+        return {
+          status: error.response.status,
+          data: error.response.data,
+        };
+      }
+      throw error;
+    }
+  }
+
+  async deleteUser(userId: string, token: string | null): Promise<ApiResponse<void>> {
+    try {
+      const options = token
+        ? {
+            headers: { Authorization: `Bearer ${token}` },
+          }
+        : {};
+
+      const response = await httpClient.delete<void>(`${this.endpoints.user}/${userId}`, options);
+      return {
+        status: response.status,
+        data: response.data,
+      };
+    } catch (error: any) {
+      if (error.response) {
+        return {
+          status: error.response.status,
+          data: error.response.data,
+        };
+      }
+      throw error;
+    }
+  }
+}
+
+export default AccountController;
