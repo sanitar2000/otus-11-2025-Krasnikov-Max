@@ -3,8 +3,9 @@
  * https://jestjs.io/docs/configuration
  */
 
-/** @type {import('jest').Config} */
-const config = {
+import type { Config } from 'jest';
+
+export default {
   // All imported modules in your tests should be mocked automatically
   // automock: false,
 
@@ -115,9 +116,9 @@ const config = {
       'jest-html-reporters',
       {
         publicPath: './reports/html-report',
-        filename: 'index.html'
-      }
-    ]
+        filename: 'index.html',
+      },
+    ],
   ],
 
   // Automatically reset mock state before every test
@@ -147,7 +148,7 @@ const config = {
   setupFiles: ['dotenv/config'],
 
   // A list of paths to modules that run some code to configure or set up the testing framework before each test
-  setupFilesAfterEnv: ['./setup-jest.js'],
+  setupFilesAfterEnv: ['./setup-jest.ts'],
 
   // The number of seconds after which a test is considered as slow and reported as such in the results.
   // slowTestThreshold: 5,
@@ -204,8 +205,6 @@ const config = {
 
   testEnvironment: 'allure-jest/node',
   testEnvironmentOptions: {
-    resultsDir: 'reports/allure-results'
-  }
-}
-
-module.exports = config
+    resultsDir: 'reports/allure-results',
+  },
+} satisfies Config;
