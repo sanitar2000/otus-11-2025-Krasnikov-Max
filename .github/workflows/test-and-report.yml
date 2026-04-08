@@ -84,7 +84,7 @@ jobs:
 
   deploy-report:
     needs: test
-    if: always() && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master')
+    if: always()
     runs-on: ubuntu-latest
     permissions:
       contents: write
