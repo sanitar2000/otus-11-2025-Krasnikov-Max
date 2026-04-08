@@ -83,64 +83,55 @@ jobs:
       continue-on-error: true
 
   deploy-report:
-    needs: test
+  needs: test
+  if: always()   # <--- публикуем всегда
+  runs-on: ubuntu-latest
+  permissions:
+    contents: write
+    pages: write
+  
+  steps:
+  - name: Download test report
     if: always()
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      pages: write
-    
-    steps:
-    - name: Download test report (always)
-      if: always()
-      uses: actions/download-artifact@v4
-      with:
-        name: test-report
-        path: ./test-report
-        continue-on-error: true
-    
-    - name: Prepare for GitHub Pages (always)
-      if: always()
-      run: |
-        mkdir -p ./public/${{ github.run_id }}
-        # Копируем отчет, если он существует
-        if [ -d "./test-report" ] && [ "$(ls -A ./test-report)" ]; then
-          cp -r ./test-report/* ./public/${{ github.run_id }}/
-          echo "Report copied successfully"
-        else
-          # Создаём заглушку, если отчета нет
-          echo "<html><body><h1>⚠️ Test Report Not Available</h1><p>Tests failed to generate report for run ${{ github.run_id }}</p></body></html>" > ./public/${{ github.run_id }}/index.html
-        fi
-        
-        # Создаём главную страницу со списком всех отчетов
-        echo '<html><body><h1>📊 Test Reports History</h1><ul>' > ./public/index.html
-        for dir in ./public/*/; do
-          if [ -d "$dir" ]; then
-            dirname=$(basename "$dir")
-            # Проверяем, есть ли index.html внутри
-            if [ -f "$dir/index.html" ]; then
-              echo "<li><a href='$dirname/'>Report #$dirname</a></li>" >> ./public/index.html
-            elif [ -f "$dir/test-report.html" ]; then
-              echo "<li><a href='$dirname/test-report.html'>Report #$dirname</a></li>" >> ./public/index.html
-            else
-              echo "<li>Report #$dirname (no index)</li>" >> ./public/index.html
-            fi
+    continue-on-error: true   # <--- правильно: на уровне шага
+    uses: actions/download-artifact@v4
+    with:
+      name: test-report
+      path: ./test-report
+  
+  - name: Prepare for GitHub Pages
+    if: always()
+    run: |
+      mkdir -p ./public/${{ github.run_id }}
+      if [ -d "./test-report" ] && [ "$(ls -A ./test-report)" ]; then
+        cp -r ./test-report/* ./public/${{ github.run_id }}/
+      else
+        echo "<html><body><h1>⚠️ Test Report Not Available</h1><p>Tests failed to generate report for run ${{ github.run_id }}</p></body></html>" > ./public/${{ github.run_id }}/index.html
+      fi
+      
+      echo '<html><body><h1>📊 Test Reports History</h1><ul>' > ./public/index.html
+      for dir in ./public/*/; do
+        if [ -d "$dir" ]; then
+          dirname=$(basename "$dir")
+          if [ -f "$dir/index.html" ]; then
+            echo "<li><a href='$dirname/'>Report #$dirname</a></li>" >> ./public/index.html
           fi
-        done
-        echo '</ul><p><small>Last updated: $(date)</small></p></body></html>' >> ./public/index.html
-    
-    - name: Deploy to GitHub Pages
-      if: always()
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./public   
-        publish_branch: main    
-        force_orphan: false
-        keep_files: true
-        user_name: 'github-actions[bot]'
-        user_email: 'github-actions[bot]@users.noreply.github.com'
-        commit_message: 'Deploy test report for run ${{ github.run_id }}'
+        fi
+      done
+      echo '</ul></body></html>' >> ./public/index.html
+  
+  - name: Deploy to GitHub Pages
+    if: always()
+    uses: peaceiris/actions-gh-pages@v3
+    with:
+      github_token: ${{ secrets.GITHUB_TOKEN }}
+      publish_dir: ./public
+      publish_branch: main
+      force_orphan: false
+      keep_files: true
+      user_name: 'github-actions[bot]'
+      user_email: 'github-actions[bot]@users.noreply.github.com'
+      commit_message: 'Deploy test report for run ${{ github.run_id }}'
 
   send-notification:
     needs: test
