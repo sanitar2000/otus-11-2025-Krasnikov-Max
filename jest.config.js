@@ -205,7 +205,26 @@ const config = {
   testEnvironment: 'allure-jest/node',
   testEnvironmentOptions: {
     resultsDir: 'reports/allure-results'
-  }
+  },
+  testEnvironment: 'node',
+  reporters: [
+    'default',
+    [
+      'jest-html-reporter',
+      {
+        pageTitle: 'Test Report',
+        outputPath: './test-report/index.html',
+        includeFailureMsg: true,
+        includeConsoleLog: true,
+        dateFormat: 'yyyy-mm-dd HH:MM:ss',
+        logo: '',
+        theme: 'darkTheme'
+      }
+    ]
+  ],
+  collectCoverage: true,
+  coverageDirectory: './coverage',
+  testMatch: ['**/__tests__/**/*.js', '**/?(*.)+(spec|test).js']
 }
 
 module.exports = config
