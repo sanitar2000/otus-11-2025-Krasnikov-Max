@@ -1,0 +1,125 @@
+name: Run Tests and Publish Report
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+        cache: 'npm'
+    
+    - name: Install dependencies
+      run: npm ci
+    
+    - name: Run tests with coverage
+      run: npm test -- --coverage
+    
+    - name: Upload test report artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: test-report
+        path: test-report/
+    
+    - name: Get test results
+      id: test-results
+      run: |
+        # Parse test results
+        if [ -f test-report/index.html ]; then
+          # Extract summary from jest output
+          TOTAL_TESTS=$(npm test -- --listTests | wc -l)
+          echo "total_tests=$TOTAL_TESTS" >> $GITHUB_OUTPUT
+          
+          # Get passed/failed from jest json output
+          npm test -- --json --outputFile=test-results.json
+          PASSED=$(jq '.numPassedTests' test-results.json)
+          FAILED=$(jq '.numFailedTests' test-results.json)
+          echo "passed=$PASSED" >> $GITHUB_OUTPUT
+          echo "failed=$FAILED" >> $GITHUB_OUTPUT
+          
+          # Calculate success rate
+          if [ $TOTAL_TESTS -gt 0 ]; then
+            RATE=$(echo "scale=2; $PASSED * 100 / $TOTAL_TESTS" | bc)
+            echo "success_rate=$RATE" >> $GITHUB_OUTPUT
+          else
+            echo "success_rate=0" >> $GITHUB_OUTPUT
+          fi
+        fi
+      continue-on-error: true
+    
+    - name: Send Telegram notification
+      if: always()
+      uses: appleboy/telegram-action@master
+      with:
+        to: ${{ secrets.TELEGRAM_CHAT_ID }}
+        token: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+        message: |
+          🧪 **Test Results**
+          
+          Repository: ${{ github.repository }}
+          Branch: ${{ github.ref_name }}
+          Commit: ${{ github.sha }}
+          Author: ${{ github.actor }}
+          
+          📊 **Results:**
+          ✅ Passed: ${{ steps.test-results.outputs.passed || 'N/A' }}
+          ❌ Failed: ${{ steps.test-results.outputs.failed || 'N/A' }}
+          📈 Total: ${{ steps.test-results.outputs.total_tests || 'N/A' }}
+          🎯 Success Rate: ${{ steps.test-results.outputs.success_rate || 'N/A' }}%
+          
+          📎 Report: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/${{ github.run_id }}/test-report/
+          
+          ⏱️ Time: ${{ github.event.head_commit.timestamp }}
+          🔗 Workflow: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+
+  deploy-report:
+    needs: test
+    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pages: write
+    
+    steps:
+    - name: Download test report
+      uses: actions/download-artifact@v4
+      with:
+        name: test-report
+        path: ./test-report
+    
+    - name: Prepare for GitHub Pages
+      run: |
+        mkdir -p ./public/${{ github.run_id }}
+        cp -r ./test-report/* ./public/${{ github.run_id }}/
+        # Create index.html with links to all reports
+        echo '<html><body><h1>Test Reports</h1><ul>' > ./public/index.html
+        for dir in ./public/*/; do
+          if [ -d "$dir" ]; then
+            dirname=$(basename "$dir")
+            echo "<li><a href='$dirname/test-report.html'>Report $dirname</a></li>" >> ./public/index.html
+          fi
+        done
+        echo '</ul></body></html>' >> ./public/index.html
+    
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./public
+        publish_branch: gh-pages
+        keep_files: true
+        user_name: 'github-actions[bot]'
+        user_email: 'github-actions[bot]@users.noreply.github.com'
+        commit_message: 'Deploy test report for run ${{ github.run_id }}'

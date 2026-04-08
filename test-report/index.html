@@ -1,0 +1,542 @@
+<html><head><meta charset="utf-8"/><title>Test Report</title><style type="text/css">:root {
+  --text-primary: #eee;
+  --text-secondary: #aaa;
+  --success: #2ecc71;
+  --success-bright: #1e3d2a;
+  --danger: #e74c3c;
+  --danger-bright: #3d1e1e;
+  --warning: #f39c12;
+  --warning-bright: #3d2c1e;
+  --panel: #1f1f1f;
+  --border: #444;
+  --disabled: #666;
+  background-color: #121212;
+}
+
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  color: var(--text-primary);
+}
+body {
+  padding: 2rem 1rem;
+}
+.jesthtml-content {
+  margin: 0 auto;
+  max-width: 70rem;
+}
+header {
+  display: flex;
+  align-items: center;
+}
+#title {
+  margin: 0;
+  flex-grow: 1;
+}
+#logo {
+  height: 4rem;
+}
+#timestamp {
+  color: var(--text-secondary);
+  margin-top: 0.5rem;
+}
+
+#metadata-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.additional-information-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: var(--text-secondary);
+}
+
+/** SUMMARY */
+#summary {
+  color: var(--text-primary);
+  display: flex;
+  font-family: monospace;
+  font-size: 1rem;
+}
+#summary > div {
+  margin-right: 0.5rem;
+  background: var(--panel);
+  padding: 1rem;
+  min-width: 15rem;
+}
+#summary > div:last-child {
+  margin-right: 0;
+}
+@media only screen and (max-width: 720px) {
+  #summary {
+    flex-direction: column;
+  }
+  #summary > div {
+    margin-right: 0;
+    margin-top: 1rem;
+  }
+  #summary > div:first-child {
+    margin-top: 0;
+  }
+}
+
+.summary-total {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.summary-passed {
+  color: var(--success);
+  border-left: 0.4rem solid var(--success);
+  padding-left: 0.5rem;
+  margin-bottom: 0.15rem;
+}
+.summary-failed,
+.summary-obsolete-snapshots {
+  color: var(--danger);
+  border-left: 0.4rem solid var(--danger);
+  padding-left: 0.5rem;
+  margin-bottom: 0.15rem;
+}
+.summary-pending {
+  color: var(--warning);
+  border-left: 0.4rem solid var(--warning);
+  padding-left: 0.5rem;
+  margin-bottom: 0.15rem;
+}
+.summary-empty {
+  color: var(--disabled);
+  border-left: 0.4rem solid var(--disabled);
+  margin-bottom: 0.15rem;
+}
+
+.test-result {
+  padding: 1rem;
+  margin-bottom: 0.25rem;
+}
+.test-result:last-child {
+  border: 0;
+}
+.test-result.passed {
+  background-color: var(--success-bright);
+  color: var(--success);
+}
+.test-result.failed {
+  background-color: var(--danger-bright);
+  color: var(--danger);
+}
+.test-result.pending {
+  background-color: var(--warning-bright);
+  color: var(--warning);
+}
+
+.test-info {
+  display: flex;
+  justify-content: space-between;
+}
+.test-suitename {
+  width: 20%;
+  text-align: left;
+  font-weight: bold;
+  word-break: break-word;
+}
+.test-title {
+  width: 40%;
+  text-align: left;
+  font-style: italic;
+}
+.test-status {
+  width: 20%;
+  text-align: right;
+}
+.test-duration {
+  width: 10%;
+  text-align: right;
+  font-size: 0.85rem;
+}
+
+.failureMessages {
+  padding: 0 1rem;
+  margin-top: 1rem;
+  border-top: 1px dashed var(--danger);
+}
+.failureMessages.suiteFailure {
+  border-top: none;
+}
+.failureMsg {
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+}
+
+.suite-container {
+  margin-bottom: 1rem;
+}
+.suite-info {
+  padding: 1rem;
+  background-color: var(--panel);
+  color: var(--text-secondary);
+  border: 0.15rem solid;
+  border-color: var(--panel);
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.25rem;
+}
+.suite-info:hover {
+  border-color: var(--border);
+  cursor: pointer;
+}
+.suite-info .suite-path {
+  word-break: break-all;
+  flex-grow: 1;
+  font-family: monospace;
+  font-size: 1rem;
+}
+.suite-info .suite-time {
+  margin-left: 1rem;
+  padding: 0.2rem 0.3rem;
+  font-size: 0.85rem;
+}
+.suite-info .suite-time.warn {
+  background-color: var(--danger);
+  color: #fff;
+}
+.suite-info:before {
+  content: "\2303";
+  display: inline-block;
+  margin-right: 1rem;
+  transform: rotate(180deg) translateY(0.15rem);
+}
+.suite-container[open] .suite-info:before {
+  transform: rotate(0deg) translateY(0.15rem);
+}
+
+/* CONSOLE LOGS */
+.suite-consolelog {
+  margin-bottom: 0.25rem;
+  padding: 1rem;
+  background-color: var(--panel);
+}
+.suite-consolelog-header {
+  font-weight: bold;
+}
+.suite-consolelog-item {
+  padding: 0.5rem;
+}
+.suite-consolelog-item pre {
+  margin: 0.5rem 0;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+}
+.suite-consolelog-item-origin {
+  color: var(--text-secondary);
+  font-weight: bold;
+}
+.suite-consolelog-item-message {
+  color: var(--text-primary);
+  font-size: 1rem;
+  padding: 0 0.5rem;
+}
+
+/* OBSOLETE SNAPSHOTS */
+.suite-obsolete-snapshots {
+  margin-bottom: 0.25rem;
+  padding: 1rem;
+  background-color: var(--danger-bright);
+  color: var(--danger);
+}
+.suite-obsolete-snapshots-header {
+  font-weight: bold;
+}
+.suite-obsolete-snapshots-item {
+  padding: 0.5rem;
+}
+.suite-obsolete-snapshots-item pre {
+  margin: 0.5rem 0;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+}
+.suite-obsolete-snapshots-item-message {
+  color: var(--text-primary);
+  font-size: 1rem;
+  padding: 0 0.5rem;
+}
+</style></head><body><main class="jesthtml-content"><header><h1 id="title">Test Report</h1></header><section id="metadata-container"><div id="timestamp">Started: 2026-04-08 17:04:29</div><div id="summary"><div id="suite-summary"><div class="summary-total">Suites (4)</div><div class="summary-passed ">2 passed</div><div class="summary-failed ">2 failed</div><div class="summary-pending  summary-empty">0 pending</div></div><div id="test-summary"><div class="summary-total">Tests (36)</div><div class="summary-passed ">29 passed</div><div class="summary-failed ">7 failed</div><div class="summary-pending  summary-empty">0 pending</div></div></div></section><details id="suite-1" class="suite-container" open=""><summary class="suite-info"><div class="suite-path">D:\otus-11-2025-Krasnikov-Max\test\app.test.js</div><div class="suite-time">1.393s</div></summary><div class="suite-tests"><div class="test-result passed"><div class="test-info"><div class="test-suitename">nameIsValid function</div><div class="test-title">возвращает true для корректного имени (строчные латинские буквы, длина ≥ 2)</div><div class="test-status">passed</div><div class="test-duration">0.003s</div></div></div><div class="test-result passed"><div class="test-info"><div class="test-suitename">nameIsValid function</div><div class="test-title">возвращает false для имён короче 2 символов</div><div class="test-status">passed</div><div class="test-duration"> </div></div></div><div class="test-result passed"><div class="test-info"><div class="test-suitename">nameIsValid function</div><div class="test-title">возвращает false для некорректных данных</div><div class="test-status">passed</div><div class="test-duration">0.01s</div></div></div><div class="test-result passed"><div class="test-info"><div class="test-suitename">fullTrim</div><div class="test-title">удаляет обычные пробелы из строки</div><div class="test-status">passed</div><div class="test-duration"> </div></div></div><div class="test-result passed"><div class="test-info"><div class="test-suitename">fullTrim</div><div class="test-title">удаляет все виды пробельных символов (табуляция, перевод строки, неразрывный пробел и т. п.)</div><div class="test-status">passed</div><div class="test-duration"> </div></div></div><div class="test-result passed"><div class="test-info"><div class="test-suitename">fullTrim</div><div class="test-title">корректно обрабатывает крайние случаи (пустая строка, null, undefined, строки без пробелов)</div><div class="test-status">passed</div><div class="test-duration"> </div></div></div><div class="test-result passed"><div class="test-info"><div class="test-suitename">getTotal</div><div class="test-title">считает сумму для [ [Object] ] со скидкой 0% → ожидает 50 (без скидки)</div><div class="test-status">passed</div><div class="test-duration"> </div></div></div><div class="test-result passed"><div class="test-info"><div class="test-suitename">getTotal</div><div class="test-title">считает сумму для [ [Object] ] со скидкой 10% → ожидает 45 (скидка 10%)</div><div class="test-status">passed</div><div class="test-duration">0.001s</div></div></div><div class="test-result passed"><div class="test-info"><div class="test-suitename">getTotal</div><div class="test-title">считает сумму для [ [Object], [Object] ] со скидкой 0% → ожидает 90 (два товара, без скидки)</div><div class="test-status">passed</div><div class="test-duration"> </div></div></div><div class="test-result passed"><div class="test-info"><div class="test-suitename">getTotal</div><div class="test-title">считает сумму для [ [Object], [Object] ] со скидкой 20% → ожидает 72 (два товара, скидка 20%)</div><div class="test-status">passed</div><div class="test-duration"> </div></div></div><div class="test-result passed"><div class="test-info"><div class="test-suitename">getTotal</div><div class="test-title">считает сумму для [ [Object] ] со скидкой 99% → ожидает 0.1 (максимальная скидка (99%))</div><div class="test-status">passed</div><div class="test-duration"> </div></div></div><div class="test-result passed"><div class="test-info"><div class="test-suitename">getTotal</div><div class="test-title">выбрасывает ошибку для скидки "10": "Скидка должна быть числом"</div><div class="test-status">passed</div><div class="test-duration">0.006s</div></div></div><div class="test-result passed"><div class="test-info"><div class="test-suitename">getTotal</div><div class="test-title">выбрасывает ошибку для скидки null: "Скидка должна быть числом"</div><div class="test-status">passed</div><div class="test-duration"> </div></div></div><div class="test-result passed"><div class="test-info"><div class="test-suitename">getTotal</div><div class="test-title">выбрасывает ошибку для скидки -1: "Процент скидки должен быть от 0 до 99"</div><div class="test-status">passed</div><div class="test-duration">0.001s</div></div></div><div class="test-result passed"><div class="test-info"><div class="test-suitename">getTotal</div><div class="test-title">выбрасывает ошибку для скидки 100: "Процент скидки должен быть от 0 до 99"</div><div class="test-status">passed</div><div class="test-duration"> </div></div></div><div class="test-result passed"><div class="test-info"><div class="test-suitename">getTotal</div><div class="test-title">выбрасывает ошибку для скидки 150: "Процент скидки должен быть от 0 до 99"</div><div class="test-status">passed</div><div class="test-duration"> </div></div></div><div class="test-result passed"><div class="test-info"><div class="test-suitename">getTotal</div><div class="test-title">обрабатывает [] со скидкой 0% → ожидает 0 (пустой список товаров)</div><div class="test-status">passed</div><div class="test-duration"> </div></div></div><div class="test-result passed"><div class="test-info"><div class="test-suitename">getTotal</div><div class="test-title">обрабатывает [] со скидкой 50% → ожидает 0 (пустой список + скидка)</div><div class="test-status">passed</div><div class="test-duration"> </div></div></div><div class="test-result passed"><div class="test-info"><div class="test-suitename">getTotal</div><div class="test-title">обрабатывает [ [Object] ] со скидкой 0% → ожидает 0 (товар с quantity=0)</div><div class="test-status">passed</div><div class="test-duration">0.001s</div></div></div><div class="test-result passed"><div class="test-info"><div class="test-suitename">getTotal</div><div class="test-title">обрабатывает [ [Object], [Object] ] со скидкой 20% → ожидает 0 (несколько товаров с quantity=0)</div><div class="test-status">passed</div><div class="test-duration"> </div></div></div><div class="test-result passed"><div class="test-info"><div class="test-suitename">getTotal</div><div class="test-title">обрабатывает [ [Object] ] со скидкой 0% → ожидает 0 (цена товара = 0)</div><div class="test-status">passed</div><div class="test-duration"> </div></div></div></div><div class="suite-consolelog"><div class="suite-consolelog-header">Console Log</div><div class="suite-consolelog-item"><pre class="suite-consolelog-item-origin">    at Object.log (D:\otus-11-2025-Krasnikov-Max\src\app.js:65:9)
+    at Runtime._execModule (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-runtime\build\index.js:1264:24)
+    at Runtime._loadModule (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-runtime\build\index.js:940:12)
+    at Runtime.requireModule (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-runtime\build\index.js:828:12)
+    at Runtime.requireModuleOrMock (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-runtime\build\index.js:960:21)
+    at Object.require (D:\otus-11-2025-Krasnikov-Max\test\app.test.js:1:25)
+    at Runtime._execModule (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-runtime\build\index.js:1264:24)
+    at Runtime._loadModule (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-runtime\build\index.js:940:12)
+    at Runtime.requireModule (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-runtime\build\index.js:828:12)
+    at jestAdapter (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\runner.js:97:19)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at runTestInternal (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-runner\build\testWorker.js:275:16)
+    at runTest (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-runner\build\testWorker.js:343:7)
+    at Object.worker (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-runner\build\testWorker.js:497:12)</pre><pre class="suite-consolelog-item-message">350</pre></div></div></details><details id="suite-2" class="suite-container" open=""><summary class="suite-info"><div class="suite-path">D:\otus-11-2025-Krasnikov-Max\tests\example.spec.js</div><div class="suite-time">0s</div></summary><div class="suite-tests"/></details><details id="suite-3" class="suite-container" open=""><summary class="suite-info"><div class="suite-path">D:\otus-11-2025-Krasnikov-Max\test\bookstore.test.js</div><div class="suite-time warn">11.753s</div></summary><div class="suite-tests"><div class="test-result passed"><div class="test-info"><div class="test-suitename">Bookstore API Tests &gt; Создание книги</div><div class="test-title">Должен успешно создать новую книгу</div><div class="test-status">passed</div><div class="test-duration">0.002s</div></div></div><div class="test-result passed"><div class="test-info"><div class="test-suitename">Bookstore API Tests &gt; Создание книги</div><div class="test-title">Должна быть ошибка при создании книги без аутентификации</div><div class="test-status">passed</div><div class="test-duration">0.001s</div></div></div><div class="test-result passed"><div class="test-info"><div class="test-suitename">Bookstore API Tests &gt; Получение информации о книге</div><div class="test-title">Должен успешно получить все книги</div><div class="test-status">passed</div><div class="test-duration"> </div></div></div><div class="test-result passed"><div class="test-info"><div class="test-suitename">Bookstore API Tests &gt; Получение информации о книге</div><div class="test-title">Должен успешно получить конкретную книгу по ISBN</div><div class="test-status">passed</div><div class="test-duration"> </div></div></div><div class="test-result passed"><div class="test-info"><div class="test-suitename">Bookstore API Tests &gt; Получение информации о книге</div><div class="test-title">Должна быть ошибка при получении несуществующей книги</div><div class="test-status">passed</div><div class="test-duration">0.001s</div></div></div></div><div class="suite-consolelog"><div class="suite-consolelog-header">Console Log</div><div class="suite-consolelog-item"><pre class="suite-consolelog-item-origin">    at Object.log (D:\otus-11-2025-Krasnikov-Max\test\bookstore.test.js:25:21)
+    at Promise.finally.completed (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:1557:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:1497:10)
+    at _callCircusHook (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:976:40)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at _runTestsForDescribeBlock (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:800:7)
+    at _runTestsForDescribeBlock (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:857:11)
+    at run (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:761:3)
+    at runAndTransformResultsToJestFormat (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:1918:21)
+    at jestAdapter (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\runner.js:103:25)
+    at runTestInternal (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-runner\build\testWorker.js:275:16)
+    at runTest (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-runner\build\testWorker.js:343:7)
+    at Object.worker (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-runner\build\testWorker.js:497:12)</pre><pre class="suite-consolelog-item-message">Проверка доступности API...</pre></div><div class="suite-consolelog-item"><pre class="suite-consolelog-item-origin">    at Object.log (D:\otus-11-2025-Krasnikov-Max\test\bookstore.test.js:36:25)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)</pre><pre class="suite-consolelog-item-message">API недоступен, тесты будут пропущены</pre></div><div class="suite-consolelog-item"><pre class="suite-consolelog-item-origin">    at Object.log (D:\otus-11-2025-Krasnikov-Max\test\bookstore.test.js:112:25)
+    at Promise.finally.completed (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:1557:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:1497:10)
+    at _callCircusTest (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:1007:40)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at _runTest (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:947:3)
+    at D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:849:7
+    at _runTestsForDescribeBlock (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:862:11)
+    at _runTestsForDescribeBlock (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:857:11)
+    at _runTestsForDescribeBlock (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:857:11)
+    at run (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:761:3)
+    at runAndTransformResultsToJestFormat (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:1918:21)
+    at jestAdapter (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\runner.js:103:25)
+    at runTestInternal (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-runner\build\testWorker.js:275:16)
+    at runTest (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-runner\build\testWorker.js:343:7)
+    at Object.worker (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-runner\build\testWorker.js:497:12)</pre><pre class="suite-consolelog-item-message">Пропускаем тест: API недоступен</pre></div><div class="suite-consolelog-item"><pre class="suite-consolelog-item-origin">    at Object.log (D:\otus-11-2025-Krasnikov-Max\test\bookstore.test.js:181:25)
+    at Promise.finally.completed (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:1557:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:1497:10)
+    at _callCircusTest (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:1007:40)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at _runTest (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:947:3)
+    at D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:849:7
+    at _runTestsForDescribeBlock (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:862:11)
+    at _runTestsForDescribeBlock (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:857:11)
+    at _runTestsForDescribeBlock (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:857:11)
+    at run (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:761:3)
+    at runAndTransformResultsToJestFormat (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:1918:21)
+    at jestAdapter (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\runner.js:103:25)
+    at runTestInternal (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-runner\build\testWorker.js:275:16)
+    at runTest (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-runner\build\testWorker.js:343:7)
+    at Object.worker (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-runner\build\testWorker.js:497:12)</pre><pre class="suite-consolelog-item-message">Пропускаем тест: API недоступен</pre></div><div class="suite-consolelog-item"><pre class="suite-consolelog-item-origin">    at Object.log (D:\otus-11-2025-Krasnikov-Max\test\bookstore.test.js:235:25)
+    at Promise.finally.completed (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:1557:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:1497:10)
+    at _callCircusTest (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:1007:40)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at _runTest (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:947:3)
+    at D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:849:7
+    at _runTestsForDescribeBlock (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:862:11)
+    at _runTestsForDescribeBlock (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:857:11)
+    at _runTestsForDescribeBlock (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:857:11)
+    at run (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:761:3)
+    at runAndTransformResultsToJestFormat (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:1918:21)
+    at jestAdapter (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\runner.js:103:25)
+    at runTestInternal (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-runner\build\testWorker.js:275:16)
+    at runTest (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-runner\build\testWorker.js:343:7)
+    at Object.worker (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-runner\build\testWorker.js:497:12)</pre><pre class="suite-consolelog-item-message">Пропускаем тест: API недоступен или не отвечает</pre></div><div class="suite-consolelog-item"><pre class="suite-consolelog-item-origin">    at Object.log (D:\otus-11-2025-Krasnikov-Max\test\bookstore.test.js:273:25)
+    at Promise.finally.completed (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:1557:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:1497:10)
+    at _callCircusTest (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:1007:40)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at _runTest (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:947:3)
+    at D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:849:7
+    at _runTestsForDescribeBlock (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:862:11)
+    at _runTestsForDescribeBlock (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:857:11)
+    at _runTestsForDescribeBlock (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:857:11)
+    at run (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:761:3)
+    at runAndTransformResultsToJestFormat (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:1918:21)
+    at jestAdapter (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\runner.js:103:25)
+    at runTestInternal (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-runner\build\testWorker.js:275:16)
+    at runTest (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-runner\build\testWorker.js:343:7)
+    at Object.worker (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-runner\build\testWorker.js:497:12)</pre><pre class="suite-consolelog-item-message">Пропускаем тест: API недоступен или не отвечает</pre></div><div class="suite-consolelog-item"><pre class="suite-consolelog-item-origin">    at Object.log (D:\otus-11-2025-Krasnikov-Max\test\bookstore.test.js:316:25)
+    at Promise.finally.completed (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:1557:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:1497:10)
+    at _callCircusTest (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:1007:40)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at _runTest (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:947:3)
+    at D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:849:7
+    at _runTestsForDescribeBlock (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:862:11)
+    at _runTestsForDescribeBlock (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:857:11)
+    at _runTestsForDescribeBlock (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:857:11)
+    at run (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:761:3)
+    at runAndTransformResultsToJestFormat (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:1918:21)
+    at jestAdapter (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\runner.js:103:25)
+    at runTestInternal (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-runner\build\testWorker.js:275:16)
+    at runTest (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-runner\build\testWorker.js:343:7)
+    at Object.worker (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-runner\build\testWorker.js:497:12)</pre><pre class="suite-consolelog-item-message">Пропускаем тест: API недоступен или не отвечает</pre></div></div></details><details id="suite-4" class="suite-container" open=""><summary class="suite-info"><div class="suite-path">D:\otus-11-2025-Krasnikov-Max\test\account.test.js</div><div class="suite-time warn">31.691s</div></summary><div class="suite-tests"><div class="test-result failed"><div class="test-info"><div class="test-suitename">Account API Tests &gt; Создание пользователя</div><div class="test-title">Должна быть ошибка при создании пользователя с существующим именем</div><div class="test-status">failed</div><div class="test-duration">5.002s</div></div><div class="failureMessages"> <pre class="failureMsg">Error: thrown: "Exceeded timeout of 5000 ms for a test.
+Add a timeout value to this test to increase the timeout, if this is a long-running test. See https://jestjs.io/docs/api#testname-fn-timeout."
+    at test (D:\otus-11-2025-Krasnikov-Max\test\account.test.js:26:9)
+    at _dispatchDescribe (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:604:26)
+    at describe (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:572:44)
+    at describe (D:\otus-11-2025-Krasnikov-Max\test\account.test.js:25:5)
+    at _dispatchDescribe (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:604:26)
+    at describe (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:572:44)
+    at Object.describe (D:\otus-11-2025-Krasnikov-Max\test\account.test.js:5:1)
+    at Runtime._execModule (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-runtime\build\index.js:1264:24)
+    at Runtime._loadModule (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-runtime\build\index.js:940:12)
+    at Runtime.requireModule (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-runtime\build\index.js:828:12)
+    at jestAdapter (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\runner.js:97:19)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at runTestInternal (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-runner\build\testWorker.js:275:16)
+    at runTest (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-runner\build\testWorker.js:343:7)
+    at Object.worker (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-runner\build\testWorker.js:497:12)</pre></div></div><div class="test-result failed"><div class="test-info"><div class="test-suitename">Account API Tests &gt; Создание пользователя</div><div class="test-title">Должна быть ошибка при создании пользователя со слабым паролем</div><div class="test-status">failed</div><div class="test-duration">5.011s</div></div><div class="failureMessages"> <pre class="failureMsg">Error: thrown: "Exceeded timeout of 5000 ms for a test.
+Add a timeout value to this test to increase the timeout, if this is a long-running test. See https://jestjs.io/docs/api#testname-fn-timeout."
+    at test (D:\otus-11-2025-Krasnikov-Max\test\account.test.js:55:9)
+    at _dispatchDescribe (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:604:26)
+    at describe (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:572:44)
+    at describe (D:\otus-11-2025-Krasnikov-Max\test\account.test.js:25:5)
+    at _dispatchDescribe (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:604:26)
+    at describe (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:572:44)
+    at Object.describe (D:\otus-11-2025-Krasnikov-Max\test\account.test.js:5:1)
+    at Runtime._execModule (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-runtime\build\index.js:1264:24)
+    at Runtime._loadModule (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-runtime\build\index.js:940:12)
+    at Runtime.requireModule (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-runtime\build\index.js:828:12)
+    at jestAdapter (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\runner.js:97:19)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at runTestInternal (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-runner\build\testWorker.js:275:16)
+    at runTest (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-runner\build\testWorker.js:343:7)
+    at Object.worker (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-runner\build\testWorker.js:497:12)</pre></div></div><div class="test-result failed"><div class="test-info"><div class="test-suitename">Account API Tests &gt; Создание пользователя</div><div class="test-title">Должен успешно создать нового пользователя</div><div class="test-status">failed</div><div class="test-duration">5.003s</div></div><div class="failureMessages"> <pre class="failureMsg">Error: thrown: "Exceeded timeout of 5000 ms for a test.
+Add a timeout value to this test to increase the timeout, if this is a long-running test. See https://jestjs.io/docs/api#testname-fn-timeout."
+    at test (D:\otus-11-2025-Krasnikov-Max\test\account.test.js:81:9)
+    at _dispatchDescribe (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:604:26)
+    at describe (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:572:44)
+    at describe (D:\otus-11-2025-Krasnikov-Max\test\account.test.js:25:5)
+    at _dispatchDescribe (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:604:26)
+    at describe (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:572:44)
+    at Object.describe (D:\otus-11-2025-Krasnikov-Max\test\account.test.js:5:1)
+    at Runtime._execModule (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-runtime\build\index.js:1264:24)
+    at Runtime._loadModule (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-runtime\build\index.js:940:12)
+    at Runtime.requireModule (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-runtime\build\index.js:828:12)
+    at jestAdapter (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\runner.js:97:19)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at runTestInternal (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-runner\build\testWorker.js:275:16)
+    at runTest (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-runner\build\testWorker.js:343:7)
+    at Object.worker (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-runner\build\testWorker.js:497:12)</pre></div></div><div class="test-result failed"><div class="test-info"><div class="test-suitename">Account API Tests &gt; Генерация токена</div><div class="test-title">Должна быть ошибка при генерации токена с неверными учетными данными</div><div class="test-status">failed</div><div class="test-duration">5.011s</div></div><div class="failureMessages"> <pre class="failureMsg">Error: thrown: "Exceeded timeout of 5000 ms for a test.
+Add a timeout value to this test to increase the timeout, if this is a long-running test. See https://jestjs.io/docs/api#testname-fn-timeout."
+    at test (D:\otus-11-2025-Krasnikov-Max\test\account.test.js:112:5)
+    at _dispatchDescribe (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:604:26)
+    at describe (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:572:44)
+    at describe (D:\otus-11-2025-Krasnikov-Max\test\account.test.js:111:2)
+    at _dispatchDescribe (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:604:26)
+    at describe (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:572:44)
+    at Object.describe (D:\otus-11-2025-Krasnikov-Max\test\account.test.js:5:1)
+    at Runtime._execModule (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-runtime\build\index.js:1264:24)
+    at Runtime._loadModule (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-runtime\build\index.js:940:12)
+    at Runtime.requireModule (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-runtime\build\index.js:828:12)
+    at jestAdapter (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\runner.js:97:19)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at runTestInternal (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-runner\build\testWorker.js:275:16)
+    at runTest (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-runner\build\testWorker.js:343:7)
+    at Object.worker (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-runner\build\testWorker.js:497:12)</pre></div></div><div class="test-result failed"><div class="test-info"><div class="test-suitename">Account API Tests &gt; Генерация токена</div><div class="test-title">Должен успешно сгенерировать токен с верными учетными данными</div><div class="test-status">failed</div><div class="test-duration">5.002s</div></div><div class="failureMessages"> <pre class="failureMsg">Error: thrown: "Exceeded timeout of 5000 ms for a test.
+Add a timeout value to this test to increase the timeout, if this is a long-running test. See https://jestjs.io/docs/api#testname-fn-timeout."
+    at test (D:\otus-11-2025-Krasnikov-Max\test\account.test.js:153:5)
+    at _dispatchDescribe (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:604:26)
+    at describe (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:572:44)
+    at describe (D:\otus-11-2025-Krasnikov-Max\test\account.test.js:111:2)
+    at _dispatchDescribe (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:604:26)
+    at describe (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:572:44)
+    at Object.describe (D:\otus-11-2025-Krasnikov-Max\test\account.test.js:5:1)
+    at Runtime._execModule (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-runtime\build\index.js:1264:24)
+    at Runtime._loadModule (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-runtime\build\index.js:940:12)
+    at Runtime.requireModule (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-runtime\build\index.js:828:12)
+    at jestAdapter (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\runner.js:97:19)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at runTestInternal (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-runner\build\testWorker.js:275:16)
+    at runTest (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-runner\build\testWorker.js:343:7)
+    at Object.worker (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-runner\build\testWorker.js:497:12)</pre></div></div><div class="test-result failed"><div class="test-info"><div class="test-suitename">Account API Tests &gt; Авторизация</div><div class="test-title">Должен успешно авторизовать пользователя с верными учетными данными</div><div class="test-status">failed</div><div class="test-duration">0.001s</div></div><div class="failureMessages"> <pre class="failureMsg">Error: Тестовый пользователь не создан. Проверьте beforeAll hook
+    at Object.&lt;anonymous&gt; (D:\otus-11-2025-Krasnikov-Max\test\account.test.js:196:19)
+    at Promise.finally.completed (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:1557:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:1497:10)
+    at _callCircusTest (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:1007:40)
+    at _runTest (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:947:3)
+    at D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:849:7
+    at _runTestsForDescribeBlock (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:862:11)
+    at _runTestsForDescribeBlock (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:857:11)
+    at _runTestsForDescribeBlock (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:857:11)
+    at run (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:761:3)
+    at runAndTransformResultsToJestFormat (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:1918:21)
+    at jestAdapter (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\runner.js:103:25)
+    at runTestInternal (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-runner\build\testWorker.js:275:16)
+    at runTest (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-runner\build\testWorker.js:343:7)
+    at Object.worker (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-runner\build\testWorker.js:497:12)</pre></div></div><div class="test-result failed"><div class="test-info"><div class="test-suitename">Account API Tests &gt; Авторизация</div><div class="test-title">Должна быть ошибка при авторизации с неверными учетными данными</div><div class="test-status">failed</div><div class="test-duration">5.005s</div></div><div class="failureMessages"> <pre class="failureMsg">Error: thrown: "Exceeded timeout of 5000 ms for a test.
+Add a timeout value to this test to increase the timeout, if this is a long-running test. See https://jestjs.io/docs/api#testname-fn-timeout."
+    at test (D:\otus-11-2025-Krasnikov-Max\test\account.test.js:227:9)
+    at _dispatchDescribe (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:604:26)
+    at describe (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:572:44)
+    at describe (D:\otus-11-2025-Krasnikov-Max\test\account.test.js:192:5)
+    at _dispatchDescribe (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:604:26)
+    at describe (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:572:44)
+    at Object.describe (D:\otus-11-2025-Krasnikov-Max\test\account.test.js:5:1)
+    at Runtime._execModule (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-runtime\build\index.js:1264:24)
+    at Runtime._loadModule (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-runtime\build\index.js:940:12)
+    at Runtime.requireModule (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-runtime\build\index.js:828:12)
+    at jestAdapter (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\runner.js:97:19)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at runTestInternal (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-runner\build\testWorker.js:275:16)
+    at runTest (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-runner\build\testWorker.js:343:7)
+    at Object.worker (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-runner\build\testWorker.js:497:12)</pre></div></div><div class="test-result passed"><div class="test-info"><div class="test-suitename">Account API Tests &gt; Информация о пользователе</div><div class="test-title">Должен успешно получить информацию о пользователе</div><div class="test-status">passed</div><div class="test-duration">0.006s</div></div></div><div class="test-result passed"><div class="test-info"><div class="test-suitename">Account API Tests &gt; Информация о пользователе</div><div class="test-title">Должна быть ошибка при получении информации о пользователе с неверным токеном</div><div class="test-status">passed</div><div class="test-duration">0.001s</div></div></div><div class="test-result passed"><div class="test-info"><div class="test-suitename">Account API Tests &gt; Удаление пользователя</div><div class="test-title">Должен успешно удалить пользователя</div><div class="test-status">passed</div><div class="test-duration"> </div></div></div></div><div class="suite-consolelog"><div class="suite-consolelog-header">Console Log</div><div class="suite-consolelog-item"><pre class="suite-consolelog-item-origin">    at Object.log (D:\otus-11-2025-Krasnikov-Max\test\account.test.js:246:25)
+    at Promise.finally.completed (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:1557:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:1497:10)
+    at _callCircusTest (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:1007:40)
+    at _runTest (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:947:3)
+    at D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:849:7
+    at _runTestsForDescribeBlock (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:862:11)
+    at _runTestsForDescribeBlock (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:857:11)
+    at _runTestsForDescribeBlock (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:857:11)
+    at run (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:761:3)
+    at runAndTransformResultsToJestFormat (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:1918:21)
+    at jestAdapter (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\runner.js:103:25)
+    at runTestInternal (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-runner\build\testWorker.js:275:16)
+    at runTest (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-runner\build\testWorker.js:343:7)
+    at Object.worker (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-runner\build\testWorker.js:497:12)</pre><pre class="suite-consolelog-item-message">Пропускаем тест: нет тестового пользователя или токена</pre></div><div class="suite-consolelog-item"><pre class="suite-consolelog-item-origin">    at Object.log (D:\otus-11-2025-Krasnikov-Max\test\account.test.js:268:25)
+    at Promise.finally.completed (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:1557:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:1497:10)
+    at _callCircusTest (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:1007:40)
+    at _runTest (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:947:3)
+    at D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:849:7
+    at _runTestsForDescribeBlock (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:862:11)
+    at _runTestsForDescribeBlock (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:857:11)
+    at _runTestsForDescribeBlock (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:857:11)
+    at run (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:761:3)
+    at runAndTransformResultsToJestFormat (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:1918:21)
+    at jestAdapter (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\runner.js:103:25)
+    at runTestInternal (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-runner\build\testWorker.js:275:16)
+    at runTest (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-runner\build\testWorker.js:343:7)
+    at Object.worker (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-runner\build\testWorker.js:497:12)</pre><pre class="suite-consolelog-item-message">Пропускаем тест: нет тестового пользователя</pre></div><div class="suite-consolelog-item"><pre class="suite-consolelog-item-origin">    at Object.log (D:\otus-11-2025-Krasnikov-Max\test\account.test.js:292:25)
+    at Promise.finally.completed (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:1557:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:1497:10)
+    at _callCircusTest (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:1007:40)
+    at _runTest (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:947:3)
+    at D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:849:7
+    at _runTestsForDescribeBlock (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:862:11)
+    at _runTestsForDescribeBlock (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:857:11)
+    at _runTestsForDescribeBlock (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:857:11)
+    at run (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:761:3)
+    at runAndTransformResultsToJestFormat (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\jestAdapterInit.js:1918:21)
+    at jestAdapter (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-circus\build\runner.js:103:25)
+    at runTestInternal (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-runner\build\testWorker.js:275:16)
+    at runTest (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-runner\build\testWorker.js:343:7)
+    at Object.worker (D:\otus-11-2025-Krasnikov-Max\node_modules\jest-runner\build\testWorker.js:497:12)</pre><pre class="suite-consolelog-item-message">Пропускаем тест: нет тестового пользователя или токена</pre></div></div></details></main></body></html>
