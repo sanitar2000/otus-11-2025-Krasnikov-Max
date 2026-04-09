@@ -84,7 +84,7 @@ jobs:
     if: always()
     runs-on: ubuntu-latest
     permissions:
-      contents: write   # нужно для push в main
+      contents: write   # нужно для push в gh-pages
 
     steps:
     - name: Download test report
@@ -95,7 +95,7 @@ jobs:
 
     - name: Prepare report folder
       run: |
-        # Создаём папку для отчётов в корне репозитория (не перезаписывает исходники)
+        # Создаём папку для отчётов
         mkdir -p ./test-reports/${{ github.run_id }}
         if [ -d "./test-report" ] && [ "$(ls -A ./test-report)" ]; then
           cp -r ./test-report/* ./test-reports/${{ github.run_id }}/
@@ -115,18 +115,17 @@ jobs:
         done
         echo '</ul></body></html>' >> ./test-reports/index.html
 
-    - name: Deploy to main branch (keep source code)
+    - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./test-reports
-        publish_branch: main
-        force_orphan: false
-        keep_files: true
+        publish_branch: gh-pages   # <--- изменено с main на gh-pages
+        force_orphan: true         # создаёт чистую ветку gh-pages при первом запуске
+        keep_files: false          # не сохранять старые файлы (лучше для чистоты)
         user_name: 'github-actions[bot]'
         user_email: 'github-actions[bot]@users.noreply.github.com'
         commit_message: 'Deploy test report for run ${{ github.run_id }}'
-        # Важно: публикуем только в папку test-reports, не трогая остальные файлы
 
   send-notification:
     needs: [test, parse-results]
@@ -153,7 +152,7 @@ jobs:
           📈 Total: ${{ needs.parse-results.outputs.total_tests || '0' }}
           🎯 Success Rate: ${{ needs.parse-results.outputs.success_rate || '0' }}%
           
-          📎 Report: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/${{ github.run_id }}/ (if Pages serves root)
+          📎 Report: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/${{ github.run_id }}/
           
           ⏱️ Time: ${{ github.event.head_commit.timestamp }}
           🔗 Workflow: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
