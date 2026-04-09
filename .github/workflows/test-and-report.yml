@@ -10,132 +10,127 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-    continue-on-error: true  
-    
+    continue-on-error: true   # джоба может быть красной, но остальные запустятся
+
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
-    
+
     - name: Setup Node.js
       uses: actions/setup-node@v4
       with:
         node-version: '20'
         cache: 'npm'
-    
+
     - name: Install dependencies
       run: npm ci
-    
-    - name: Run tests with coverage (always continue)
+
+    - name: Run tests (always continue)
       id: run_tests
       run: |
-        # Запускаем тесты, но НЕ прерываем workflow при ошибке
+        # Запускаем тесты, но не прерываем workflow при ошибке
         npm test -- --coverage || true
-        # Сохраняем код возврата для информации
-        if [ $? -eq 0 ]; then
-          echo "tests_success=true" >> $GITHUB_OUTPUT
-        else
-          echo "tests_success=false" >> $GITHUB_OUTPUT
-        fi
-    
+
     - name: Upload test report artifact (always)
-      if: always()  
+      if: always()
       uses: actions/upload-artifact@v4
       with:
         name: test-report
         path: test-report/
-        if-no-files-found: warn  
-    
-    - name: Get test results (always)
-      id: test-results
-      if: always()
-      run: |
-        # Пытаемся получить результаты тестов
-        TOTAL_TESTS=0
-        PASSED=0
-        FAILED=0
-        SUCCESS_RATE=0
-        
-        # Если есть JSON-отчет Jest
-        if [ -f test-results.json ]; then
-          TOTAL_TESTS=$(jq '.numTotalTests // 0' test-results.json)
-          PASSED=$(jq '.numPassedTests // 0' test-results.json)
-          FAILED=$(jq '.numFailedTests // 0' test-results.json)
-          if [ "$TOTAL_TESTS" -gt 0 ]; then
-            SUCCESS_RATE=$(echo "scale=2; $PASSED * 100 / $TOTAL_TESTS" | bc)
-          fi
-        else
-          # Если нет файла результатов, пробуем запустить jest в тихом режиме
-          npm test -- --json --outputFile=test-results.json || true
-          if [ -f test-results.json ]; then
-            TOTAL_TESTS=$(jq '.numTotalTests // 0' test-results.json)
-            PASSED=$(jq '.numPassedTests // 0' test-results.json)
-            FAILED=$(jq '.numFailedTests // 0' test-results.json)
-            if [ "$TOTAL_TESTS" -gt 0 ]; then
-              SUCCESS_RATE=$(echo "scale=2; $PASSED * 100 / $TOTAL_TESTS" | bc)
-            fi
-          fi
-        fi
-        
-        echo "total_tests=$TOTAL_TESTS" >> $GITHUB_OUTPUT
-        echo "passed=$PASSED" >> $GITHUB_OUTPUT
-        echo "failed=$FAILED" >> $GITHUB_OUTPUT
-        echo "success_rate=$SUCCESS_RATE" >> $GITHUB_OUTPUT
+        if-no-files-found: warn
+
+  parse-results:
+    needs: test
+    if: always()
+    runs-on: ubuntu-latest
+    outputs:
+      total_tests: ${{ steps.extract.outputs.total_tests }}
+      passed: ${{ steps.extract.outputs.passed }}
+      failed: ${{ steps.extract.outputs.failed }}
+      success_rate: ${{ steps.extract.outputs.success_rate }}
+
+    steps:
+    - name: Download test results JSON
+      uses: actions/download-artifact@v4
+      with:
+        name: test-report
+        path: ./artifacts
       continue-on-error: true
 
-  deploy-report:
-  needs: test
-  if: always()   # <--- публикуем всегда
-  runs-on: ubuntu-latest
-  permissions:
-    contents: write
-    pages: write
-  
-  steps:
-  - name: Download test report
-    if: always()
-    continue-on-error: true   # <--- правильно: на уровне шага
-    uses: actions/download-artifact@v4
-    with:
-      name: test-report
-      path: ./test-report
-  
-  - name: Prepare for GitHub Pages
-    if: always()
-    run: |
-      mkdir -p ./public/${{ github.run_id }}
-      if [ -d "./test-report" ] && [ "$(ls -A ./test-report)" ]; then
-        cp -r ./test-report/* ./public/${{ github.run_id }}/
-      else
-        echo "<html><body><h1>⚠️ Test Report Not Available</h1><p>Tests failed to generate report for run ${{ github.run_id }}</p></body></html>" > ./public/${{ github.run_id }}/index.html
-      fi
-      
-      echo '<html><body><h1>📊 Test Reports History</h1><ul>' > ./public/index.html
-      for dir in ./public/*/; do
-        if [ -d "$dir" ]; then
-          dirname=$(basename "$dir")
-          if [ -f "$dir/index.html" ]; then
-            echo "<li><a href='$dirname/'>Report #$dirname</a></li>" >> ./public/index.html
+    - name: Extract metrics
+      id: extract
+      run: |
+        TOTAL=0
+        PASSED=0
+        FAILED=0
+        RATE=0
+
+        if [ -f ./artifacts/test-results.json ]; then
+          TOTAL=$(jq '.numTotalTests // 0' ./artifacts/test-results.json)
+          PASSED=$(jq '.numPassedTests // 0' ./artifacts/test-results.json)
+          FAILED=$(jq '.numFailedTests // 0' ./artifacts/test-results.json)
+          if [ "$TOTAL" -gt 0 ]; then
+            RATE=$(echo "scale=2; $PASSED * 100 / $TOTAL" | bc)
           fi
         fi
-      done
-      echo '</ul></body></html>' >> ./public/index.html
-  
-  - name: Deploy to GitHub Pages
+
+        echo "total_tests=$TOTAL" >> $GITHUB_OUTPUT
+        echo "passed=$PASSED" >> $GITHUB_OUTPUT
+        echo "failed=$FAILED" >> $GITHUB_OUTPUT
+        echo "success_rate=$RATE" >> $GITHUB_OUTPUT
+
+  deploy-report:
+    needs: test
     if: always()
-    uses: peaceiris/actions-gh-pages@v3
-    with:
-      github_token: ${{ secrets.GITHUB_TOKEN }}
-      publish_dir: ./public
-      publish_branch: main
-      force_orphan: false
-      keep_files: true
-      user_name: 'github-actions[bot]'
-      user_email: 'github-actions[bot]@users.noreply.github.com'
-      commit_message: 'Deploy test report for run ${{ github.run_id }}'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write   # нужно для push в main
+
+    steps:
+    - name: Download test report
+      uses: actions/download-artifact@v4
+      with:
+        name: test-report
+        path: ./test-report
+
+    - name: Prepare report folder
+      run: |
+        # Создаём папку для отчётов в корне репозитория (не перезаписывает исходники)
+        mkdir -p ./test-reports/${{ github.run_id }}
+        if [ -d "./test-report" ] && [ "$(ls -A ./test-report)" ]; then
+          cp -r ./test-report/* ./test-reports/${{ github.run_id }}/
+        else
+          echo "<html><body><h1>⚠️ Test Report Not Available</h1><p>Run ${{ github.run_id }}</p></body></html>" > ./test-reports/${{ github.run_id }}/index.html
+        fi
+
+        # Генерируем индексную страницу со ссылками на все отчёты
+        echo '<html><body><h1>📊 Test Reports History</h1><ul>' > ./test-reports/index.html
+        for dir in ./test-reports/*/; do
+          if [ -d "$dir" ]; then
+            dirname=$(basename "$dir")
+            if [ -f "$dir/index.html" ]; then
+              echo "<li><a href='$dirname/'>Report #$dirname</a></li>" >> ./test-reports/index.html
+            fi
+          fi
+        done
+        echo '</ul></body></html>' >> ./test-reports/index.html
+
+    - name: Deploy to main branch (keep source code)
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./test-reports
+        publish_branch: main
+        force_orphan: false
+        keep_files: true
+        user_name: 'github-actions[bot]'
+        user_email: 'github-actions[bot]@users.noreply.github.com'
+        commit_message: 'Deploy test report for run ${{ github.run_id }}'
+        # Важно: публикуем только в папку test-reports, не трогая остальные файлы
 
   send-notification:
-    needs: test
-    if: always()   
+    needs: [test, parse-results]
+    if: always()
     runs-on: ubuntu-latest
     steps:
     - name: Send Telegram notification
@@ -153,12 +148,12 @@ jobs:
           Status: ${{ needs.test.result == 'success' && '✅ Success' || '❌ Failed' }}
           
           📊 **Results:**
-          ✅ Passed: ${{ needs.test-results.outputs.passed || '0' }}
-          ❌ Failed: ${{ needs.test-results.outputs.failed || '0' }}
-          📈 Total: ${{ needs.test-results.outputs.total_tests || '0' }}
-          🎯 Success Rate: ${{ needs.test-results.outputs.success_rate || '0' }}%
+          ✅ Passed: ${{ needs.parse-results.outputs.passed || '0' }}
+          ❌ Failed: ${{ needs.parse-results.outputs.failed || '0' }}
+          📈 Total: ${{ needs.parse-results.outputs.total_tests || '0' }}
+          🎯 Success Rate: ${{ needs.parse-results.outputs.success_rate || '0' }}%
           
-          📎 Report: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/${{ github.run_id }}/
+          📎 Report: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/${{ github.run_id }}/ (if Pages serves root)
           
           ⏱️ Time: ${{ github.event.head_commit.timestamp }}
           🔗 Workflow: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
