@@ -1,0 +1,7 @@
+2026/04/08-20:00:45.486 a89c File C:\Users\user\AppData\Local\Yandex\YandexBrowser\User Data\Default\Extension Scripts is locked for recovering successfully
+2026/04/08-20:00:45.486 a89c Reusing MANIFEST C:\Users\user\AppData\Local\Yandex\YandexBrowser\User Data\Default\Extension Scripts/MANIFEST-000001
+2026/04/08-20:00:45.486 a89c Recovering log #3
+2026/04/08-20:00:45.486 a89c Reusing old log C:\Users\user\AppData\Local\Yandex\YandexBrowser\User Data\Default\Extension Scripts/000003.log 
+2026/04/08-20:20:42.778 bc44 Deletion DBImpl for C:\Users\user\AppData\Local\Yandex\YandexBrowser\User Data\Default\Extension Scripts, waiting for background work finished
+2026/04/08-20:20:42.778 bc44 Deletion DBImpl for C:\Users\user\AppData\Local\Yandex\YandexBrowser\User Data\Default\Extension Scripts, background work finished
+2026/04/08-20:20:42.778 bc44 File C:\Users\user\AppData\Local\Yandex\YandexBrowser\User Data\Default\Extension Scripts unlocked successfully

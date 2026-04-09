@@ -1,0 +1,154 @@
+
+2026-04-03 10:42:18.359 [0] InitSessionLog done
+2026-04-03 10:42:18.359 [0] ReadLastSessionCommands
+2026-04-03 10:42:18.359 [0]   LegacySessionState
+2026-04-03 10:42:18.359 [1]   Init
+2026-04-03 10:42:18.359 [0]   Init done
+2026-04-03 10:42:18.359 [0]   ReadCommandsFromFile
+2026-04-03 10:42:18.359 [0]   Session file not found
+2026-04-03 10:42:18.359 [-4]   ! Read error
+2026-04-03 10:42:18.359 [1]   ReadCommandsFromFile done: -1 (0/no mraker)
+2026-04-03 10:42:18.359 [0] ReadLastSessionCommands done
+2026-04-03 10:56:29.847 [11] AppendCommandsWithReset
+2026-04-03 10:56:29.847 [0] TruncateOrOpenFile
+2026-04-03 10:56:29.847 [0] OpenAndWriteHeader
+2026-04-03 10:56:29.848 [0] OpenAndWriteHeader done
+2026-04-03 10:56:29.848 [0] TruncateOrOpenFile done
+2026-04-03 11:05:23.902 [0] CommandStorageBackend done
+2026-04-03 16:25:48.641 [0] InitSessionLog done
+2026-04-03 16:25:48.642 [0] ReadLastSessionCommands
+2026-04-03 16:25:48.642 [2]   SessionState (1)
+2026-04-03 16:25:48.642 [0]     13419687389847789: 15
+2026-04-03 16:25:48.642 [1]   Init
+2026-04-03 16:25:48.642 [0]   Init done
+2026-04-03 16:25:48.642 [0]   ReadCommandsFromFile
+2026-04-03 16:25:48.642 [0]   ReadCommandsFromFile done: 15 (11)
+2026-04-03 16:25:48.642 [0] ReadLastSessionCommands done
+2026-04-03 16:25:50.808 [11] AppendCommandsWithReset
+2026-04-03 16:25:50.808 [0] TruncateOrOpenFile
+2026-04-03 16:25:50.808 [0] OpenAndWriteHeader
+2026-04-03 16:25:50.809 [0] OpenAndWriteHeader done
+2026-04-03 16:25:50.809 [0] TruncateOrOpenFile done
+2026-04-03 16:33:13.397 [0] CommandStorageBackend done
+2026-04-08 16:00:18.850 [0] InitSessionLog done
+2026-04-08 16:00:18.856 [0] ReadLastSessionCommands
+2026-04-08 16:00:18.856 [3]   SessionState (2)
+2026-04-08 16:00:18.856 [0]     13419707150808792: 15
+2026-04-08 16:00:18.856 [0]     13419687389847789: 15
+2026-04-08 16:00:18.856 [1]   Init
+2026-04-08 16:00:18.858 [0]   Init done
+2026-04-08 16:00:18.858 [0]   ReadCommandsFromFile
+2026-04-08 16:00:18.858 [0]   ReadCommandsFromFile done: 15 (11)
+2026-04-08 16:00:18.858 [0] ReadLastSessionCommands done
+2026-04-08 16:00:21.081 [11] AppendCommandsWithReset
+2026-04-08 16:00:21.081 [0] TruncateOrOpenFile
+2026-04-08 16:00:21.081 [0] OpenAndWriteHeader
+2026-04-08 16:00:21.081 [0] OpenAndWriteHeader done
+2026-04-08 16:00:21.081 [0] TruncateOrOpenFile done
+2026-04-08 16:00:35.969 [5] AppendCommands
+2026-04-08 16:00:38.470 [5] AppendCommands
+2026-04-08 16:00:42.024 [0] CommandStorageBackend done
+2026-04-08 16:03:42.756 [0] InitSessionLog done
+2026-04-08 16:03:42.756 [0] ReadLastSessionCommands
+2026-04-08 16:03:42.757 [3]   SessionState (2)
+2026-04-08 16:03:42.757 [0]     13420137621081667: 18
+2026-04-08 16:03:42.757 [0]     13419707150808792: 15
+2026-04-08 16:03:42.757 [1]   Init
+2026-04-08 16:03:42.757 [0]   Init done
+2026-04-08 16:03:42.757 [0]   ReadCommandsFromFile
+2026-04-08 16:03:42.757 [0]   ReadCommandsFromFile done: 18 (21)
+2026-04-08 16:03:42.757 [0] ReadLastSessionCommands done
+2026-04-08 16:03:45.267 [21] AppendCommandsWithReset
+2026-04-08 16:03:45.267 [0] TruncateOrOpenFile
+2026-04-08 16:03:45.267 [0] OpenAndWriteHeader
+2026-04-08 16:03:45.268 [0] OpenAndWriteHeader done
+2026-04-08 16:03:45.268 [0] TruncateOrOpenFile done
+2026-04-08 16:20:42.780 [0] CommandStorageBackend done
+2026-04-08 16:23:43.080 [0] InitSessionLog done
+2026-04-08 16:23:43.081 [0] ReadLastSessionCommands
+2026-04-08 16:23:43.081 [3]   SessionState (2)
+2026-04-08 16:23:43.081 [0]     13420137825267966: 18
+2026-04-08 16:23:43.081 [0]     13420137621081667: 18
+2026-04-08 16:23:43.081 [1]   Init
+2026-04-08 16:23:43.081 [0]   Init done
+2026-04-08 16:23:43.081 [0]   ReadCommandsFromFile
+2026-04-08 16:23:43.081 [0]   ReadCommandsFromFile done: 18 (21)
+2026-04-08 16:23:43.081 [0] ReadLastSessionCommands done
+2026-04-08 16:23:45.592 [21] AppendCommandsWithReset
+2026-04-08 16:23:45.592 [0] TruncateOrOpenFile
+2026-04-08 16:23:45.592 [0] OpenAndWriteHeader
+2026-04-08 16:23:45.593 [0] OpenAndWriteHeader done
+2026-04-08 16:23:45.593 [0] TruncateOrOpenFile done
+2026-04-08 16:28:28.994 [0] CommandStorageBackend done
+2026-04-09 07:24:42.813 [0] InitSessionLog done
+2026-04-09 07:24:42.813 [0] ReadLastSessionCommands
+2026-04-09 07:24:42.813 [3]   SessionState (3)
+2026-04-09 07:24:42.813 [0]     13420139025592798: 18
+2026-04-09 07:24:42.813 [0]     13420137825267966: 18
+2026-04-09 07:24:42.813 [0]     13420137621081667: 18
+2026-04-09 07:24:42.813 [1]   Init
+2026-04-09 07:24:42.815 [0]   Init done
+2026-04-09 07:24:42.815 [0]   ReadCommandsFromFile
+2026-04-09 07:24:42.815 [0]   ReadCommandsFromFile done: 18 (21)
+2026-04-09 07:24:42.815 [0] ReadLastSessionCommands done
+2026-04-09 07:24:42.967 [21] AppendCommandsWithReset
+2026-04-09 07:24:42.967 [0] TruncateOrOpenFile
+2026-04-09 07:24:42.967 [0] OpenAndWriteHeader
+2026-04-09 07:24:42.967 [0] OpenAndWriteHeader done
+2026-04-09 07:24:42.967 [0] TruncateOrOpenFile done
+2026-04-09 07:24:42.974 [0] CommandStorageBackend done
+2026-04-09 07:27:43.253 [0] InitSessionLog done
+2026-04-09 07:27:43.253 [0] ReadLastSessionCommands
+2026-04-09 07:27:43.253 [3]   SessionState (2)
+2026-04-09 07:27:43.253 [0]     13420193082967232: 18
+2026-04-09 07:27:43.254 [0]     13420139025592798: 18
+2026-04-09 07:27:43.254 [1]   Init
+2026-04-09 07:27:43.254 [0]   Init done
+2026-04-09 07:27:43.254 [0]   ReadCommandsFromFile
+2026-04-09 07:27:43.254 [0]   ReadCommandsFromFile done: 18 (21)
+2026-04-09 07:27:43.254 [0] ReadLastSessionCommands done
+2026-04-09 07:27:45.754 [21] AppendCommandsWithReset
+2026-04-09 07:27:45.754 [0] TruncateOrOpenFile
+2026-04-09 07:27:45.754 [0] OpenAndWriteHeader
+2026-04-09 07:27:45.755 [0] OpenAndWriteHeader done
+2026-04-09 07:27:45.755 [0] TruncateOrOpenFile done
+2026-04-09 07:48:08.319 [0] CommandStorageBackend done
+2026-04-09 07:57:48.313 [0] InitSessionLog done
+2026-04-09 07:57:48.314 [0] ReadLastSessionCommands
+2026-04-09 07:57:48.314 [3]   SessionState (2)
+2026-04-09 07:57:48.314 [0]     13420193265754670: 18
+2026-04-09 07:57:48.314 [0]     13420193082967232: 18
+2026-04-09 07:57:48.314 [1]   Init
+2026-04-09 07:57:48.314 [0]   Init done
+2026-04-09 07:57:48.314 [0]   ReadCommandsFromFile
+2026-04-09 07:57:48.314 [0]   ReadCommandsFromFile done: 18 (21)
+2026-04-09 07:57:48.314 [0] ReadLastSessionCommands done
+2026-04-09 07:57:50.439 [21] AppendCommandsWithReset
+2026-04-09 07:57:50.439 [0] TruncateOrOpenFile
+2026-04-09 07:57:50.439 [0] OpenAndWriteHeader
+2026-04-09 07:57:50.439 [0] OpenAndWriteHeader done
+2026-04-09 07:57:50.439 [0] TruncateOrOpenFile done
+2026-04-09 07:58:00.773 [6] AppendCommands
+2026-04-09 07:58:50.440 [0] Flush done
+2026-04-09 07:58:53.956 [8] AppendCommands
+2026-04-09 07:58:59.071 [8] AppendCommands
+2026-04-09 07:59:51.448 [0] Flush done
+2026-04-09 08:00:06.119 [11] AppendCommands
+2026-04-09 08:00:06.122 [0] CommandStorageBackend done
+2026-04-09 08:01:48.114 [0] InitSessionLog done
+2026-04-09 08:01:48.114 [0] ReadLastSessionCommands
+2026-04-09 08:01:48.114 [3]   SessionState (3)
+2026-04-09 08:01:48.114 [0]     13420195070439167: 34
+2026-04-09 08:01:48.114 [0]     13420193265754670: 18
+2026-04-09 08:01:48.114 [0]     13420193082967232: 18
+2026-04-09 08:01:48.114 [1]   Init
+2026-04-09 08:01:48.114 [0]   Init done
+2026-04-09 08:01:48.114 [0]   ReadCommandsFromFile
+2026-04-09 08:01:48.114 [0]   ReadCommandsFromFile done: 34 (54)
+2026-04-09 08:01:48.114 [0] ReadLastSessionCommands done
+2026-04-09 08:01:51.214 [54] AppendCommandsWithReset
+2026-04-09 08:01:51.214 [0] TruncateOrOpenFile
+2026-04-09 08:01:51.214 [0] OpenAndWriteHeader
+2026-04-09 08:01:51.214 [0] OpenAndWriteHeader done
+2026-04-09 08:01:51.214 [0] TruncateOrOpenFile done
+2026-04-09 08:02:41.781 [0] CommandStorageBackend done

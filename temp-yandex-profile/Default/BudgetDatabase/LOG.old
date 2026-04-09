@@ -1,0 +1,4 @@
+2026/04/09-11:57:50.461 72d0 File C:\Users\user\AppData\Local\Yandex\YandexBrowser\User Data\Default\BudgetDatabase is locked for recovering successfully
+2026/04/09-11:57:50.461 72d0 Deletion DBImpl for C:\Users\user\AppData\Local\Yandex\YandexBrowser\User Data\Default\BudgetDatabase, waiting for background work finished
+2026/04/09-11:57:50.461 72d0 Deletion DBImpl for C:\Users\user\AppData\Local\Yandex\YandexBrowser\User Data\Default\BudgetDatabase, background work finished
+2026/04/09-11:57:50.461 72d0 File C:\Users\user\AppData\Local\Yandex\YandexBrowser\User Data\Default\BudgetDatabase unlocked successfully

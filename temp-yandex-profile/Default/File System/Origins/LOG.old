@@ -1,0 +1,6 @@
+2026/04/08-20:00:36.486 b478 File C:\Users\user\AppData\Local\Yandex\YandexBrowser\User Data\Default\File System\Origins is locked for recovering successfully
+2026/04/08-20:00:36.486 b478 Creating DB C:\Users\user\AppData\Local\Yandex\YandexBrowser\User Data\Default\File System\Origins since it was missing.
+2026/04/08-20:00:36.490 b478 Reusing MANIFEST C:\Users\user\AppData\Local\Yandex\YandexBrowser\User Data\Default\File System\Origins/MANIFEST-000001
+2026/04/08-20:00:42.030 7d90 Deletion DBImpl for C:\Users\user\AppData\Local\Yandex\YandexBrowser\User Data\Default\File System\Origins, waiting for background work finished
+2026/04/08-20:00:42.030 7d90 Deletion DBImpl for C:\Users\user\AppData\Local\Yandex\YandexBrowser\User Data\Default\File System\Origins, background work finished
+2026/04/08-20:00:42.031 7d90 File C:\Users\user\AppData\Local\Yandex\YandexBrowser\User Data\Default\File System\Origins unlocked successfully
