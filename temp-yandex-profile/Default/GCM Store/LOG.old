@@ -1,0 +1,7 @@
+2026/04/09-11:57:50.444 72d0 File C:\Users\user\AppData\Local\Yandex\YandexBrowser\User Data\Default\GCM Store is locked for recovering successfully
+2026/04/09-11:57:50.445 72d0 Reusing MANIFEST C:\Users\user\AppData\Local\Yandex\YandexBrowser\User Data\Default\GCM Store/MANIFEST-000001
+2026/04/09-11:57:50.445 72d0 Recovering log #3
+2026/04/09-11:57:50.445 72d0 Reusing old log C:\Users\user\AppData\Local\Yandex\YandexBrowser\User Data\Default\GCM Store/000003.log 
+2026/04/09-12:00:06.118 72d0 Deletion DBImpl for C:\Users\user\AppData\Local\Yandex\YandexBrowser\User Data\Default\GCM Store, waiting for background work finished
+2026/04/09-12:00:06.118 72d0 Deletion DBImpl for C:\Users\user\AppData\Local\Yandex\YandexBrowser\User Data\Default\GCM Store, background work finished
+2026/04/09-12:00:06.139 72d0 File C:\Users\user\AppData\Local\Yandex\YandexBrowser\User Data\Default\GCM Store unlocked successfully

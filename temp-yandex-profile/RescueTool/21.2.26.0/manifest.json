@@ -1,0 +1,1 @@
+{"manifest_version":2,"name":"YandexRescueTool","version":"21.2.26.0","x-add-uid":"yes","x-add-version":"yes","x-service-detect-args":"/browser_build /service /scan_mode:detect","x-user-detect-args":"/browser_build /scan_mode:detect /no_gui"}
