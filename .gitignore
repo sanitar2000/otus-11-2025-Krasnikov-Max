@@ -12,3 +12,5 @@ build
 /playwright/.cache/
 /playwright/.auth/
 /temp-yandex-profile/
+/temp-profile/
+/output/
