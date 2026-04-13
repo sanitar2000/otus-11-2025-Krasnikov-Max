@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<rss version="2.0" xmlns:version="http://storage.ape.yandex.net/get/browser/web_components/versionmodule"
+    xmlns:update="http://storage.ape.yandex.net/get/browser/web_components/updatemodule">
+  <channel>
+    <title>Yandex</title>
+    <link>https://www.yandex.ru/</link>
+    <description>Yandex</description>
+    <managingEditor>support@browser.yandex.ru</managingEditor>
+    <item>
+      <title>Yandex</title>
+      <link>https://www.yandex.ru/</link>
+      <description>Yandex 26.3.1.1080</description>
+      <pubDate>Mon, 06 Apr 2026 16:22:52 UTC</pubDate>
+      <guid>https://download.cdn.yandex.net/browser/update/26_3_1_1080_105770_w_s_r/yandex.exe</guid>
+      <version:nick>yabrowser</version:nick>
+      <version:distsize>181069040</version:distsize>
+      <version:md5>a6a097d95e074954c9696dd8bf77d37c</version:md5>
+      <version:distargs>--do-not-launch-browser --silent</version:distargs>
+      <version:platform>winnt</version:platform>
+      <version:version>26.3.1.1080</version:version>
+      <version:status>critical</version:status>
+      <version:uac_dlg>hide</version:uac_dlg>
+    </item>
+  </channel>
+</rss>

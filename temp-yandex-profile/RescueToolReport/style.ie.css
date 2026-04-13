@@ -1,0 +1,10 @@
+.grey-logo_lang_ru
+{
+  background-image: url(yandex-ru.png);
+}
+
+.grey-logo_lang_en
+{
+  width: 54px;
+  background-image: url(yandex-eng.png);
+}

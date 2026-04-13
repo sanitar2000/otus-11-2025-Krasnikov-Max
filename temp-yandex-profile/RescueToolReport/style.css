@@ -1,0 +1,95 @@
+html,
+body
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    font-size: 15px;
+
+    background-color: #f6f5f3;
+}
+
+.wrapper
+{
+    width: 600px;
+    margin: 0 auto;
+    padding: 32px 18px;
+}
+
+.main-title
+{
+    font-size: 14px;
+    font-weight: normal;
+
+    margin: 0 0 20px;
+
+    text-align: center;
+
+    opacity: .5;
+}
+
+.article-title
+{
+    font-size: 20px;
+    font-weight: normal;
+
+    margin: 0 0 20px;
+}
+
+.section-title
+{
+    font-size: 16px;
+    font-weight: bold;
+
+    margin: 0 0 10px;
+}
+
+a,
+.link,
+.link:visited
+{
+    text-decoration: none;
+
+    color: #0079d3;
+}
+
+a:hover,
+.link:hover,
+.link:visited:hover
+{
+    color: #f00;
+}
+
+.grey-logo
+{
+    width: 53px;
+    height: 20px;
+    margin: 50px auto 0 auto;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.grey-logo_lang_ru
+{
+    background-image: url(yandex-ru.svg);
+}
+
+.grey-logo_lang_en
+{
+    width: 54px;
+    background-image: url(yandex-eng.svg);
+}
+
+.warning
+{
+    color: #d0011b;
+}
+
+p
+{
+    line-height: 20px;
+}

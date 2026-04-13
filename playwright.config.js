@@ -1,81 +1,79 @@
 // @ts-check
 import { defineConfig, devices } from '@playwright/test';
+import fs from 'fs';
+import path from 'path';
+import os from 'os';
 
-/**
- * Read environment variables from file.
- * https://github.com/motdotla/dotenv
- */
-// import dotenv from 'dotenv';
-// import path from 'path';
-// dotenv.config({ path: path.resolve(__dirname, '.env') });
+// ---------- НАСТРОЙКИ ДЛЯ ЯНДЕКС.БРАУЗЕРА ----------
+// Путь к оригинальному профилю (где установлены плагины)
+const ORIGINAL_YANDEX_PROFILE = `C:\\Users\\user\\AppData\\Local\\Yandex\\YandexBrowser\\User Data`;
+// Временная копия профиля, чтобы не блокировать оригинал
+const TEMP_PROFILE_DIR = path.join(process.cwd(), 'temp-yandex-profile');
 
-/**
- * @see https://playwright.dev/docs/test-configuration
- */
+// Функция копирования профиля (вызывается один раз при загрузке конфига)
+function copyYandexProfile() {
+  if (!fs.existsSync(ORIGINAL_YANDEX_PROFILE)) {
+    console.warn(`⚠️ Профиль Яндекс.Браузера не найден: ${ORIGINAL_YANDEX_PROFILE}`);
+    console.warn(`Тесты для Яндекс.Браузера будут пропущены.`);
+    return false;
+  }
+  if (fs.existsSync(TEMP_PROFILE_DIR)) {
+    fs.rmSync(TEMP_PROFILE_DIR, { recursive: true, force: true });
+  }
+  fs.cpSync(ORIGINAL_YANDEX_PROFILE, TEMP_PROFILE_DIR, { recursive: true });
+  console.log(`✅ Профиль скопирован в ${TEMP_PROFILE_DIR}`);
+  return true;
+}
+
+const yandexProfileReady = copyYandexProfile();
+
+// ---------- ОСНОВНАЯ КОНФИГУРАЦИЯ ----------
 export default defineConfig({
   testDir: './tests',
-  /* Run tests in files in parallel */
-  fullyParallel: true,
-  /* Fail the build on CI if you accidentally left test.only in the source code. */
+  /* Для работы с персистентным профилем отключаем параллельность */
+  fullyParallel: false,
   forbidOnly: !!process.env.CI,
-  /* Retry on CI only */
   retries: process.env.CI ? 2 : 0,
-  /* Opt out of parallel tests on CI. */
-  workers: process.env.CI ? 1 : undefined,
-  /* Reporter to use. See https://playwright.dev/docs/test-reporters */
+  workers: 1,   // только один рабочий процесс, чтобы профиль не конфликтовал
   reporter: 'html',
-  /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
-    /* Base URL to use in actions like `await page.goto('')`. */
-    // baseURL: 'http://localhost:3000',
-
-    /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
+    // Базовые настройки для всех проектов
   },
 
-  /* Configure projects for major browsers */
   projects: [
+    // Стандартные браузеры (можно оставить для других тестов)
     {
       name: 'chromium',
       use: { ...devices['Desktop Chrome'] },
     },
-
     {
       name: 'firefox',
       use: { ...devices['Desktop Firefox'] },
     },
-
     {
       name: 'webkit',
       use: { ...devices['Desktop Safari'] },
     },
 
-    /* Test against mobile viewports. */
-    // {
-    //   name: 'Mobile Chrome',
-    //   use: { ...devices['Pixel 5'] },
-    // },
-    // {
-    //   name: 'Mobile Safari',
-    //   use: { ...devices['iPhone 12'] },
-    // },
-
-    /* Test against branded browsers. */
-    // {
-    //   name: 'Microsoft Edge',
-    //   use: { ...devices['Desktop Edge'], channel: 'msedge' },
-    // },
-    // {
-    //   name: 'Google Chrome',
-    //   use: { ...devices['Desktop Chrome'], channel: 'chrome' },
-    // },
+    // ----- НАСТРОЙКА ДЛЯ ЯНДЕКС.БРАУЗЕРА С ПЛАГИНАМИ -----
+    ...(yandexProfileReady ? [{
+      name: 'yandex-browser',
+      use: {
+        // Путь к исполняемому файлу Яндекс.Браузера
+        executablePath: `C:\\Program Files (x86)\\Yandex\\YandexBrowser\\Application\\browser.exe`,
+        channel: 'chrome',   // Playwright управляет Chromium-браузером
+        headless: false,     // обязательно false, иначе плагины не будут работать
+        viewport: { width: 1280, height: 720 },
+        // Аргументы запуска – указываем скопированный профиль и нужную директорию профиля
+        launchOptions: {
+          args: [
+            `--user-data-dir=${TEMP_PROFILE_DIR}`,
+            `--profile-directory=Profile 1`,   // имя вашего профиля (Default, Profile 1, Profile 2...)
+            '--disable-blink-features=AutomationControlled',
+          ],
+        },
+      },
+    }] : []),
   ],
-
-  /* Run your local dev server before starting the tests */
-  // webServer: {
-  //   command: 'npm run start',
-  //   url: 'http://localhost:3000',
-  //   reuseExistingServer: !process.env.CI,
-  // },
 });
-

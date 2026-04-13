@@ -1,0 +1,7 @@
+2026/04/09-12:01:48.074 158 File C:\Users\user\AppData\Local\Yandex\YandexBrowser\User Data\Default\Sync Data\LevelDB is locked for recovering successfully
+2026/04/09-12:01:48.074 158 Reusing MANIFEST C:\Users\user\AppData\Local\Yandex\YandexBrowser\User Data\Default\Sync Data\LevelDB/MANIFEST-000001
+2026/04/09-12:01:48.074 158 Recovering log #3
+2026/04/09-12:01:48.075 158 Reusing old log C:\Users\user\AppData\Local\Yandex\YandexBrowser\User Data\Default\Sync Data\LevelDB/000003.log 
+2026/04/09-12:02:41.781 76a8 Deletion DBImpl for C:\Users\user\AppData\Local\Yandex\YandexBrowser\User Data\Default\Sync Data\LevelDB, waiting for background work finished
+2026/04/09-12:02:41.781 76a8 Deletion DBImpl for C:\Users\user\AppData\Local\Yandex\YandexBrowser\User Data\Default\Sync Data\LevelDB, background work finished
+2026/04/09-12:02:41.782 76a8 File C:\Users\user\AppData\Local\Yandex\YandexBrowser\User Data\Default\Sync Data\LevelDB unlocked successfully

@@ -1,0 +1,7 @@
+2026/04/09-12:01:48.091 7a20 File C:\Users\user\AppData\Local\Yandex\YandexBrowser\User Data\Default\Local Storage\leveldb is locked for recovering successfully
+2026/04/09-12:01:48.093 7a20 Reusing MANIFEST C:\Users\user\AppData\Local\Yandex\YandexBrowser\User Data\Default\Local Storage\leveldb/MANIFEST-000001
+2026/04/09-12:01:48.093 7a20 Recovering log #3
+2026/04/09-12:01:48.095 7a20 Reusing old log C:\Users\user\AppData\Local\Yandex\YandexBrowser\User Data\Default\Local Storage\leveldb/000003.log 
+2026/04/09-12:02:41.781 7a20 Deletion DBImpl for C:\Users\user\AppData\Local\Yandex\YandexBrowser\User Data\Default\Local Storage\leveldb, waiting for background work finished
+2026/04/09-12:02:41.781 7a20 Deletion DBImpl for C:\Users\user\AppData\Local\Yandex\YandexBrowser\User Data\Default\Local Storage\leveldb, background work finished
+2026/04/09-12:02:41.782 7a20 File C:\Users\user\AppData\Local\Yandex\YandexBrowser\User Data\Default\Local Storage\leveldb unlocked successfully

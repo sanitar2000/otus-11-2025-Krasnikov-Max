@@ -1,0 +1,4389 @@
+[
+  {
+    "action": "CREATE_REQUEST",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_USER_VIEW_FILIAL": true,
+    "ROLE_GROWS_GRAIN_VIEW_FILIAL": true,
+    "MANAGE_APPROVAL_REQUEST": true
+  },
+  {
+    "action": "UPDATE_REQUEST",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_USER_VIEW_FILIAL": true,
+    "ROLE_GROWS_GRAIN_VIEW_FILIAL": true,
+    "MANAGE_APPROVAL_REQUEST": true
+  },
+  {
+    "action": "DELETE_REQUEST",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_USER_VIEW_FILIAL": true,
+    "ROLE_GROWS_GRAIN_VIEW_FILIAL": true,
+    "MANAGE_APPROVAL_REQUEST": true
+  },
+  {
+    "action": "SIGN_REQUEST",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_USER_VIEW_FILIAL": true,
+    "ROLE_GROWS_GRAIN_VIEW_FILIAL": true,
+    "MANAGE_APPROVAL_REQUEST": true
+  },
+  {
+    "action": "READ_REQUEST",
+    "ROLE_ADMIN": true,
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_REQUEST": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_USER_VIEW_FILIAL": true,
+    "ROLE_ELEVATOR_USER_VIEW_FILIAL": true,
+    "ROLE_GROWS_GRAIN_VIEW_FILIAL": true,
+    "VIEW_REQUEST": true
+  },
+  {
+    "action": "READ_REQUEST_REGISTER",
+    "ROLE_ADMIN": true,
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_REQUEST": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_USER_VIEW_FILIAL": true,
+    "ROLE_ELEVATOR_USER_VIEW_FILIAL": true,
+    "ROLE_GROWS_GRAIN_VIEW_FILIAL": true,
+    "VIEW_REQUEST": true
+  },
+  {
+    "action": "EXPORT_REQUEST_REGISTER",
+    "ROLE_ADMIN": true,
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_REQUEST": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_USER_VIEW_FILIAL": true,
+    "ROLE_ELEVATOR_USER_VIEW_FILIAL": true,
+    "ROLE_GROWS_GRAIN_VIEW_FILIAL": true,
+    "VIEW_REQUEST": true
+  },
+  {
+    "action": "CREATE_CHANGE_REQUEST",
+    "ROLE_ELEVATOR_USER": true,
+    "MANAGE_CHANGE_REQUEST": true
+  },
+  {
+    "action": "UPDATE_CHANGE_REQUEST",
+    "ROLE_ELEVATOR_USER": true,
+    "MANAGE_CHANGE_REQUEST": true
+  },
+  {
+    "action": "DELETE_CHANGE_REQUEST",
+    "ROLE_ELEVATOR_USER": true,
+    "MANAGE_CHANGE_REQUEST": true
+  },
+  {
+    "action": "SIGN_CHANGE_REQUEST",
+    "ROLE_ELEVATOR_USER": true,
+    "MANAGE_CHANGE_REQUEST": true
+  },
+  {
+    "action": "READ_CHANGE_REQUEST",
+    "ROLE_ADMIN": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_REQUEST": true,
+    "MANAGE_CHANGE_REQUEST": true,
+    "VIEW_REQUEST": true
+  },
+  {
+    "action": "READ_CHANGE_REQUEST_DATA",
+    "ROLE_ADMIN": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_REQUEST": true,
+    "MANAGE_CHANGE_REQUEST": true,
+    "VIEW_REQUEST": true
+  },
+  {
+    "action": "READ_CHANGE_REQUEST_DATA_LIST",
+    "ROLE_ADMIN": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_REQUEST": true,
+    "MANAGE_CHANGE_REQUEST": true,
+    "VIEW_REQUEST": true
+  },
+  {
+    "action": "READ_LOT_FORMATION_PLACE_REGISTRY",
+    "ROLE_GOVERMENT_MONITORING": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_RSHN": true,
+    "ROLE_ROU_APK": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_ROSSTAT": true,
+    "VIEW_LOT_FORMATION_PLACE": true,
+    "MANAGE_LOT_FORMATION_PLACE": true
+  },
+  {
+    "action": "READ_LOT_FORMATION_PLACE_DATA",
+    "ROLE_GOVERMENT_MONITORING": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_RSHN": true,
+    "ROLE_ROU_APK": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_ROSSTAT": true,
+    "VIEW_LOT_FORMATION_PLACE": true,
+    "MANAGE_LOT_FORMATION_PLACE": true
+  },
+  {
+    "action": "CREATE_LOT_FORMATION_PLACE",
+    "ROLE_GROWS_GRAIN": true,
+    "MANAGE_LOT_FORMATION_PLACE": true
+  },
+  {
+    "action": "UPDATE_LOT_FORMATION_PLACE",
+    "ROLE_GROWS_GRAIN": true,
+    "MANAGE_LOT_FORMATION_PLACE": true
+  },
+  {
+    "action": "DELETE_LOT_FORMATION_PLACE",
+    "ROLE_GROWS_GRAIN": true,
+    "MANAGE_LOT_FORMATION_PLACE": true
+  },
+  {
+    "action": "SIGN_LOT_FORMATION_PLACE",
+    "ROLE_GROWS_GRAIN": true,
+    "MANAGE_LOT_FORMATION_PLACE": true
+  },
+  {
+    "action": "CANCEL_LOT_FORMATION_PLACE",
+    "ROLE_GROWS_GRAIN": true,
+    "MANAGE_LOT_FORMATION_PLACE": true
+  },
+  {
+    "action": "ROLLBACK_LOT_FORMATION_PLACE",
+    "ROLE_GROWS_GRAIN": true,
+    "MANAGE_LOT_FORMATION_PLACE": true
+  },
+  {
+    "action": "READ_SAMPLES_PICKING_REGISTER",
+    "ROLE_GOVERMENT_MONITORING": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_RSHN": true,
+    "ROLE_ROU_APK": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_ROSSTAT": true,
+    "VIEW_SAMPLES_PICKING": true,
+    "MANAGE_SAMPLES_PICKING": true,
+    "VIEW_SAMPLES_PICKING_FOR_SUBJECT": true
+  },
+  {
+    "action": "READ_SAMPLES_PICKING_DATA",
+    "ROLE_GOVERMENT_MONITORING": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_RSHN": true,
+    "ROLE_ROU_APK": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_ROSSTAT": true,
+    "VIEW_SAMPLES_PICKING": true,
+    "MANAGE_SAMPLES_PICKING": true,
+    "VIEW_SAMPLES_PICKING_FOR_SUBJECT": true
+  },
+  {
+    "action": "CREATE_SAMPLES_PICKING",
+    "ROLE_GOVERMENT_MONITORING": true,
+    "MANAGE_SAMPLES_PICKING": true
+  },
+  {
+    "action": "UPDATE_SAMPLES_PICKING",
+    "ROLE_GOVERMENT_MONITORING": true,
+    "MANAGE_SAMPLES_PICKING": true
+  },
+  {
+    "action": "DELETE_SAMLES_PICKING",
+    "ROLE_GOVERMENT_MONITORING": true,
+    "MANAGE_SAMPLES_PICKING": true
+  },
+  {
+    "action": "SIGN_SAMPLES_PICKING",
+    "ROLE_GOVERMENT_MONITORING": true,
+    "MANAGE_SAMPLES_PICKING": true
+  },
+  {
+    "action": "CANCEL_SAMPLES_PICKING",
+    "ROLE_GOVERMENT_MONITORING": true,
+    "MANAGE_SAMPLES_PICKING": true
+  },
+  {
+    "action": "READ_GOSMONITORING_DATA_REGISTER",
+    "ROLE_ADMIN": true,
+    "ROLE_DICTIONARY": true,
+    "ROLE_WORKFLOW": true,
+    "ROLE_LABORATORY": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_REQUEST": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_GROWS_GRAIN_VIEW_FILIAL": true,
+    "MANAGE_SUBJECT_GOVMONITORING": true,
+    "VIEW_OWN_PRODACTMONITOR": true
+  },
+  {
+    "action": "FILTER_GOSMONITORING_DATA_REGISTER",
+    "ROLE_ADMIN": true,
+    "ROLE_DICTIONARY": true,
+    "ROLE_WORKFLOW": true,
+    "ROLE_LABORATORY": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_REQUEST": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_GROWS_GRAIN": true,
+    "MANAGE_SUBJECT_GOVMONITORING": true
+  },
+  {
+    "action": "READ_GOSMONITORING_DATA",
+    "ROLE_ADMIN": true,
+    "ROLE_DICTIONARY": true,
+    "ROLE_WORKFLOW": true,
+    "ROLE_LABORATORY": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_REQUEST": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_GROWS_GRAIN_VIEW_FILIAL": true,
+    "MANAGE_SUBJECT_GOVMONITORING": true,
+    "VIEW_OWN_PRODACTMONITOR": true
+  },
+  {
+    "action": "CREATE_GOSMONITORING_DATA",
+    "ROLE_GROWS_GRAIN": true,
+    "MANAGE_SUBJECT_GOVMONITORING": true
+  },
+  {
+    "action": "UPDATE_GOSMONITORING_DATA",
+    "ROLE_GROWS_GRAIN": true,
+    "MANAGE_SUBJECT_GOVMONITORING": true
+  },
+  {
+    "action": "DELETE_GOSMONITORING_DATA",
+    "ROLE_GROWS_GRAIN": true,
+    "MANAGE_SUBJECT_GOVMONITORING": true
+  },
+  {
+    "action": "SIGN_GOSMONITORING_DATA",
+    "ROLE_GROWS_GRAIN": true,
+    "MANAGE_SUBJECT_GOVMONITORING": true
+  },
+  {
+    "action": "CANCEL_GOSMONITORING_DATA",
+    "ROLE_GROWS_GRAIN": true,
+    "MANAGE_SUBJECT_GOVMONITORING": true
+  },
+  {
+    "action": "READ_MANUFACTURER_RESEARCH_REGISTER",
+    "ROLE_MCX_USER": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_RSHN": true,
+    "ROLE_ROU_APK": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_ROSSTAT": true,
+    "MANAGE_SUBJECT_GOVMONITORING": true,
+    "VIEW_GOVERMENT_MONITORING": true
+  },
+  {
+    "action": "FILTER_MANUFACTURER_RESEARCH_REGISTER",
+    "ROLE_MCX_USER": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_RSHN": true,
+    "ROLE_ROU_APK": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_ROSSTAT": true,
+    "MANAGE_SUBJECT_GOVMONITORING": true,
+    "VIEW_GOVERMENT_MONITORING": true
+  },
+  {
+    "action": "READ_MANUFACTURER_RESEARCH_DATA",
+    "ROLE_MCX_USER": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_RSHN": true,
+    "ROLE_ROU_APK": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_ROSSTAT": true,
+    "MANAGE_SUBJECT_GOVMONITORING": true,
+    "VIEW_GOVERMENT_MONITORING": true
+  },
+  {
+    "action": "READ_VESTA_RESEARCH_REGISTER",
+    "ROLE_MCX_USER": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_RSHN": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_GROWS_GRAIN": true,
+    "MANAGE_SUBJECT_GOVMONITORING": true,
+    "VIEW_GOVERMENT_MONITORING": true
+  },
+  {
+    "action": "READ_GRAIN_LOT_REGISTER",
+    "ROLE_ADMIN": true,
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_DICTIONARY": true,
+    "ROLE_WORKFLOW": true,
+    "ROLE_LABORATORY": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_REQUEST": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_RSHN": true,
+    "ROLE_ROU_APK": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_AGENT": true,
+    "ROLE_SUBJECT_USER_VIEW_FILIAL": true,
+    "ROLE_ELEVATOR_USER_VIEW_FILIAL": true,
+    "ROLE_GROWS_GRAIN_VIEW_FILIAL": true,
+    "ROLE_ROSSTAT": true,
+    "MANAGE_GRAIN_BATCH": true,
+    "VIEW_LOT": true,
+    "VIEW_OWN_LOT": true
+  },
+  {
+    "action": "FILTER_GRAIN_LOT_REGISTER",
+    "ROLE_ADMIN": true,
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_DICTIONARY": true,
+    "ROLE_WORKFLOW": true,
+    "ROLE_LABORATORY": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_REQUEST": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_RSHN": true,
+    "ROLE_ROU_APK": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_AGENT": true,
+    "ROLE_ROSSTAT": true,
+    "MANAGE_GRAIN_BATCH": true,
+    "VIEW_LOT": true
+  },
+  {
+    "action": "READ_GRAIN_LOT_DATA",
+    "ROLE_ADMIN": true,
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_DICTIONARY": true,
+    "ROLE_WORKFLOW": true,
+    "ROLE_LABORATORY": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_REQUEST": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_RSHN": true,
+    "ROLE_ROU_APK": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_AGENT": true,
+    "ROLE_SUBJECT_USER_VIEW_FILIAL": true,
+    "ROLE_ELEVATOR_USER_VIEW_FILIAL": true,
+    "ROLE_GROWS_GRAIN_VIEW_FILIAL": true,
+    "ROLE_ROSSTAT": true,
+    "MANAGE_GRAIN_BATCH": true,
+    "VIEW_LOT": true,
+    "VIEW_OWN_LOT": true
+  },
+  {
+    "action": "CREATE_GOSMONITORING_GRAIN_LOT",
+    "ROLE_GROWS_GRAIN": true,
+    "MANAGE_GRAIN_BATCH": true
+  },
+  {
+    "action": "CREATE_OTHER_LOTS_GRAIN_LOT",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_AGENT": true,
+    "MANAGE_GRAIN_BATCH": true
+  },
+  {
+    "action": "CREATE_SURPLUS_GRAIN_LOT",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GROWS_GRAIN": true,
+    "MANAGE_GRAIN_BATCH": true
+  },
+  {
+    "action": "CREATE_IMPORT_GRAIN_LOT",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_AGENT": true,
+    "MANAGE_GRAIN_BATCH": true
+  },
+  {
+    "action": "CREATE_SDIZ_GRAIN_LOT",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GROWS_GRAIN": true,
+    "MANAGE_GRAIN_BATCH": true
+  },
+  {
+    "action": "CREATE_SAMPLES_PICKING_LOT",
+    "ROLE_GROWS_GRAIN": true,
+    "MANAGE_GRAIN_BATCH": true
+  },
+  {
+    "action": "CREATE_HARVEST_GRAIN_LOT",
+    "ROLE_GROWS_GRAIN": true,
+    "MANAGE_GRAIN_BATCH": true
+  },
+  {
+    "action": "UPDATE_GRAIN_LOT",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_AGENT": true,
+    "MANAGE_GRAIN_BATCH": true
+  },
+  {
+    "action": "DELETE_GRAIN_LOT",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_AGENT": true,
+    "MANAGE_GRAIN_BATCH": true
+  },
+  {
+    "action": "CANCEL_GRAIN_LOT",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_AGENT": true,
+    "MANAGE_GRAIN_BATCH": true
+  },
+  {
+    "action": "CANCEL_GRAIN_LOT_SURPLUS",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_AGENT": true,
+    "MANAGE_GRAIN_BATCH": true
+  },
+  {
+    "action": "READ_SDIZ_REGISTER",
+    "ROLE_ADMIN": true,
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_DICTIONARY": true,
+    "ROLE_WORKFLOW": true,
+    "ROLE_LABORATORY": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_REQUEST": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_RSHN": true,
+    "ROLE_ROU_APK": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_AGENT": true,
+    "ROLE_SUBJECT_USER_VIEW_FILIAL": true,
+    "ROLE_ELEVATOR_USER_VIEW_FILIAL": true,
+    "ROLE_GROWS_GRAIN_VIEW_FILIAL": true,
+    "ROLE_ROSSTAT": true,
+    "MANAGE_SDIZ": true,
+    "VIEW_SDIZ": true,
+    "MANAGE_CONFIRM_SDIZ": true,
+    "VIEW_OWN_SDIZ": true
+  },
+  {
+    "action": "FILTER_SDIZ_REGISTER",
+    "ROLE_ADMIN": true,
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_DICTIONARY": true,
+    "ROLE_WORKFLOW": true,
+    "ROLE_LABORATORY": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_REQUEST": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_RSHN": true,
+    "ROLE_ROU_APK": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_AGENT": true,
+    "ROLE_ROSSTAT": true,
+    "MANAGE_SDIZ": true,
+    "VIEW_SDIZ": true,
+    "MANAGE_CONFIRM_SDIZ": true
+  },
+  {
+    "action": "READ_SDIZ",
+    "ROLE_ADMIN": true,
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_DICTIONARY": true,
+    "ROLE_WORKFLOW": true,
+    "ROLE_LABORATORY": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_REQUEST": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_RSHN": true,
+    "ROLE_ROU_APK": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_AGENT": true,
+    "ROLE_SUBJECT_USER_VIEW_FILIAL": true,
+    "ROLE_ELEVATOR_USER_VIEW_FILIAL": true,
+    "ROLE_GROWS_GRAIN_VIEW_FILIAL": true,
+    "ROLE_ROSSTAT": true,
+    "MANAGE_SDIZ": true,
+    "VIEW_SDIZ": true,
+    "MANAGE_CONFIRM_SDIZ": true,
+    "VIEW_OWN_SDIZ": true
+  },
+  {
+    "action": "READ_SDIZ_PRINT_FORM",
+    "ROLE_ADMIN": true,
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_DICTIONARY": true,
+    "ROLE_WORKFLOW": true,
+    "ROLE_LABORATORY": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_REQUEST": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_RSHN": true,
+    "ROLE_ROU_APK": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_AGENT": true,
+    "ROLE_SUBJECT_USER_VIEW_FILIAL": true,
+    "ROLE_ELEVATOR_USER_VIEW_FILIAL": true,
+    "ROLE_GROWS_GRAIN_VIEW_FILIAL": true,
+    "ROLE_ROSSTAT": true,
+    "MANAGE_SDIZ": true,
+    "VIEW_SDIZ": true,
+    "MANAGE_CONFIRM_SDIZ": true,
+    "VIEW_OWN_SDIZ": true
+  },
+  {
+    "action": "CREATE_SDIZ",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_AGENT": true,
+    "MANAGE_SDIZ": true
+  },
+  {
+    "action": "UPDATE_SDIZ",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_AGENT": true,
+    "MANAGE_SDIZ": true
+  },
+  {
+    "action": "DELETE_SDIZ",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_AGENT": true,
+    "MANAGE_SDIZ": true
+  },
+  {
+    "action": "SIGN_SDIZ",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_AGENT": true,
+    "MANAGE_SDIZ": true
+  },
+  {
+    "action": "CANCEL_SDIZ",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_AGENT": true,
+    "MANAGE_SDIZ": true
+  },
+  {
+    "action": "REPAYMENT_SDIZ",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_AGENT": true,
+    "MANAGE_SDIZ": true
+  },
+  {
+    "action": "READ_GRAIN_PRODUCT_LOT_REGISTER",
+    "ROLE_ADMIN": true,
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_DICTIONARY": true,
+    "ROLE_WORKFLOW": true,
+    "ROLE_LABORATORY": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_REQUEST": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_RSHN": true,
+    "ROLE_ROU_APK": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_AGENT": true,
+    "ROLE_SUBJECT_USER_VIEW_FILIAL": true,
+    "ROLE_ELEVATOR_USER_VIEW_FILIAL": true,
+    "ROLE_GROWS_GRAIN_VIEW_FILIAL": true,
+    "ROLE_ROSSTAT": true,
+    "MANAGE_GRAIN_PRODUCTS_BATCH": true,
+    "VIEW_GPB": true,
+    "VIEW_OWN_GPB": true
+  },
+  {
+    "action": "FILTER_GRAIN_PRODUCT_LOT_REGISTER",
+    "ROLE_ADMIN": true,
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_DICTIONARY": true,
+    "ROLE_WORKFLOW": true,
+    "ROLE_LABORATORY": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_REQUEST": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_RSHN": true,
+    "ROLE_ROU_APK": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_AGENT": true,
+    "ROLE_ROSSTAT": true,
+    "MANAGE_GRAIN_PRODUCTS_BATCH": true,
+    "VIEW_GPB": true
+  },
+  {
+    "action": "READ_GRAIN_PRODUCT_LOT",
+    "ROLE_ADMIN": true,
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_DICTIONARY": true,
+    "ROLE_WORKFLOW": true,
+    "ROLE_LABORATORY": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_REQUEST": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_RSHN": true,
+    "ROLE_ROU_APK": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_AGENT": true,
+    "ROLE_SUBJECT_USER_VIEW_FILIAL": true,
+    "ROLE_ELEVATOR_USER_VIEW_FILIAL": true,
+    "ROLE_GROWS_GRAIN_VIEW_FILIAL": true,
+    "ROLE_ROSSTAT": true,
+    "MANAGE_GRAIN_PRODUCTS_BATCH": true,
+    "VIEW_GPB": true,
+    "VIEW_OWN_GPB": true
+  },
+  {
+    "action": "CREATE_PRODUCTION_GRAIN_PRODUCT_LOT",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_AGENT": true,
+    "MANAGE_GRAIN_PRODUCTS_BATCH": true
+  },
+  {
+    "action": "CREATE_OTHER_LOT_GRAIN_PRODUCT_LOT",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_AGENT": true,
+    "MANAGE_GRAIN_PRODUCTS_BATCH": true
+  },
+  {
+    "action": "CREATE_SURPLUS_GRAIN_PRODUCT_LOT",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GROWS_GRAIN": true,
+    "MANAGE_GRAIN_PRODUCTS_BATCH": true
+  },
+  {
+    "action": "CREATE_IMPORT_GRAIN_PRODUCT_LOT",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_AGENT": true,
+    "MANAGE_GRAIN_PRODUCTS_BATCH": true
+  },
+  {
+    "action": "CREATE_SDIZ_GRAIN_PRODUCT_LOT",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GROWS_GRAIN": true,
+    "MANAGE_GRAIN_PRODUCTS_BATCH": true
+  },
+  {
+    "action": "UPDATE_GRAIN_PRODUCT_LOT",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_AGENT": true,
+    "MANAGE_GRAIN_PRODUCTS_BATCH": true
+  },
+  {
+    "action": "DELETE_GRAIN_PRODUCT_LOT",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_AGENT": true,
+    "MANAGE_GRAIN_PRODUCTS_BATCH": true
+  },
+  {
+    "action": "CANCEL_GRAIN_PRODUCT_LOT",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_AGENT": true,
+    "MANAGE_GRAIN_PRODUCTS_BATCH": true
+  },
+  {
+    "action": "CANCEL_GRAIN_PRODUCT_LOT_SURPLUS",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_AGENT": true,
+    "MANAGE_GRAIN_PRODUCTS_BATCH": true
+  },
+  {
+    "action": "READ_SDIZ_ON_PPZ_REGISTER",
+    "ROLE_ADMIN": true,
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_DICTIONARY": true,
+    "ROLE_WORKFLOW": true,
+    "ROLE_LABORATORY": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_REQUEST": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_RSHN": true,
+    "ROLE_ROU_APK": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_AGENT": true,
+    "ROLE_SUBJECT_USER_VIEW_FILIAL": true,
+    "ROLE_ELEVATOR_USER_VIEW_FILIAL": true,
+    "ROLE_GROWS_GRAIN_VIEW_FILIAL": true,
+    "ROLE_ROSSTAT": true,
+    "MANAGE_GRAIN_PRODUCTS_SDIZ": true,
+    "VIEW_GPBSDIZ": true,
+    "VIEW_OWN_GPBSDIZ": true
+  },
+  {
+    "action": "FILTER_SDIZ_ON_PPZ_REGISTER",
+    "ROLE_ADMIN": true,
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_DICTIONARY": true,
+    "ROLE_WORKFLOW": true,
+    "ROLE_LABORATORY": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_REQUEST": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_RSHN": true,
+    "ROLE_ROU_APK": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_AGENT": true,
+    "ROLE_ROSSTAT": true,
+    "MANAGE_GRAIN_PRODUCTS_SDIZ": true,
+    "VIEW_GPBSDIZ": true
+  },
+  {
+    "action": "READ_SDIZ_ON_PPZ",
+    "ROLE_ADMIN": true,
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_DICTIONARY": true,
+    "ROLE_WORKFLOW": true,
+    "ROLE_LABORATORY": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_REQUEST": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_RSHN": true,
+    "ROLE_ROU_APK": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_AGENT": true,
+    "ROLE_SUBJECT_USER_VIEW_FILIAL": true,
+    "ROLE_ELEVATOR_USER_VIEW_FILIAL": true,
+    "ROLE_GROWS_GRAIN_VIEW_FILIAL": true,
+    "ROLE_ROSSTAT": true,
+    "MANAGE_GRAIN_PRODUCTS_SDIZ": true,
+    "VIEW_GPBSDIZ": true,
+    "VIEW_OWN_GPBSDIZ": true
+  },
+  {
+    "action": "READ_SDIZ_ON_PPZ_PRINT_FORM",
+    "ROLE_ADMIN": true,
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_DICTIONARY": true,
+    "ROLE_WORKFLOW": true,
+    "ROLE_LABORATORY": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_REQUEST": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_RSHN": true,
+    "ROLE_ROU_APK": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_AGENT": true,
+    "ROLE_SUBJECT_USER_VIEW_FILIAL": true,
+    "ROLE_ELEVATOR_USER_VIEW_FILIAL": true,
+    "ROLE_GROWS_GRAIN_VIEW_FILIAL": true,
+    "ROLE_ROSSTAT": true,
+    "MANAGE_GRAIN_PRODUCTS_SDIZ": true,
+    "VIEW_GPBSDIZ": true,
+    "VIEW_OWN_GPBSDIZ": true
+  },
+  {
+    "action": "CREATE_SDIZ_ON_PPZ",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_AGENT": true,
+    "MANAGE_GRAIN_PRODUCTS_SDIZ": true
+  },
+  {
+    "action": "UPDATE_SDIZ_ON_PPZ",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_AGENT": true,
+    "MANAGE_GRAIN_PRODUCTS_SDIZ": true
+  },
+  {
+    "action": "DELETE_SDIZ_ON_PPZ",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_AGENT": true,
+    "MANAGE_GRAIN_PRODUCTS_SDIZ": true
+  },
+  {
+    "action": "SEND_SDIZ_ON_PPZ",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_AGENT": true,
+    "MANAGE_GRAIN_PRODUCTS_SDIZ": true
+  },
+  {
+    "action": "CANCEL_SDIZ_ON_PPZ",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_AGENT": true,
+    "MANAGE_GRAIN_PRODUCTS_SDIZ": true
+  },
+  {
+    "action": "REPAYMENTS_SDIZ_ON_PPZ",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_AGENT": true,
+    "MANAGE_GRAIN_PRODUCTS_SDIZ": true
+  },
+  {
+    "action": "READ_GRAIN_LOT_STORAGE_REGISTER",
+    "ROLE_ADMIN": true,
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_DICTIONARY": true,
+    "ROLE_WORKFLOW": true,
+    "ROLE_LABORATORY": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_REQUEST": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_RSHN": true,
+    "ROLE_ROU_APK": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_AGENT": true,
+    "ROLE_ELEVATOR_USER_VIEW_FILIAL": true,
+    "ROLE_ROSSTAT": true,
+    "MANAGE_STORED_GRAIN_BATCH": true,
+    "VIEW_LOT_ELEVATOR": true,
+    "VIEW_OWN_LOT_ELEVATOR": true
+  },
+  {
+    "action": "FILTER_GRAIN_LOT_STORAGE_REGISTER",
+    "ROLE_ADMIN": true,
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_DICTIONARY": true,
+    "ROLE_WORKFLOW": true,
+    "ROLE_LABORATORY": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_REQUEST": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_RSHN": true,
+    "ROLE_ROU_APK": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_ROSSTAT": true,
+    "MANAGE_STORED_GRAIN_BATCH": true,
+    "VIEW_LOT_ELEVATOR": true
+  },
+  {
+    "action": "READ_GRAIN_LOT_STORAGE",
+    "ROLE_ADMIN": true,
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_DICTIONARY": true,
+    "ROLE_WORKFLOW": true,
+    "ROLE_LABORATORY": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_REQUEST": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_RSHN": true,
+    "ROLE_ROU_APK": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_ELEVATOR_USER_VIEW_FILIAL": true,
+    "ROLE_ROSSTAT": true,
+    "MANAGE_STORED_GRAIN_BATCH": true,
+    "VIEW_LOT_ELEVATOR": true,
+    "VIEW_OWN_LOT_ELEVATOR": true
+  },
+  {
+    "action": "CREATE_GRAIN_PARTIES_OTHER_PARTIES_STORAGE",
+    "ROLE_ELEVATOR_USER": true,
+    "MANAGE_STORED_GRAIN_BATCH": true
+  },
+  {
+    "action": "CREATE_GRAIN_PARTIES_SURPLUS_STORAGE",
+    "ROLE_ELEVATOR_USER": true,
+    "MANAGE_STORED_GRAIN_BATCH": true
+  },
+  {
+    "action": "UPDATE_GRAIN_LOT_STORAGE",
+    "ROLE_ELEVATOR_USER": true,
+    "MANAGE_STORED_GRAIN_BATCH": true
+  },
+  {
+    "action": "DELETE_GRAIN_LOT_STORAGE",
+    "ROLE_ELEVATOR_USER": true,
+    "MANAGE_STORED_GRAIN_BATCH": true
+  },
+  {
+    "action": "SIGN_GRAIN_LOT_STORAGE",
+    "ROLE_ELEVATOR_USER": true,
+    "MANAGE_STORED_GRAIN_BATCH": true
+  },
+  {
+    "action": "CANCEL_GRAIN_LOT_STORAGE",
+    "ROLE_ELEVATOR_USER": true,
+    "MANAGE_STORED_GRAIN_BATCH": true
+  },
+  {
+    "action": "OFF_GRAIN_LOT_STORAGE",
+    "ROLE_ELEVATOR_USER": true,
+    "MANAGE_STORED_GRAIN_BATCH": true
+  },
+  {
+    "action": "READ_SDIZ_STORAGE_REGISTER",
+    "ROLE_ADMIN": true,
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_DICTIONARY": true,
+    "ROLE_WORKFLOW": true,
+    "ROLE_LABORATORY": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_REQUEST": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_RSHN": true,
+    "ROLE_ROU_APK": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_ELEVATOR_USER_VIEW_FILIAL": true,
+    "ROLE_ROSSTAT": true,
+    "MANAGE_SDIZ_STORAGE": true,
+    "VIEW_SDIZ_ELEVATOR": true,
+    "VIEW_OWN_SDIZ_ELEVATOR": true
+  },
+  {
+    "action": "FILTER_SDIZ_STORAGE_REGISTER",
+    "ROLE_ADMIN": true,
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_DICTIONARY": true,
+    "ROLE_WORKFLOW": true,
+    "ROLE_LABORATORY": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_REQUEST": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_RSHN": true,
+    "ROLE_ROU_APK": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_ROSSTAT": true,
+    "MANAGE_SDIZ_STORAGE": true,
+    "VIEW_SDIZ_ELEVATOR": true
+  },
+  {
+    "action": "READ_SDIZ_STORAGE",
+    "ROLE_ADMIN": true,
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_DICTIONARY": true,
+    "ROLE_WORKFLOW": true,
+    "ROLE_LABORATORY": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_REQUEST": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_RSHN": true,
+    "ROLE_ROU_APK": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_ELEVATOR_USER_VIEW_FILIAL": true,
+    "ROLE_ROSSTAT": true,
+    "MANAGE_SDIZ_STORAGE": true,
+    "VIEW_SDIZ_ELEVATOR": true,
+    "VIEW_OWN_SDIZ_ELEVATOR": true
+  },
+  {
+    "action": "READ_SDIZ_STORAGE_PRINT_FORM",
+    "ROLE_ADMIN": true,
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_DICTIONARY": true,
+    "ROLE_WORKFLOW": true,
+    "ROLE_LABORATORY": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_REQUEST": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_RSHN": true,
+    "ROLE_ROU_APK": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_ELEVATOR_USER_VIEW_FILIAL": true,
+    "ROLE_ROSSTAT": true,
+    "MANAGE_SDIZ_STORAGE": true,
+    "VIEW_SDIZ_ELEVATOR": true,
+    "VIEW_OWN_SDIZ_ELEVATOR": true
+  },
+  {
+    "action": "CREATE_SDIZ_STORAGE",
+    "ROLE_ELEVATOR_USER": true,
+    "MANAGE_SDIZ_STORAGE": true
+  },
+  {
+    "action": "UPDATE_SDIZ_STORAGE",
+    "ROLE_ELEVATOR_USER": true,
+    "MANAGE_SDIZ_STORAGE": true
+  },
+  {
+    "action": "DELETE_SDIZ_STORAGE",
+    "ROLE_ELEVATOR_USER": true,
+    "MANAGE_SDIZ_STORAGE": true
+  },
+  {
+    "action": "SIGN_SDIZ_STORAGE",
+    "ROLE_ELEVATOR_USER": true,
+    "MANAGE_SDIZ_STORAGE": true
+  },
+  {
+    "action": "CANCEL_SDIZ_STORAGE",
+    "ROLE_ELEVATOR_USER": true,
+    "MANAGE_SDIZ_STORAGE": true
+  },
+  {
+    "action": "REPAYMENT_SDIZ_STORAGE",
+    "ROLE_ELEVATOR_USER": true,
+    "MANAGE_SDIZ_STORAGE": true
+  },
+  {
+    "action": "READ_MANUFACTURER_REGISTER",
+    "ROLE_ADMIN": true,
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_DICTIONARY": true,
+    "ROLE_WORKFLOW": true,
+    "ROLE_LABORATORY": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_REQUEST": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_RSHN": true,
+    "ROLE_ROU_APK": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_ROSSTAT": true,
+    "VIEW_MANUFACTURER": true
+  },
+  {
+    "action": "FILTER_MANUFACTURER_REGISTER",
+    "ROLE_ADMIN": true,
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_DICTIONARY": true,
+    "ROLE_WORKFLOW": true,
+    "ROLE_LABORATORY": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_REQUEST": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_RSHN": true,
+    "ROLE_ROU_APK": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_ROSSTAT": true,
+    "VIEW_MANUFACTURER": true
+  },
+  {
+    "action": "SETTING_MANUFACTURER_REGISTER",
+    "ROLE_ADMIN": true,
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_DICTIONARY": true,
+    "ROLE_WORKFLOW": true,
+    "ROLE_LABORATORY": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_REQUEST": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_RSHN": true,
+    "ROLE_ROU_APK": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_ROSSTAT": true,
+    "VIEW_MANUFACTURER": true
+  },
+  {
+    "action": "EXPORT_MANUFACTURER_REGISTER",
+    "ROLE_ADMIN": true,
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_DICTIONARY": true,
+    "ROLE_WORKFLOW": true,
+    "ROLE_LABORATORY": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_REQUEST": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "ROLE_RSHN": true,
+    "ROLE_ROU_APK": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_ROSSTAT": true,
+    "VIEW_MANUFACTURER": true
+  },
+  {
+    "action": "DELETE_MANUFACTURER",
+    "ROLE_ADMIN": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "MANAGE_MANUFACTURER": true
+  },
+  {
+    "action": "READ_MANUFACTURER",
+    "ROLE_ADMIN": true,
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GOVERMENT_MONITORING": true,
+    "ROLE_DICTIONARY": true,
+    "ROLE_WORKFLOW": true,
+    "ROLE_LABORATORY": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_REQUEST": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_RSHN": true,
+    "ROLE_ROU_APK": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_ROSSTAT": true,
+    "VIEW_MANUFACTURER": true,
+    "VIEW_CARD_MANUFACTURER": true
+  },
+  {
+    "action": "CREATE_MANUFACTURER",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "ROLE_RSHN": true,
+    "ROLE_GROWS_GRAIN": true,
+    "MANAGE_MANUFACTURER": true,
+    "ADD_MANUFACTURER": true
+  },
+  {
+    "action": "CHANGE_MANUFACTURER",
+    "ROLE_SUBJECT_ADMIN": true,
+    "MANAGE_MANUFACTURER": true
+  },
+  {
+    "action": "READ_ORGANIZATION_REGISTER",
+    "ROLE_ADMIN": true,
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_DICTIONARY": true,
+    "ROLE_WORKFLOW": true,
+    "ROLE_LABORATORY": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_REQUEST": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_RSHN": true,
+    "ROLE_ROU_APK": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_ROSSTAT": true,
+    "VIEW_ELEVATOR": true,
+    "SEARCH_ELEVATOR": true
+  },
+  {
+    "action": "FILTER_ORGANIZATION_REGISTER",
+    "ROLE_ADMIN": true,
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_DICTIONARY": true,
+    "ROLE_WORKFLOW": true,
+    "ROLE_LABORATORY": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_REQUEST": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_RSHN": true,
+    "ROLE_ROU_APK": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_ROSSTAT": true,
+    "VIEW_ELEVATOR": true,
+    "SEARCH_ELEVATOR": true
+  },
+  {
+    "action": "CUSTOMIZE_ORGANIZATION_REGISTER",
+    "ROLE_ADMIN": true,
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_DICTIONARY": true,
+    "ROLE_WORKFLOW": true,
+    "ROLE_LABORATORY": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_REQUEST": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_RSHN": true,
+    "ROLE_ROU_APK": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_ROSSTAT": true,
+    "VIEW_ELEVATOR": true,
+    "SEARCH_ELEVATOR": true
+  },
+  {
+    "action": "EXPORT_ORGANIZATION_REGISTER",
+    "ROLE_ADMIN": true,
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_DICTIONARY": true,
+    "ROLE_WORKFLOW": true,
+    "ROLE_LABORATORY": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_REQUEST": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "ROLE_RSHN": true,
+    "ROLE_ROU_APK": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_ROSSTAT": true,
+    "VIEW_ELEVATOR": true,
+    "SEARCH_ELEVATOR": true
+  },
+  {
+    "action": "DELETE_ORGANIZATION",
+    "ROLE_MCX_USER": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "MANAGE_ELEVATOR": true
+  },
+  {
+    "action": "ESNSI_ELEVATOR_RECORD",
+    "ROLE_MCX_USER": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "MANAGE_ELEVATOR": true
+  },
+  {
+    "action": "READ_ORGANIZATION",
+    "ROLE_ADMIN": true,
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_DICTIONARY": true,
+    "ROLE_WORKFLOW": true,
+    "ROLE_LABORATORY": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_REQUEST": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_RSHN": true,
+    "ROLE_ROU_APK": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_ROSSTAT": true,
+    "VIEW_ELEVATOR": true,
+    "SEARCH_ELEVATOR": true
+  },
+  {
+    "action": "GENERATE_ORGANIZATION_REGISTER_REPORT",
+    "ROLE_ADMIN": true,
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_DICTIONARY": true,
+    "ROLE_WORKFLOW": true,
+    "ROLE_LABORATORY": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_REQUEST": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_GROWS_GRAIN": true,
+    "VIEW_ELEVATOR": true
+  },
+  {
+    "action": "READ_TASK_REGISTER",
+    "ROLE_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "MANAGE_APPROVAL_TASK": true,
+    "VIEW_APPROVAL_TASK": true
+  },
+  {
+    "action": "READ_TASK_REGISTER_DIVISION",
+    "ROLE_REQUEST": true,
+    "MANAGE_APPROVAL_TASK_DIVISION": true
+  },
+  {
+    "action": "FILTER_TASK_REGISTER",
+    "ROLE_ADMIN": true,
+    "ROLE_REQUEST": true,
+    "ROLE_AUDITOR": true,
+    "MANAGE_APPROVAL_TASK": true,
+    "MANAGE_APPROVAL_TASK_DIVISION": true,
+    "VIEW_APPROVAL_TASK": true
+  },
+  {
+    "action": "CUSTOMIZE_TASK_REGISTER",
+    "ROLE_ADMIN": true,
+    "ROLE_REQUEST": true,
+    "ROLE_AUDITOR": true,
+    "MANAGE_APPROVAL_TASK": true,
+    "MANAGE_APPROVAL_TASK_DIVISION": true,
+    "VIEW_APPROVAL_TASK": true
+  },
+  {
+    "action": "EXPORT_TASK_REGISTER",
+    "ROLE_REQUEST": true,
+    "MANAGE_APPROVAL_TASK_DIVISION": true
+  },
+  {
+    "action": "APPROVE_TASK",
+    "ROLE_REQUEST": true,
+    "MANAGE_APPROVAL_TASK_DIVISION": true
+  },
+  {
+    "action": "REJECT_TASK",
+    "ROLE_REQUEST": true,
+    "MANAGE_APPROVAL_TASK_DIVISION": true
+  },
+  {
+    "action": "READ_TASK",
+    "ROLE_ADMIN": true,
+    "ROLE_REQUEST": true,
+    "ROLE_AUDITOR": true,
+    "MANAGE_APPROVAL_TASK": true,
+    "MANAGE_APPROVAL_TASK_DIVISION": true,
+    "VIEW_APPROVAL_TASK": true
+  },
+  {
+    "action": "ASSIGN_TASK_EXECUTOR",
+    "ROLE_REQUEST": true,
+    "MANAGE_APPROVAL_TASK_DIVISION": true
+  },
+  {
+    "action": "UNASSIGN_TASK_EXECUTOR",
+    "ROLE_REQUEST": true,
+    "MANAGE_APPROVAL_TASK_DIVISION": true
+  },
+  {
+    "action": "READ_APPROVAL_TEMPLATE_REGISTER",
+    "ROLE_ADMIN": true,
+    "ROLE_WORKFLOW": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_OPERATOR": true,
+    "MANAGE_TEMPLATE": true,
+    "VIEW_TEMPLATE": true
+  },
+  {
+    "action": "FILTER_APPROVAL_TEMPLATE_REGISTER",
+    "ROLE_ADMIN": true,
+    "ROLE_WORKFLOW": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_OPERATOR": true,
+    "MANAGE_TEMPLATE": true,
+    "VIEW_TEMPLATE": true
+  },
+  {
+    "action": "CREATE_APPROVAL_TEMPLATE",
+    "ROLE_WORKFLOW": true,
+    "MANAGE_TEMPLATE": true
+  },
+  {
+    "action": "UPDATE_APPROVAL_TEMPLATE",
+    "ROLE_WORKFLOW": true,
+    "MANAGE_TEMPLATE": true
+  },
+  {
+    "action": "DISABLE_APPROVAL_TEMPLATE",
+    "ROLE_WORKFLOW": true,
+    "MANAGE_TEMPLATE": true
+  },
+  {
+    "action": "ENABLE_APPROVAL_TEMPLATE",
+    "ROLE_WORKFLOW": true,
+    "MANAGE_TEMPLATE": true
+  },
+  {
+    "action": "DELETE_APPROVAL_TEMPLATE",
+    "ROLE_WORKFLOW": true,
+    "MANAGE_TEMPLATE": true
+  },
+  {
+    "action": "READ_DICTIONARY_REGISTER",
+    "ROLE_ADMIN": true,
+    "ROLE_SECURITY_ADMIN": true,
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GOVERMENT_MONITORING": true,
+    "ROLE_DICTIONARY": true,
+    "ROLE_WORKFLOW": true,
+    "ROLE_LABORATORY": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_REQUEST": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_RSHN": true,
+    "ROLE_ROU_APK": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_AGENT": true,
+    "ROLE_SUBJECT_USER_VIEW_FILIAL": true,
+    "ROLE_ELEVATOR_USER_VIEW_FILIAL": true,
+    "ROLE_GROWS_GRAIN_VIEW_FILIAL": true,
+    "ROLE_ROSSTAT": true,
+    "VIEW_NCI": true
+  },
+  {
+    "action": "READ_DICTIONARY",
+    "ROLE_ADMIN": true,
+    "ROLE_SECURITY_ADMIN": true,
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GOVERMENT_MONITORING": true,
+    "ROLE_DICTIONARY": true,
+    "ROLE_WORKFLOW": true,
+    "ROLE_LABORATORY": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_REQUEST": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_RSHN": true,
+    "ROLE_ROU_APK": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_AGENT": true,
+    "ROLE_SUBJECT_USER_VIEW_FILIAL": true,
+    "ROLE_ELEVATOR_USER_VIEW_FILIAL": true,
+    "ROLE_GROWS_GRAIN_VIEW_FILIAL": true,
+    "ROLE_ROSSTAT": true,
+    "VIEW_NCI": true
+  },
+  {
+    "action": "READ_DICTIONARY_RECORD",
+    "ROLE_ADMIN": true,
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GOVERMENT_MONITORING": true,
+    "ROLE_DICTIONARY": true,
+    "ROLE_WORKFLOW": true,
+    "ROLE_LABORATORY": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_REQUEST": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_RSHN": true,
+    "ROLE_ROU_APK": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_AGENT": true,
+    "ROLE_SUBJECT_USER_VIEW_FILIAL": true,
+    "ROLE_ELEVATOR_USER_VIEW_FILIAL": true,
+    "ROLE_GROWS_GRAIN_VIEW_FILIAL": true,
+    "ROLE_ROSSTAT": true,
+    "VIEW_NCI": true
+  },
+  {
+    "action": "CREATE_DICTIONARY_RECORD",
+    "ROLE_DICTIONARY": true,
+    "MANAGE_NCI": true
+  },
+  {
+    "action": "UPDATE_DICTIONARY_RECORD",
+    "ROLE_DICTIONARY": true,
+    "MANAGE_NCI": true
+  },
+  {
+    "action": "DELETE_DICTIONARY_RECORD",
+    "ROLE_DICTIONARY": true,
+    "MANAGE_NCI": true
+  },
+  {
+    "action": "ESNSI_DICTIONARY_RECORD",
+    "ROLE_DICTIONARY": true,
+    "MANAGE_NCI": true
+  },
+  {
+    "action": "EDINOE_OKNO_SYNCHRONIZATION",
+    "ROLE_DICTIONARY": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_OPERATOR": true,
+    "MANAGE_NCI": true
+  },
+  {
+    "action": "READ_LABORATORY_REGISTER",
+    "ROLE_ADMIN": true,
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GOVERMENT_MONITORING": true,
+    "ROLE_DICTIONARY": true,
+    "ROLE_WORKFLOW": true,
+    "ROLE_LABORATORY": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_REQUEST": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_ROU_APK": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_AGENT": true,
+    "ROLE_SUBJECT_USER_VIEW_FILIAL": true,
+    "ROLE_ELEVATOR_USER_VIEW_FILIAL": true,
+    "ROLE_GROWS_GRAIN_VIEW_FILIAL": true,
+    "ROLE_ROSSTAT": true,
+    "VIEW_LABORATORY": true
+  },
+  {
+    "action": "FILTER_LABORATORY_REGISTER",
+    "ROLE_ADMIN": true,
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GOVERMENT_MONITORING": true,
+    "ROLE_DICTIONARY": true,
+    "ROLE_WORKFLOW": true,
+    "ROLE_LABORATORY": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_REQUEST": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_ROU_APK": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_AGENT": true,
+    "ROLE_SUBJECT_USER_VIEW_FILIAL": true,
+    "ROLE_ELEVATOR_USER_VIEW_FILIAL": true,
+    "ROLE_GROWS_GRAIN_VIEW_FILIAL": true,
+    "ROLE_ROSSTAT": true,
+    "VIEW_LABORATORY": true
+  },
+  {
+    "action": "CUSTOMIZE_LABORATORY_REGISTER",
+    "ROLE_ADMIN": true,
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GOVERMENT_MONITORING": true,
+    "ROLE_DICTIONARY": true,
+    "ROLE_WORKFLOW": true,
+    "ROLE_LABORATORY": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_REQUEST": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_ROU_APK": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_AGENT": true,
+    "ROLE_SUBJECT_USER_VIEW_FILIAL": true,
+    "ROLE_ELEVATOR_USER_VIEW_FILIAL": true,
+    "ROLE_GROWS_GRAIN_VIEW_FILIAL": true,
+    "ROLE_ROSSTAT": true,
+    "VIEW_LABORATORY": true
+  },
+  {
+    "action": "EXPORT_LABORATORY_REGISTER",
+    "ROLE_ADMIN": true,
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GOVERMENT_MONITORING": true,
+    "ROLE_DICTIONARY": true,
+    "ROLE_WORKFLOW": true,
+    "ROLE_LABORATORY": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_REQUEST": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "ROLE_ROU_APK": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_AGENT": true,
+    "ROLE_SUBJECT_USER_VIEW_FILIAL": true,
+    "ROLE_ELEVATOR_USER_VIEW_FILIAL": true,
+    "ROLE_GROWS_GRAIN_VIEW_FILIAL": true,
+    "ROLE_ROSSTAT": true,
+    "VIEW_LABORATORY": true
+  },
+  {
+    "action": "DELETE_LABORATORY",
+    "ROLE_ADMIN": true,
+    "ROLE_LABORATORY": true,
+    "MANAGE_LABORATORY": true
+  },
+  {
+    "action": "READ_LABORATORY",
+    "ROLE_ADMIN": true,
+    "ROLE_DICTIONARY": true,
+    "ROLE_WORKFLOW": true,
+    "ROLE_LABORATORY": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_REQUEST": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_ROU_APK": true,
+    "ROLE_ROSSTAT": true,
+    "VIEW_LABORATORY": true,
+    "VIEW_CARD_LABORATORY": true
+  },
+  {
+    "action": "UPDATE_LABORATORY",
+    "ROLE_LABORATORY": true,
+    "MANAGE_LABORATORY": true
+  },
+  {
+    "action": "CREATE_LABORATORY",
+    "ROLE_LABORATORY": true,
+    "MANAGE_LABORATORY": true
+  },
+  {
+    "action": "READ_SDIZ_NUMBER_REGISTER",
+    "ROLE_ADMIN": true,
+    "ROLE_FEDERAL_RESERVE": true,
+    "ROLE_DICTIONARY": true,
+    "ROLE_WORKFLOW": true,
+    "ROLE_LABORATORY": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_REQUEST": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_OPERATOR": true,
+    "GETTING_NUMBERS": true,
+    "SEARCH_FEDERAL_NUMBERS": true,
+    "VIEW_FEDERAL_NUMBERS": true
+  },
+  {
+    "action": "CREATE_SDIZ_NUMBER",
+    "ROLE_FEDERAL_RESERVE": true,
+    "GETTING_NUMBERS": true
+  },
+  {
+    "action": "READ_GRAIN_NUMBER_REGISTER",
+    "ROLE_ADMIN": true,
+    "ROLE_FEDERAL_RESERVE": true,
+    "ROLE_DICTIONARY": true,
+    "ROLE_WORKFLOW": true,
+    "ROLE_LABORATORY": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_REQUEST": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_OPERATOR": true,
+    "GETTING_NUMBERS": true,
+    "SEARCH_FEDERAL_NUMBERS": true,
+    "VIEW_FEDERAL_NUMBERS": true
+  },
+  {
+    "action": "CREATE_GRAIN_NUMBER",
+    "ROLE_FEDERAL_RESERVE": true,
+    "GETTING_NUMBERS": true
+  },
+  {
+    "action": "READ_GRAIN_PRODUCT_NUMBER_REGISTER",
+    "ROLE_ADMIN": true,
+    "ROLE_FEDERAL_RESERVE": true,
+    "ROLE_DICTIONARY": true,
+    "ROLE_WORKFLOW": true,
+    "ROLE_LABORATORY": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_REQUEST": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_OPERATOR": true,
+    "GETTING_NUMBERS": true,
+    "SEARCH_FEDERAL_NUMBERS": true,
+    "VIEW_FEDERAL_NUMBERS": true
+  },
+  {
+    "action": "CREATE_GRAIN_PRODUCT_NUMBER",
+    "ROLE_FEDERAL_RESERVE": true,
+    "GETTING_NUMBERS": true
+  },
+  {
+    "action": "READ_MANUFACTURER_DATA_REGISTER",
+    "ROLE_GOVERMENT_MONITORING": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_RSHN": true,
+    "ROLE_ROU_APK": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_ROSSTAT": true,
+    "MANAGE_GOVERMENT_MONITORING": true,
+    "VIEW_SUBJECT_GOVMONITORING": true
+  },
+  {
+    "action": "FILTER_MANUFACTURER_DATA_REGISTER",
+    "ROLE_GOVERMENT_MONITORING": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_RSHN": true,
+    "ROLE_ROU_APK": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_ROSSTAT": true,
+    "MANAGE_GOVERMENT_MONITORING": true,
+    "VIEW_SUBJECT_GOVMONITORING": true
+  },
+  {
+    "action": "READ_MANUFACTURER_DATA",
+    "ROLE_GOVERMENT_MONITORING": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_RSHN": true,
+    "ROLE_ROU_APK": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_ROSSTAT": true,
+    "MANAGE_GOVERMENT_MONITORING": true,
+    "VIEW_SUBJECT_GOVMONITORING": true
+  },
+  {
+    "action": "READ_RESEARCH_REGISTER",
+    "ROLE_ADMIN": true,
+    "ROLE_GOVERMENT_MONITORING": true,
+    "ROLE_DICTIONARY": true,
+    "ROLE_WORKFLOW": true,
+    "ROLE_LABORATORY": true,
+    "ROLE_REQUEST": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "MANAGE_GOVERMENT_MONITORING": true,
+    "VIEW_LABORATORYMONITOR": true
+  },
+  {
+    "action": "FILTER_RESEARCH_REGISTER",
+    "ROLE_ADMIN": true,
+    "ROLE_GOVERMENT_MONITORING": true,
+    "ROLE_DICTIONARY": true,
+    "ROLE_WORKFLOW": true,
+    "ROLE_LABORATORY": true,
+    "ROLE_REQUEST": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "MANAGE_GOVERMENT_MONITORING": true,
+    "VIEW_LABORATORYMONITOR": true
+  },
+  {
+    "action": "READ_RESEARCH_DATA",
+    "ROLE_ADMIN": true,
+    "ROLE_GOVERMENT_MONITORING": true,
+    "ROLE_DICTIONARY": true,
+    "ROLE_WORKFLOW": true,
+    "ROLE_LABORATORY": true,
+    "ROLE_REQUEST": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "MANAGE_GOVERMENT_MONITORING": true,
+    "VIEW_LABORATORYMONITOR": true
+  },
+  {
+    "action": "CREATE_RESEARCH_DATA",
+    "ROLE_GOVERMENT_MONITORING": true,
+    "MANAGE_GOVERMENT_MONITORING": true
+  },
+  {
+    "action": "UPDATE_RESEARCH_DATA",
+    "ROLE_GOVERMENT_MONITORING": true,
+    "MANAGE_GOVERMENT_MONITORING": true
+  },
+  {
+    "action": "DELETE_RESEARCH_DATA",
+    "ROLE_GOVERMENT_MONITORING": true,
+    "MANAGE_GOVERMENT_MONITORING": true
+  },
+  {
+    "action": "SIGN_RESEARCH_DATA",
+    "ROLE_GOVERMENT_MONITORING": true,
+    "MANAGE_GOVERMENT_MONITORING": true
+  },
+  {
+    "action": "CANCEL_RESEARCH_DATA",
+    "ROLE_GOVERMENT_MONITORING": true,
+    "MANAGE_GOVERMENT_MONITORING": true
+  },
+  {
+    "action": "READ_AGENT_DATA_REGISTER",
+    "ROLE_ADMIN": true,
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_DICTIONARY": true,
+    "ROLE_WORKFLOW": true,
+    "ROLE_AGENT_USER": true,
+    "ROLE_LABORATORY": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_REQUEST": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_ROU_APK": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_ROSSTAT": true,
+    "VIEW_AGENT_DATA": true,
+    "MANAGE_AGENT_DATA": true
+  },
+  {
+    "action": "FILTER_AGENT_DATA_REGISTER",
+    "ROLE_ADMIN": true,
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_DICTIONARY": true,
+    "ROLE_WORKFLOW": true,
+    "ROLE_AGENT_USER": true,
+    "ROLE_LABORATORY": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_REQUEST": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_ROU_APK": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_ROSSTAT": true,
+    "VIEW_AGENT_DATA": true,
+    "MANAGE_AGENT_DATA": true
+  },
+  {
+    "action": "READ_AGENT_DATA",
+    "ROLE_ADMIN": true,
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_DICTIONARY": true,
+    "ROLE_WORKFLOW": true,
+    "ROLE_AGENT_USER": true,
+    "ROLE_LABORATORY": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_REQUEST": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_ROU_APK": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_ROSSTAT": true,
+    "VIEW_AGENT_DATA": true,
+    "MANAGE_AGENT_DATA": true
+  },
+  {
+    "action": "CREATE_AGENT_DATA",
+    "ROLE_AGENT_USER": true,
+    "MANAGE_AGENT_DATA": true
+  },
+  {
+    "action": "UPDATE_AGENT_DATA",
+    "ROLE_AGENT_USER": true,
+    "MANAGE_AGENT_DATA": true
+  },
+  {
+    "action": "DELETE_AGENT_DATA",
+    "ROLE_AGENT_USER": true,
+    "MANAGE_AGENT_DATA": true
+  },
+  {
+    "action": "SIGN_AGENT_DATA",
+    "ROLE_AGENT_USER": true,
+    "MANAGE_AGENT_DATA": true
+  },
+  {
+    "action": "CANCEL_AGENT_DATA",
+    "ROLE_AGENT_USER": true,
+    "MANAGE_AGENT_DATA": true
+  },
+  {
+    "action": "READ_GOV_ORG_REGISTER",
+    "ROLE_ADMIN": true,
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GOVERMENT_MONITORING": true,
+    "ROLE_DICTIONARY": true,
+    "ROLE_WORKFLOW": true,
+    "ROLE_LABORATORY": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_REQUEST": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_AGENT": true,
+    "ROLE_SUBJECT_USER_VIEW_FILIAL": true,
+    "ROLE_ELEVATOR_USER_VIEW_FILIAL": true,
+    "ROLE_GROWS_GRAIN_VIEW_FILIAL": true,
+    "VIEW_OGV": true
+  },
+  {
+    "action": "FILTER_GOV_ORG_REGISTER",
+    "ROLE_ADMIN": true,
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GOVERMENT_MONITORING": true,
+    "ROLE_DICTIONARY": true,
+    "ROLE_WORKFLOW": true,
+    "ROLE_LABORATORY": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_REQUEST": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_AGENT": true,
+    "ROLE_SUBJECT_USER_VIEW_FILIAL": true,
+    "ROLE_ELEVATOR_USER_VIEW_FILIAL": true,
+    "ROLE_GROWS_GRAIN_VIEW_FILIAL": true,
+    "VIEW_OGV": true
+  },
+  {
+    "action": "CUSTOMIZE_GOV_ORG_REGISTER",
+    "ROLE_ADMIN": true,
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GOVERMENT_MONITORING": true,
+    "ROLE_DICTIONARY": true,
+    "ROLE_WORKFLOW": true,
+    "ROLE_LABORATORY": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_REQUEST": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_AGENT": true,
+    "ROLE_SUBJECT_USER_VIEW_FILIAL": true,
+    "ROLE_ELEVATOR_USER_VIEW_FILIAL": true,
+    "ROLE_GROWS_GRAIN_VIEW_FILIAL": true,
+    "VIEW_OGV": true
+  },
+  {
+    "action": "EXPORT_GOV_ORG_REGISTER",
+    "ROLE_ADMIN": true,
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GOVERMENT_MONITORING": true,
+    "ROLE_DICTIONARY": true,
+    "ROLE_WORKFLOW": true,
+    "ROLE_LABORATORY": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_REQUEST": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_AGENT": true,
+    "ROLE_SUBJECT_USER_VIEW_FILIAL": true,
+    "ROLE_ELEVATOR_USER_VIEW_FILIAL": true,
+    "ROLE_GROWS_GRAIN_VIEW_FILIAL": true,
+    "VIEW_OGV": true
+  },
+  {
+    "action": "READ_GOV_ORG",
+    "ROLE_ADMIN": true,
+    "ROLE_DICTIONARY": true,
+    "ROLE_WORKFLOW": true,
+    "ROLE_LABORATORY": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_REQUEST": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "VIEW_OGV": true
+  },
+  { "action": "CREATE_GOV_ORG", "ROLE_ADMIN": true, "MANAGE_OGV": true },
+  { "action": "UPDATE_GOV_ORG", "ROLE_ADMIN": true, "MANAGE_OGV": true },
+  { "action": "DELETE_GOV_ORG", "ROLE_ADMIN": true, "MANAGE_OGV": true },
+  {
+    "action": "CREATE_USER_ACCOUNT",
+    "ROLE_SECURITY_ADMIN": true,
+    "MANAGE_USER": true
+  },
+  {
+    "action": "UPDATE_USER_ACCOUNT",
+    "ROLE_SECURITY_ADMIN": true,
+    "MANAGE_USER": true
+  },
+  {
+    "action": "DEACTIVATE_USER_ACCOUNT",
+    "ROLE_SECURITY_ADMIN": true,
+    "MANAGE_USER": true
+  },
+  {
+    "action": "ACTIVATE_USER_ACCOUNT",
+    "ROLE_SECURITY_ADMIN": true,
+    "MANAGE_USER": true
+  },
+  {
+    "action": "DELETE_USER_ACCOUNT",
+    "ROLE_SECURITY_ADMIN": true,
+    "MANAGE_USER": true
+  },
+  {
+    "action": "UPDATE_USER_PRIVILEGE",
+    "ROLE_SECURITY_ADMIN": true,
+    "MANAGE_USER": true
+  },
+  {
+    "action": "READ_DIGITAL_ACCOUNTING_LOG",
+    "ROLE_SECURITY_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "VIEW_LOG": true
+  },
+  {
+    "action": "READ_SMEV_LOG",
+    "ROLE_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "MANAGE_SMEV": true
+  },
+  {
+    "action": "READ_FIAS_UPLOAD",
+    "ROLE_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "MANAGE_FIAS": true
+  },
+  { "action": "CREATE_FIAS_UPLOAD", "ROLE_ADMIN": true, "MANAGE_FIAS": true },
+  { "action": "UPDATE_FIAS_UPLOAD", "ROLE_ADMIN": true, "MANAGE_FIAS": true },
+  { "action": "UPDATE_ORGANIZATION_STRUCTURE", "MANAGE_DIVISION": true },
+  {
+    "action": "READ_AGENT_CONTRACT_REGISTER",
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_AUDITOR": true,
+    "MANAGE_CONTRACT": true,
+    "VIEW_CONTRACT": true
+  },
+  {
+    "action": "FILTER_AGENT_CONTRACT_REGISTER",
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_AUDITOR": true,
+    "MANAGE_CONTRACT": true,
+    "VIEW_CONTRACT": true
+  },
+  { "action": "DELETE_AGENT_CONTRACT", "MANAGE_CONTRACT": true },
+  {
+    "action": "READ_AGENT_CONTRACT",
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_AUDITOR": true,
+    "MANAGE_CONTRACT": true,
+    "VIEW_CONTRACT": true
+  },
+  { "action": "UPDATE_AGENT_CONTRACT_REGISTER", "MANAGE_CONTRACT": true },
+  { "action": "UPDATE_AGENT_CONTRACT", "MANAGE_CONTRACT": true },
+  {
+    "action": "SEARCH_MANUFACTURER",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GOVERMENT_MONITORING": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_RSHN": true,
+    "ROLE_ROU_APK": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_AGENT": true,
+    "ROLE_SUBJECT_USER_VIEW_FILIAL": true,
+    "ROLE_ELEVATOR_USER_VIEW_FILIAL": true,
+    "ROLE_GROWS_GRAIN_VIEW_FILIAL": true,
+    "ROLE_ROSSTAT": true,
+    "SEARCH_MANUFACTURER": true
+  },
+  {
+    "action": "SEARCH_ELEVATOR",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_RSHN": true,
+    "ROLE_ROU_APK": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_AGENT": true,
+    "ROLE_SUBJECT_USER_VIEW_FILIAL": true,
+    "ROLE_ELEVATOR_USER_VIEW_FILIAL": true,
+    "ROLE_GROWS_GRAIN_VIEW_FILIAL": true,
+    "ROLE_ROSSTAT": true,
+    "SEARCH_ELEVATOR": true
+  },
+  {
+    "action": "SEARCH_FEDERAL_NUMBERS",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_GROWS_GRAIN": true
+  },
+  {
+    "action": "VIEW_NOTIFICATION_REGISTRY",
+    "ROLE_MCX_USER": true,
+    "ROLE_REQUEST": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "VIEW_NOTIFICATION": true
+  },
+  {
+    "action": "VIEW_NOTIFICATION_USER_REGISTRY",
+    "ROLE_ADMIN": true,
+    "ROLE_SECURITY_ADMIN": true,
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GOVERMENT_MONITORING": true,
+    "ROLE_FEDERAL_RESERVE": true,
+    "ROLE_DICTIONARY": true,
+    "ROLE_WORKFLOW": true,
+    "ROLE_AGENT_USER": true,
+    "ROLE_LABORATORY": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_REQUEST": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_RSHN": true,
+    "ROLE_ROU_APK": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_METHODOLOGIST": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_AGENT": true,
+    "ROLE_OPERATOR_RISK": true,
+    "ROLE_SUBJECT_USER_VIEW_FILIAL": true,
+    "ROLE_ELEVATOR_USER_VIEW_FILIAL": true,
+    "ROLE_GROWS_GRAIN_VIEW_FILIAL": true,
+    "ROLE_ROSSTAT": true,
+    "VIEW_NOTIFICATION_USER": true
+  },
+  {
+    "action": "FILTER_NOTIFICATION_REGISTRY",
+    "ROLE_ADMIN": true,
+    "ROLE_SECURITY_ADMIN": true,
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GOVERMENT_MONITORING": true,
+    "ROLE_FEDERAL_RESERVE": true,
+    "ROLE_DICTIONARY": true,
+    "ROLE_WORKFLOW": true,
+    "ROLE_AGENT_USER": true,
+    "ROLE_LABORATORY": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_REQUEST": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_RSHN": true,
+    "ROLE_ROU_APK": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_METHODOLOGIST": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_AGENT": true,
+    "ROLE_OPERATOR_RISK": true,
+    "ROLE_SUBJECT_USER_VIEW_FILIAL": true,
+    "ROLE_ELEVATOR_USER_VIEW_FILIAL": true,
+    "ROLE_GROWS_GRAIN_VIEW_FILIAL": true,
+    "ROLE_ROSSTAT": true,
+    "VIEW_NOTIFICATION": true,
+    "VIEW_NOTIFICATION_USER": true
+  },
+  {
+    "action": "CUSTOMIZE_NOTIFICATION_REGISTRY",
+    "ROLE_ADMIN": true,
+    "ROLE_SECURITY_ADMIN": true,
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GOVERMENT_MONITORING": true,
+    "ROLE_FEDERAL_RESERVE": true,
+    "ROLE_DICTIONARY": true,
+    "ROLE_WORKFLOW": true,
+    "ROLE_AGENT_USER": true,
+    "ROLE_LABORATORY": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_REQUEST": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_RSHN": true,
+    "ROLE_ROU_APK": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_METHODOLOGIST": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_AGENT": true,
+    "ROLE_OPERATOR_RISK": true,
+    "ROLE_SUBJECT_USER_VIEW_FILIAL": true,
+    "ROLE_ELEVATOR_USER_VIEW_FILIAL": true,
+    "ROLE_GROWS_GRAIN_VIEW_FILIAL": true,
+    "ROLE_ROSSTAT": true,
+    "VIEW_NOTIFICATION": true,
+    "VIEW_NOTIFICATION_USER": true
+  },
+  {
+    "action": "EXPORT_NOTIFICATION_REGISTRY",
+    "ROLE_ADMIN": true,
+    "ROLE_SECURITY_ADMIN": true,
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GOVERMENT_MONITORING": true,
+    "ROLE_FEDERAL_RESERVE": true,
+    "ROLE_DICTIONARY": true,
+    "ROLE_WORKFLOW": true,
+    "ROLE_AGENT_USER": true,
+    "ROLE_LABORATORY": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_REQUEST": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_RSHN": true,
+    "ROLE_ROU_APK": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_METHODOLOGIST": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_AGENT": true,
+    "ROLE_OPERATOR_RISK": true,
+    "ROLE_SUBJECT_USER_VIEW_FILIAL": true,
+    "ROLE_ELEVATOR_USER_VIEW_FILIAL": true,
+    "ROLE_GROWS_GRAIN_VIEW_FILIAL": true,
+    "ROLE_ROSSTAT": true,
+    "VIEW_NOTIFICATION": true,
+    "VIEW_NOTIFICATION_USER": true
+  },
+  {
+    "action": "VIEW_NOTIFICATION",
+    "ROLE_ADMIN": true,
+    "ROLE_SECURITY_ADMIN": true,
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GOVERMENT_MONITORING": true,
+    "ROLE_FEDERAL_RESERVE": true,
+    "ROLE_DICTIONARY": true,
+    "ROLE_WORKFLOW": true,
+    "ROLE_AGENT_USER": true,
+    "ROLE_LABORATORY": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_REQUEST": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_RSHN": true,
+    "ROLE_ROU_APK": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_METHODOLOGIST": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_AGENT": true,
+    "ROLE_OPERATOR_RISK": true,
+    "ROLE_SUBJECT_USER_VIEW_FILIAL": true,
+    "ROLE_ELEVATOR_USER_VIEW_FILIAL": true,
+    "ROLE_GROWS_GRAIN_VIEW_FILIAL": true,
+    "ROLE_ROSSTAT": true,
+    "VIEW_NOTIFICATION": true,
+    "VIEW_NOTIFICATION_USER": true
+  },
+  {
+    "action": "VIEW_USER_REGISTRY",
+    "ROLE_SECURITY_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_OPERATOR": true,
+    "VIEW_USER_REGISTRY": true
+  },
+  {
+    "action": "FILTER_USER_REGISTRY",
+    "ROLE_SECURITY_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_RSHN": true,
+    "ROLE_OPERATOR": true,
+    "VIEW_USER_REGISTRY": true,
+    "VIEW_USER": true
+  },
+  {
+    "action": "CUSTOMIZE_USER_REGISTRY",
+    "ROLE_SECURITY_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_OPERATOR": true,
+    "VIEW_USER_REGISTRY": true
+  },
+  {
+    "action": "EXPORT_USER_REGISTRY",
+    "ROLE_SECURITY_ADMIN": true,
+    "VIEW_USER_REGISTRY": true
+  },
+  {
+    "action": "VIEW_USER_ACCOUNT",
+    "ROLE_SECURITY_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "VIEW_USER_REGISTRY": true
+  },
+  {
+    "action": "VIEW_AGENT_REGISTER",
+    "ROLE_ADMIN": true,
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_DICTIONARY": true,
+    "ROLE_WORKFLOW": true,
+    "ROLE_LABORATORY": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_REQUEST": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_OPERATOR": true,
+    "VIEW_AGENTSDIZ": true
+  },
+  {
+    "action": "FILTER_AGENT_REGISTER",
+    "ROLE_ADMIN": true,
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_DICTIONARY": true,
+    "ROLE_WORKFLOW": true,
+    "ROLE_LABORATORY": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_REQUEST": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_OPERATOR": true,
+    "VIEW_AGENTSDIZ": true
+  },
+  {
+    "action": "VIEW_AGENT_DATA",
+    "ROLE_ADMIN": true,
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_DICTIONARY": true,
+    "ROLE_WORKFLOW": true,
+    "ROLE_LABORATORY": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_REQUEST": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_OPERATOR": true,
+    "VIEW_AGENTSDIZ": true
+  },
+  {
+    "action": "VIEW_SDIZ_SEARCH_RESULT",
+    "ROLE_ADMIN": true,
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_DICTIONARY": true,
+    "ROLE_WORKFLOW": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_REQUEST": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_RSHN": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_AGENT": true,
+    "ROLE_SUBJECT_USER_VIEW_FILIAL": true,
+    "ROLE_ELEVATOR_USER_VIEW_FILIAL": true,
+    "ROLE_GROWS_GRAIN_VIEW_FILIAL": true,
+    "SEARCH_FEDERAL_NUMBERS": true
+  },
+  {
+    "action": "VIEW_NUMBERS_SEARCH_RESULT",
+    "ROLE_ADMIN": true,
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_DICTIONARY": true,
+    "ROLE_WORKFLOW": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_REQUEST": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_RSHN": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_AGENT": true,
+    "ROLE_SUBJECT_USER_VIEW_FILIAL": true,
+    "ROLE_ELEVATOR_USER_VIEW_FILIAL": true,
+    "ROLE_GROWS_GRAIN_VIEW_FILIAL": true,
+    "SEARCH_FEDERAL_NUMBERS": true
+  },
+  {
+    "action": "VIEW_GPB_NUMBERS_SEARCH_RESULT",
+    "ROLE_ADMIN": true,
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_DICTIONARY": true,
+    "ROLE_WORKFLOW": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_REQUEST": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_RSHN": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_AGENT": true,
+    "ROLE_SUBJECT_USER_VIEW_FILIAL": true,
+    "ROLE_ELEVATOR_USER_VIEW_FILIAL": true,
+    "ROLE_GROWS_GRAIN_VIEW_FILIAL": true,
+    "SEARCH_FEDERAL_NUMBERS": true
+  },
+  {
+    "action": "VIEW_ROLE",
+    "ROLE_SECURITY_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_OPERATOR": true,
+    "VIEW_ROLE": true
+  },
+  {
+    "action": "FILTER_ROLE",
+    "ROLE_SECURITY_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_OPERATOR": true,
+    "VIEW_ROLE": true
+  },
+  {
+    "action": "CUSTOMIZE_ROLE",
+    "ROLE_SECURITY_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_OPERATOR": true,
+    "VIEW_ROLE": true
+  },
+  {
+    "action": "EXPORT_ROLE",
+    "ROLE_SECURITY_ADMIN": true,
+    "ROLE_OPERATOR": true,
+    "VIEW_ROLE": true
+  },
+  {
+    "action": "READ_APPROVAL_REQUEST_LOG_REGISTRY",
+    "ROLE_ADMIN": true,
+    "ROLE_REQUEST": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_OPERATOR": true,
+    "READ_APPROVAL_REQUEST_LOG_REGISTRY": true
+  },
+  {
+    "action": "FILTER_APPROVAL_REQUEST_LOG_REGISTRY",
+    "ROLE_ADMIN": true,
+    "ROLE_REQUEST": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_OPERATOR": true,
+    "FILTER_APPROVAL_REQUEST_LOG_REGISTRY": true
+  },
+  {
+    "action": "CUSTOMIZE_APPROVAL_REQUEST_LOG_REGISTRY",
+    "ROLE_ADMIN": true,
+    "ROLE_REQUEST": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "CUST_APPROVAL_REQUEST_LOG_REGISTRY": true
+  },
+  {
+    "action": "READ_GRAIN_PROCESSING_BATCH_OUT_REGISTRY",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_GROWS_GRAIN": true,
+    "MANAGE_GRAIN_PROCESSING_BATCH_OUT": true
+  },
+  {
+    "action": "FILTER_GRAIN_PROCESSING_BATCH_OUT_REGISTRY",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_GROWS_GRAIN": true,
+    "MANAGE_GRAIN_PROCESSING_BATCH_OUT": true
+  },
+  {
+    "action": "READ_GRAIN_PROCESSING_BATCH_OUT",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_GROWS_GRAIN": true,
+    "MANAGE_GRAIN_PROCESSING_BATCH_OUT": true
+  },
+  {
+    "action": "CREATE_GRAIN_PROCESSING_BATCH_OUT",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GROWS_GRAIN": true,
+    "MANAGE_GRAIN_PROCESSING_BATCH_OUT": true
+  },
+  {
+    "action": "UPDATE_GRAIN_PROCESSING_BATCH_OUT",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GROWS_GRAIN": true,
+    "MANAGE_GRAIN_PROCESSING_BATCH_OUT": true
+  },
+  {
+    "action": "DELETE_GRAIN_PROCESSING_BATCH_OUT",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GROWS_GRAIN": true,
+    "MANAGE_GRAIN_PROCESSING_BATCH_OUT": true
+  },
+  {
+    "action": "CANCEL_GRAIN_PROCESSING_BATCH_OUT",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GROWS_GRAIN": true,
+    "MANAGE_GRAIN_PROCESSING_BATCH_OUT": true
+  },
+  {
+    "action": "READ_SEARCH_SDIZ_REGISTRY",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GOVERMENT_MONITORING": true,
+    "ROLE_FEDERAL_RESERVE": true,
+    "ROLE_AGENT_USER": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_AGENT": true,
+    "ROLE_SUBJECT_USER_VIEW_FILIAL": true,
+    "ROLE_ELEVATOR_USER_VIEW_FILIAL": true,
+    "ROLE_GROWS_GRAIN_VIEW_FILIAL": true,
+    "VIEW_SEARCH_SDIZ": true
+  },
+  {
+    "action": "FILTER_SEARCH_SDIZ_REGISTRY",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GOVERMENT_MONITORING": true,
+    "ROLE_FEDERAL_RESERVE": true,
+    "ROLE_AGENT_USER": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_AGENT": true,
+    "ROLE_SUBJECT_USER_VIEW_FILIAL": true,
+    "ROLE_ELEVATOR_USER_VIEW_FILIAL": true,
+    "ROLE_GROWS_GRAIN_VIEW_FILIAL": true,
+    "VIEW_SEARCH_SDIZ": true
+  },
+  {
+    "action": "READ_IMPORT_LOG_REGISTRY",
+    "ROLE_ADMIN": true,
+    "ROLE_SECURITY_ADMIN": true,
+    "MANAGE_IMPORT": true
+  },
+  {
+    "action": "FILTER_IMPORT_LOG_REGISTRY",
+    "ROLE_ADMIN": true,
+    "ROLE_SECURITY_ADMIN": true,
+    "MANAGE_IMPORT": true
+  },
+  {
+    "action": "CUSTOMIZE_IMPORT_LOG_REGISTRY",
+    "ROLE_ADMIN": true,
+    "ROLE_SECURITY_ADMIN": true,
+    "MANAGE_IMPORT": true
+  },
+  {
+    "action": "CREATE_IMPORT_RECORD",
+    "ROLE_ADMIN": true,
+    "ROLE_SECURITY_ADMIN": true,
+    "MANAGE_IMPORT": true
+  },
+  {
+    "action": "FIND_SDIZ_BY_NUMBER",
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_OPERATOR": true
+  },
+  {
+    "action": "CREATE_WITHDRAWAL",
+    "ROLE_RSHN": true,
+    "MANAGE_WITHDRAWAL": true
+  },
+  {
+    "action": "UPDATE_WITHDRAWAL",
+    "ROLE_RSHN": true,
+    "MANAGE_WITHDRAWAL": true
+  },
+  {
+    "action": "DELETE_WITHDRAWAL",
+    "ROLE_RSHN": true,
+    "MANAGE_WITHDRAWAL": true
+  },
+  { "action": "SIGN_WITHDRAWAL", "ROLE_RSHN": true, "MANAGE_WITHDRAWAL": true },
+  {
+    "action": "CANCEL_WITHDRAWAL",
+    "ROLE_RSHN": true,
+    "MANAGE_WITHDRAWAL": true
+  },
+  {
+    "action": "CREATE_PRESCRIPTION",
+    "ROLE_RSHN": true,
+    "MANAGE_PRESCRIPTION": true
+  },
+  {
+    "action": "UPDATE_PRESCRIPTION",
+    "ROLE_RSHN": true,
+    "MANAGE_PRESCRIPTION": true
+  },
+  {
+    "action": "DELETE_PRESCRIPTION",
+    "ROLE_RSHN": true,
+    "MANAGE_PRESCRIPTION": true
+  },
+  {
+    "action": "SIGN_PRESCRIPTION",
+    "ROLE_RSHN": true,
+    "MANAGE_PRESCRIPTION": true
+  },
+  {
+    "action": "CANCEL_PRESCRIPTION",
+    "ROLE_RSHN": true,
+    "MANAGE_PRESCRIPTION": true
+  },
+  { "action": "CREATE_EXPERTISE", "ROLE_RSHN": true, "MANAGE_EXPERTISE": true },
+  { "action": "UPDATE_EXPERTISE", "ROLE_RSHN": true, "MANAGE_EXPERTISE": true },
+  { "action": "DELETE_EXPERTISE", "ROLE_RSHN": true, "MANAGE_EXPERTISE": true },
+  { "action": "SIGN_EXPERTISE", "ROLE_RSHN": true, "MANAGE_EXPERTISE": true },
+  { "action": "CANCEL_EXPERTISE", "ROLE_RSHN": true, "MANAGE_EXPERTISE": true },
+  {
+    "action": "SIGN_RESTRICTIONS",
+    "ROLE_RSHN": true,
+    "MANAGE_RESTRICTIONS": true
+  },
+  {
+    "action": "TAKE_OFF_RESTRICTIONS",
+    "ROLE_RSHN": true,
+    "MANAGE_RESTRICTIONS": true
+  },
+  {
+    "action": "CANCEL_RESTRICTIONS",
+    "ROLE_RSHN": true,
+    "MANAGE_RESTRICTIONS": true
+  },
+  { "action": "CONFIRM_SDIZ", "ROLE_RSHN": true, "MANAGE_CONFIRM_SDIZ": true },
+  {
+    "action": "READ_SYSTEM_CERTIFICATES_REGISTRY",
+    "ROLE_SECURITY_ADMIN": true,
+    "MANAGE_SYSTEM_CERTIFICATE": true
+  },
+  {
+    "action": "READ_SYSTEM_CERTIFICATE",
+    "ROLE_SECURITY_ADMIN": true,
+    "MANAGE_SYSTEM_CERTIFICATE": true
+  },
+  {
+    "action": "CREATE_SYSTEM_CERTIFICATE",
+    "ROLE_SECURITY_ADMIN": true,
+    "MANAGE_SYSTEM_CERTIFICATE": true
+  },
+  {
+    "action": "DELETE_SYSTEM_CERTIFICATE",
+    "ROLE_SECURITY_ADMIN": true,
+    "MANAGE_SYSTEM_CERTIFICATE": true
+  },
+  {
+    "action": "CHECK_SYSTEM_CERTIFICATE",
+    "ROLE_SECURITY_ADMIN": true,
+    "MANAGE_SYSTEM_CERTIFICATE": true
+  },
+  {
+    "action": "READ_ORGANIZATION_CERTIFICATES_REGISTRY",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GOVERMENT_MONITORING": true,
+    "ROLE_FEDERAL_RESERVE": true,
+    "ROLE_AGENT_USER": true,
+    "ROLE_RSHN": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_AGENT": true,
+    "MANAGE_ORGANIZATION_CERTIFICATE": true
+  },
+  {
+    "action": "READ_ORGANIZATION_CERTIFICATE",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GOVERMENT_MONITORING": true,
+    "ROLE_FEDERAL_RESERVE": true,
+    "ROLE_AGENT_USER": true,
+    "ROLE_RSHN": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_AGENT": true,
+    "MANAGE_ORGANIZATION_CERTIFICATE": true
+  },
+  {
+    "action": "CREATE_ORGANIZATION_CERTIFICATE",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GOVERMENT_MONITORING": true,
+    "ROLE_FEDERAL_RESERVE": true,
+    "ROLE_AGENT_USER": true,
+    "ROLE_RSHN": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_AGENT": true,
+    "MANAGE_ORGANIZATION_CERTIFICATE": true
+  },
+  {
+    "action": "DELETE_ORGANIZATION_CERTIFICATE",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GOVERMENT_MONITORING": true,
+    "ROLE_FEDERAL_RESERVE": true,
+    "ROLE_AGENT_USER": true,
+    "ROLE_RSHN": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_AGENT": true,
+    "MANAGE_ORGANIZATION_CERTIFICATE": true
+  },
+  {
+    "action": "CHECK_ORGANIZATION_CERTIFICATE",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GOVERMENT_MONITORING": true,
+    "ROLE_FEDERAL_RESERVE": true,
+    "ROLE_AGENT_USER": true,
+    "ROLE_RSHN": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_AGENT": true,
+    "MANAGE_ORGANIZATION_CERTIFICATE": true
+  },
+  {
+    "action": "READ_ORGANIZATION_CARD",
+    "ROLE_ADMIN": true,
+    "ROLE_SECURITY_ADMIN": true,
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GOVERMENT_MONITORING": true,
+    "ROLE_FEDERAL_RESERVE": true,
+    "ROLE_DICTIONARY": true,
+    "ROLE_WORKFLOW": true,
+    "ROLE_AGENT_USER": true,
+    "ROLE_LABORATORY": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_REQUEST": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_RSHN": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_GROWS_GRAIN": true,
+    "VIEW_ORGANIZATION_CARD": true
+  },
+  {
+    "action": "EXPORT_AGENT_CONTRACT_REGISTER",
+    "ROLE_GOVERMENT_USER": true,
+    "MANAGE_CONTRACT": true
+  },
+  {
+    "action": "CANCELED_LOT_BY_OPERATOR",
+    "ROLE_ADMIN": true,
+    "CANCELLATION_DOCUMENTS_BY_OPERATOR": true
+  },
+  {
+    "action": "CANCELED_GBP_BY_OPERATOR",
+    "ROLE_ADMIN": true,
+    "CANCELLATION_DOCUMENTS_BY_OPERATOR": true
+  },
+  {
+    "action": "CANCELED_RESERACH_BY_OPERATOR",
+    "ROLE_ADMIN": true,
+    "CANCELLATION_DOCUMENTS_BY_OPERATOR": true
+  },
+  {
+    "action": "READ_ACCOMP_DOCUMENT_REGISTER",
+    "ROLE_ADMIN": true,
+    "ROLE_DICTIONARY": true,
+    "ROLE_WORKFLOW": true,
+    "ROLE_LABORATORY": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_REQUEST": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_RSHN": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_SUBJECT_USER_VIEW_FILIAL": true,
+    "ROLE_ELEVATOR_USER_VIEW_FILIAL": true,
+    "ROLE_GROWS_GRAIN_VIEW_FILIAL": true,
+    "VIEW_ACCOMP_DOCUMENT": true,
+    "VIEW_OWN_ACCOMP_DOCUMENT": true
+  },
+  {
+    "action": "FILTER_ACCOMP_DOCUMENT_REGISTER",
+    "ROLE_ADMIN": true,
+    "ROLE_DICTIONARY": true,
+    "ROLE_WORKFLOW": true,
+    "ROLE_LABORATORY": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_REQUEST": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_RSHN": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_SUBJECT_USER_VIEW_FILIAL": true,
+    "ROLE_ELEVATOR_USER_VIEW_FILIAL": true,
+    "ROLE_GROWS_GRAIN_VIEW_FILIAL": true,
+    "VIEW_ACCOMP_DOCUMENT": true,
+    "VIEW_OWN_ACCOMP_DOCUMENT": true
+  },
+  {
+    "action": "CUSTOMIZE_ACCOMP_DOCUMENT_REGISTER",
+    "ROLE_ADMIN": true,
+    "ROLE_DICTIONARY": true,
+    "ROLE_WORKFLOW": true,
+    "ROLE_LABORATORY": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_REQUEST": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_RSHN": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_SUBJECT_USER_VIEW_FILIAL": true,
+    "ROLE_ELEVATOR_USER_VIEW_FILIAL": true,
+    "ROLE_GROWS_GRAIN_VIEW_FILIAL": true,
+    "VIEW_ACCOMP_DOCUMENT": true,
+    "VIEW_OWN_ACCOMP_DOCUMENT": true
+  },
+  {
+    "action": "EXPORT_ACCOMP_DOCUMENT_REGISTER",
+    "ROLE_ADMIN": true,
+    "ROLE_DICTIONARY": true,
+    "ROLE_WORKFLOW": true,
+    "ROLE_LABORATORY": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_REQUEST": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "ROLE_RSHN": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_SUBJECT_USER_VIEW_FILIAL": true,
+    "ROLE_ELEVATOR_USER_VIEW_FILIAL": true,
+    "ROLE_GROWS_GRAIN_VIEW_FILIAL": true,
+    "VIEW_ACCOMP_DOCUMENT": true,
+    "VIEW_OWN_ACCOMP_DOCUMENT": true
+  },
+  {
+    "action": "READ_COMPLAINT_REGISTER",
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_OPERATOR": true,
+    "MANAGE_COMPLAINT": true,
+    "VIEW_COMPLAINT": true
+  },
+  {
+    "action": "FILTER_COMPLAINT_REGISTER",
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_OPERATOR": true,
+    "MANAGE_COMPLAINT": true,
+    "VIEW_COMPLAINT": true
+  },
+  {
+    "action": "CUSTOMIZE_COMPLAINT_REGISTER",
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_OPERATOR": true,
+    "MANAGE_COMPLAINT": true,
+    "VIEW_COMPLAINT": true
+  },
+  {
+    "action": "EXPORT_COMPLAINT_REGISTER",
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_OPERATOR": true,
+    "MANAGE_COMPLAINT": true,
+    "VIEW_COMPLAINT": true
+  },
+  {
+    "action": "READ_COMPLAINT",
+    "ROLE_ADMIN": true,
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_REQUEST": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_RSHN": true,
+    "ROLE_OPERATOR": true,
+    "MANAGE_COMPLAINT": true,
+    "VIEW_COMPLAINT": true
+  },
+  {
+    "action": "CREATE_COMPLAINT",
+    "ROLE_ELEVATOR_USER": true,
+    "MANAGE_COMPLAINT": true
+  },
+  {
+    "action": "READ_FREE_FORM_REGISTER",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_GROWS_GRAIN": true,
+    "VIEW_FREE_FORM": true,
+    "MANAGE_FREE_FORM": true
+  },
+  {
+    "action": "READ_FREE_FORM",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_GROWS_GRAIN": true,
+    "VIEW_FREE_FORM": true,
+    "MANAGE_FREE_FORM": true
+  },
+  {
+    "action": "CREATE_FREE_FORM",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_GROWS_GRAIN": true,
+    "VIEW_FREE_FORM": true
+  },
+  {
+    "action": "ANSWER_FREE_FORM",
+    "ROLE_OPERATOR": true,
+    "MANAGE_FREE_FORM": true
+  },
+  {
+    "action": "READ_INTERACTION_LOG_REGISTER",
+    "ROLE_SECURITY_ADMIN": true,
+    "ROLE_OPERATOR": true,
+    "MANAGE_INTERACTION_LOG": true
+  },
+  {
+    "action": "FILTER_INTERACTION_LOG_REGISTER",
+    "ROLE_SECURITY_ADMIN": true,
+    "ROLE_OPERATOR": true,
+    "MANAGE_INTERACTION_LOG": true
+  },
+  {
+    "action": "CUSTOMIZE_INTERACTION_LOG_REGISTER",
+    "ROLE_SECURITY_ADMIN": true,
+    "MANAGE_INTERACTION_LOG": true
+  },
+  {
+    "action": "EXPORT_INTERACTION_LOG_REGISTER",
+    "ROLE_SECURITY_ADMIN": true,
+    "MANAGE_INTERACTION_LOG": true
+  },
+  {
+    "action": "READ_SDIZ_ROU_APK",
+    "ROLE_ROU_APK": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_ROSSTAT": true,
+    "VIEW_ROU_APK": true
+  },
+  {
+    "action": "READ_LOT_ROU_APK",
+    "ROLE_ROU_APK": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_ROSSTAT": true,
+    "VIEW_ROU_APK": true
+  },
+  {
+    "action": "READ_PRODUCTMONITOR_ROU_APK",
+    "ROLE_ROU_APK": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_ROSSTAT": true,
+    "VIEW_ROU_APK": true
+  },
+  {
+    "action": "READ_ACCOMP_DOCUMENT_REG_SDIZ",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_AGENT": true,
+    "ROLE_SUBJECT_USER_VIEW_FILIAL": true,
+    "ROLE_ELEVATOR_USER_VIEW_FILIAL": true,
+    "MANAGE_ACCOMP_DOCUMENT": true
+  },
+  {
+    "action": "FILTER_ACCOMP_DOCUMENT_REG_SDIZ",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_AGENT": true,
+    "ROLE_SUBJECT_USER_VIEW_FILIAL": true,
+    "ROLE_ELEVATOR_USER_VIEW_FILIAL": true,
+    "MANAGE_ACCOMP_DOCUMENT": true
+  },
+  {
+    "action": "CUSTOMIZE_ACCOMP_DOCUMENT_REG_SDIZ",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_AGENT": true,
+    "ROLE_SUBJECT_USER_VIEW_FILIAL": true,
+    "ROLE_ELEVATOR_USER_VIEW_FILIAL": true,
+    "MANAGE_ACCOMP_DOCUMENT": true
+  },
+  {
+    "action": "READ_ACCOMP_DOCUMENT_SDIZ",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_AGENT": true,
+    "ROLE_SUBJECT_USER_VIEW_FILIAL": true,
+    "ROLE_ELEVATOR_USER_VIEW_FILIAL": true,
+    "MANAGE_ACCOMP_DOCUMENT": true
+  },
+  {
+    "action": "UPLOAD_CERT_ACCOMP_DOCUMENT_SDIZ",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_AGENT": true,
+    "MANAGE_ACCOMP_DOCUMENT": true
+  },
+  {
+    "action": "READ_FULL_ORGANIZATION_REGISTER",
+    "ROLE_ADMIN": true,
+    "ROLE_SECURITY_ADMIN": true,
+    "ROLE_LABORATORY": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_OPERATOR": true,
+    "VIEW_ORGANIZATION": true
+  },
+  {
+    "action": "FILTER_FULL_ORGANIZATION_REGISTER",
+    "ROLE_ADMIN": true,
+    "ROLE_SECURITY_ADMIN": true,
+    "ROLE_LABORATORY": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_OPERATOR": true,
+    "VIEW_ORGANIZATION": true
+  },
+  {
+    "action": "CUSTOMIZE_FULL_ORGANIZATION_REGISTER",
+    "ROLE_ADMIN": true,
+    "ROLE_SECURITY_ADMIN": true,
+    "ROLE_LABORATORY": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_OPERATOR": true,
+    "VIEW_ORGANIZATION": true
+  },
+  {
+    "action": "CREATE_FULL_ORGANIZATION",
+    "ROLE_ADMIN": true,
+    "ROLE_SECURITY_ADMIN": true,
+    "MANAGE_ORGANIZATION": true
+  },
+  {
+    "action": "CHANGE_FULL_ORGANIZATION",
+    "ROLE_ADMIN": true,
+    "ROLE_SECURITY_ADMIN": true,
+    "ROLE_LABORATORY": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "MANAGE_OGV": true,
+    "MANAGE_LABORATORY": true,
+    "MANAGE_MANUFACTURER": true,
+    "MANAGE_ORGANIZATION": true
+  },
+  {
+    "action": "CHANGE_ORGANIZATION_TYPE",
+    "ROLE_ADMIN": true,
+    "ROLE_SECURITY_ADMIN": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "MANAGE_MANUFACTURER": true
+  },
+  {
+    "action": "REQUEST_DATA_SMEV",
+    "ROLE_ADMIN": true,
+    "ROLE_SECURITY_ADMIN": true,
+    "ROLE_LABORATORY": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "VIEW_ORGANIZATION": true
+  },
+  {
+    "action": "READ_FULL_ORGANIZATION",
+    "ROLE_ADMIN": true,
+    "ROLE_SECURITY_ADMIN": true,
+    "ROLE_LABORATORY": true,
+    "ROLE_SUBJECT_ADMIN": true,
+    "ROLE_AUDITOR": true,
+    "VIEW_ORGANIZATION": true
+  },
+  {
+    "action": "ACCESS_MONITORING_FIAS_REGISTER",
+    "ROLE_SECURITY_ADMIN": true,
+    "ROLE_OPERATOR": true,
+    "MANAGE_MONITORING_FIAS_REGISTER": true
+  },
+  {
+    "action": "ACCESS_INTEGRATION_EFIS_ZSN_REGISTER",
+    "ROLE_SECURITY_ADMIN": true,
+    "ROLE_OPERATOR": true,
+    "MANAGE_INTEGRATION_EFIS_ZSN": true
+  },
+  { "action": "READ_OBJECT_CONTROL_REGISTRY", "ROLE_RSHN": true },
+  { "action": "FILTER_OBJECT_CONTROL_REGISTRY", "ROLE_RSHN": true },
+  {
+    "action": "CUSTOMIZE_OBJECT_CONTROL_REGISTRY",
+    "ROLE_RSHN": true,
+    "VIEW_OBJECT_CONTROL": true
+  },
+  {
+    "action": "EXPORT_OBJECT_CONTROL_REGISTRY",
+    "ROLE_RSHN": true,
+    "VIEW_OBJECT_CONTROL": true
+  },
+  {
+    "action": "CHANGE_RISK_CATEGORY",
+    "ROLE_RSHN": true,
+    "MANAGE_OBJECT_CONTROL": true
+  },
+  { "action": "READ_KNM_REGISTRY", "ROLE_RSHN": true, "VIEW_KNM": true },
+  { "action": "FILTER_KNM_REGISTRY", "ROLE_RSHN": true, "VIEW_KNM": true },
+  { "action": "CUSTOMIZE_KNM_REGISTRY", "ROLE_RSHN": true, "VIEW_KNM": true },
+  { "action": "EXPORT_KNM_REGISTRY", "ROLE_RSHN": true, "VIEW_KNM": true },
+  { "action": "READ_KNM", "ROLE_RSHN": true, "VIEW_KNM": true },
+  { "action": "UPDATE_KNM", "ROLE_RSHN": true, "MANAGE_KNM": true },
+  { "action": "DELETE_KNM", "ROLE_RSHN": true, "MANAGE_KNM": true },
+  { "action": "CREATE_KNM", "ROLE_RSHN": true, "MANAGE_KNM": true },
+  {
+    "action": "ACCESS_MONITORING_PLANS_KNM_REGISTER",
+    "ROLE_SECURITY_ADMIN": true,
+    "ROLE_OPERATOR": true,
+    "MANAGE_MONITORING_PLANS_KNM": true
+  },
+  {
+    "action": "ACCESS_MONITORING_PURCHASES_REGISTER",
+    "ROLE_SECURITY_ADMIN": true,
+    "MANAGE_MONITORING_PURCHASES": true
+  },
+  {
+    "action": "ACCESS_ANALYTICAL_SUBSYSTEM",
+    "ROLE_ADMIN": true,
+    "ROLE_GOVERMENT_MONITORING": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_RSHN": true,
+    "ROLE_ROU_APK": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_METHODOLOGIST": true,
+    "ROLE_OPERATOR_RISK": true,
+    "ROLE_FAS": true,
+    "ROLE_ROSSTAT": true,
+    "MANAGE_ANALYTICAL_SUBSYSTEM": true
+  },
+  {
+    "action": "ACCESS_GRAPHIC_REPORT",
+    "ROLE_MCX_USER": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_RSHN": true,
+    "ROLE_OPERATOR": true,
+    "MANAGE_GRAPHIC_REPORT": true
+  },
+  {
+    "action": "READ_CONSIDER_COMPLAINT_REG",
+    "ROLE_ADMIN": true,
+    "ROLE_REQUEST": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_RSHN": true,
+    "ROLE_OPERATOR": true,
+    "MANAGE_CONSIDER_COMPLAINT": true,
+    "VIEW_CONSIDER_COMPLAINT": true
+  },
+  {
+    "action": "FILTER_CONSIDER_COMPLAINT_REG",
+    "ROLE_ADMIN": true,
+    "ROLE_REQUEST": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_RSHN": true,
+    "ROLE_OPERATOR": true,
+    "MANAGE_CONSIDER_COMPLAINT": true,
+    "VIEW_CONSIDER_COMPLAINT": true
+  },
+  {
+    "action": "CUSTOMIZE_CONSIDER_COMPLAINT_REG",
+    "ROLE_ADMIN": true,
+    "ROLE_REQUEST": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_RSHN": true,
+    "ROLE_OPERATOR": true,
+    "MANAGE_CONSIDER_COMPLAINT": true,
+    "VIEW_CONSIDER_COMPLAINT": true
+  },
+  {
+    "action": "EXPORT_CONSIDER_COMPLAINT_REG",
+    "ROLE_ADMIN": true,
+    "ROLE_REQUEST": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_RSHN": true,
+    "ROLE_OPERATOR": true,
+    "MANAGE_CONSIDER_COMPLAINT": true,
+    "VIEW_CONSIDER_COMPLAINT": true
+  },
+  {
+    "action": "APPROVE_CONSIDER_COMPLAINT",
+    "ROLE_REQUEST": true,
+    "ROLE_RSHN": true,
+    "ROLE_OPERATOR": true,
+    "MANAGE_CONSIDER_COMPLAINT": true
+  },
+  {
+    "action": "REJECT_CONSIDER_COMPLAINT",
+    "ROLE_REQUEST": true,
+    "ROLE_RSHN": true,
+    "ROLE_OPERATOR": true,
+    "MANAGE_CONSIDER_COMPLAINT": true
+  },
+  {
+    "action": "READ_CONSIDER_COMPLAINT",
+    "ROLE_ADMIN": true,
+    "ROLE_REQUEST": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_RSHN": true,
+    "ROLE_OPERATOR": true,
+    "MANAGE_CONSIDER_COMPLAINT": true,
+    "VIEW_CONSIDER_COMPLAINT": true
+  },
+  {
+    "action": "ASSIGN_COMPLAINT_EXECUTOR",
+    "ROLE_REQUEST": true,
+    "ROLE_RSHN": true,
+    "ROLE_OPERATOR": true,
+    "MANAGE_CONSIDER_COMPLAINT": true
+  },
+  {
+    "action": "UNASSIGN_COMPLAINT_EXECUTOR",
+    "ROLE_REQUEST": true,
+    "ROLE_RSHN": true,
+    "ROLE_OPERATOR": true,
+    "MANAGE_CONSIDER_COMPLAINT": true
+  },
+  {
+    "action": "RETURN_CONSIDER_COMPLAINT",
+    "ROLE_REQUEST": true,
+    "ROLE_RSHN": true,
+    "ROLE_OPERATOR": true,
+    "MANAGE_CONSIDER_COMPLAINT": true
+  },
+  {
+    "action": "READ_OPEN_DATA_RSHN_REG",
+    "ROLE_RSHN": true,
+    "ROLE_OPERATOR": true,
+    "MANAGE_OPEN_DATA_RSHN_REG": true,
+    "VIEW_OPEN_DATA_RSHN_REG": true
+  },
+  {
+    "action": "READ_OPEN_DATA_RSHN",
+    "ROLE_RSHN": true,
+    "ROLE_OPERATOR": true,
+    "MANAGE_OPEN_DATA_RSHN_REG": true,
+    "VIEW_OPEN_DATA_RSHN_REG": true
+  },
+  {
+    "action": "CREATE_OPEN_DATA_RSHN",
+    "ROLE_RSHN": true,
+    "MANAGE_OPEN_DATA_RSHN_REG": true
+  },
+  { "action": "EXPORT_MANUFACTURER_REPORT", "EXPORT_REPORT": true },
+  {
+    "action": "READ_PERMISSION_SURPLUS_REGISTER",
+    "ROLE_ADMIN": true,
+    "ROLE_OPERATOR": true,
+    "MANAGE_PERMISSION_SURPLUS_REGISTER": true
+  },
+  {
+    "action": "FILTER_PERMISSION_SURPLUS_REGISTER",
+    "ROLE_ADMIN": true,
+    "ROLE_OPERATOR": true,
+    "MANAGE_PERMISSION_SURPLUS_REGISTER": true
+  },
+  {
+    "action": "READ_PERMISSION_SURPLUS",
+    "ROLE_ADMIN": true,
+    "ROLE_OPERATOR": true,
+    "MANAGE_PERMISSION_SURPLUS_REGISTER": true
+  },
+  {
+    "action": "CREATE_PERMISSION_SURPLUS",
+    "ROLE_ADMIN": true,
+    "ROLE_OPERATOR": true,
+    "MANAGE_PERMISSION_SURPLUS_REGISTER": true
+  },
+  {
+    "action": "UPDATE_PERMISSION_SURPLUS",
+    "ROLE_ADMIN": true,
+    "ROLE_OPERATOR": true,
+    "MANAGE_PERMISSION_SURPLUS_REGISTER": true
+  },
+  {
+    "action": "DELETE_PERMISSION_SURPLUS",
+    "ROLE_ADMIN": true,
+    "ROLE_OPERATOR": true,
+    "MANAGE_PERMISSION_SURPLUS_REGISTER": true
+  },
+  {
+    "action": "SIGN_PERMISSION_SURPLUS",
+    "ROLE_ADMIN": true,
+    "ROLE_OPERATOR": true,
+    "MANAGE_PERMISSION_SURPLUS_REGISTER": true
+  },
+  {
+    "action": "CANCEL_PERMISSION_SURPLUS",
+    "ROLE_ADMIN": true,
+    "ROLE_OPERATOR": true,
+    "MANAGE_PERMISSION_SURPLUS_REGISTER": true
+  },
+  { "action": "SHOW_PERSONAL_DATA", "VIEW_PERSONAL_DATA": true },
+  {
+    "action": "READ_INTEGRATION_PARAM",
+    "ROLE_SECURITY_ADMIN": true,
+    "ROLE_OPERATOR": true,
+    "MANAGE_INTEGRATION_PARAM": true
+  },
+  {
+    "action": "READ_INTEGRATION_PARAM_CARD",
+    "ROLE_SECURITY_ADMIN": true,
+    "ROLE_OPERATOR": true,
+    "MANAGE_INTEGRATION_PARAM": true
+  },
+  {
+    "action": "READ_SMEV_PARAM",
+    "ROLE_SECURITY_ADMIN": true,
+    "ROLE_OPERATOR": true,
+    "MANAGE_SMEV_PARAM": true
+  },
+  { "action": "READ_SYSTEM_PARAMERTS", "ROLE_SECURITY_ADMIN": true },
+  { "action": "VIEW_PARAM", "ROLE_METHODOLOGIST": true, "VIEW_PARAM": true },
+  {
+    "action": "CREATE_PARAM",
+    "ROLE_METHODOLOGIST": true,
+    "CREATE_PARAM": true
+  },
+  {
+    "action": "VIEW_CRITERIA",
+    "ROLE_METHODOLOGIST": true,
+    "VIEW_CRITERIA": true
+  },
+  {
+    "action": "CREATE_CRITERIA",
+    "ROLE_METHODOLOGIST": true,
+    "CREATE_CRITERIA": true
+  },
+  {
+    "action": "VIEW_PROFILE",
+    "ROLE_METHODOLOGIST": true,
+    "VIEW_PROFILE": true
+  },
+  {
+    "action": "CREATE_PROFILE",
+    "ROLE_METHODOLOGIST": true,
+    "CREATE_PROFILE": true
+  },
+  {
+    "action": "VIEW_PERSONAL_DATA",
+    "ROLE_METHODOLOGIST": true,
+    "VIEW_PERSONAL_DATA": true
+  },
+  {
+    "action": "MANAGE_INTEGRATION_PARAM",
+    "ROLE_METHODOLOGIST": true,
+    "MANAGE_INTEGRATION_PARAM": true
+  },
+  {
+    "action": "MANAGE_SMEV_PARAM",
+    "ROLE_METHODOLOGIST": true,
+    "MANAGE_SMEV_PARAM": true
+  },
+  { "action": "VIEW_TEST", "ROLE_METHODOLOGIST": true, "VIEW_TEST": true },
+  { "action": "CREATE_TEST", "ROLE_METHODOLOGIST": true, "CREATE_TEST": true },
+  {
+    "action": "VIEW_ALL_MONITORING",
+    "ROLE_METHODOLOGIST": true,
+    "VIEW_ALL_MONITORING": true
+  },
+  {
+    "action": "VIEW_MONITORING",
+    "ROLE_METHODOLOGIST": true,
+    "VIEW_MONITORING": true
+  },
+  {
+    "action": "MANAGE_SYSTEM_PARAMERTS",
+    "ROLE_METHODOLOGIST": true,
+    "MANAGE_SYSTEM_PARAMERTS": true
+  },
+  {
+    "action": "READ_ALL_AGENCY_CONTRACT_REGISTRY",
+    "ROLE_MCX_USER": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_RSHN": true,
+    "VIEW_AGENCY_CONTRACT": true
+  },
+  {
+    "action": "READ_AGENCY_CONTRACT_REGISTRY",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "MANAGE_AGENCY_CONTRACT": true
+  },
+  {
+    "action": "READ_AGENCY_CONTRACT",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_RSHN": true,
+    "MANAGE_AGENCY_CONTRACT": true,
+    "VIEW_AGENCY_CONTRACT": true
+  },
+  {
+    "action": "CREATE_AGENCY_CONTRACT",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "MANAGE_AGENCY_CONTRACT": true
+  },
+  {
+    "action": "UPDATE_AGENCY_CONTRACT",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "MANAGE_AGENCY_CONTRACT": true
+  },
+  {
+    "action": "DELETE_AGENCY_CONTRACT",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "MANAGE_AGENCY_CONTRACT": true
+  },
+  {
+    "action": "SIGN_AGENCY_CONTRACT",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "MANAGE_AGENCY_CONTRACT": true
+  },
+  {
+    "action": "CANCEL_AGENCY_CONTRACT",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "MANAGE_AGENCY_CONTRACT": true
+  },
+  {
+    "action": "TRANSFER_BATCH_FOR_AGENT",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "MANAGE_GRAIN_BATCH": true,
+    "MANAGE_STORED_GRAIN_BATCH": true,
+    "MANAGE_GRAIN_PRODUCTS_BATCH": true
+  },
+  {
+    "action": "CONFISCATION_BATCH_FROM_AGENT",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "MANAGE_GRAIN_BATCH": true,
+    "MANAGE_STORED_GRAIN_BATCH": true,
+    "MANAGE_GRAIN_PRODUCTS_BATCH": true
+  },
+  {
+    "action": "RETURN_BATCH_FROM_AGENT",
+    "ROLE_SUBJECT_AGENT": true,
+    "MANAGE_GRAIN_BATCH": true,
+    "MANAGE_STORED_GRAIN_BATCH": true,
+    "MANAGE_GRAIN_PRODUCTS_BATCH": true
+  },
+  {
+    "action": "READ_SEED_PROGRESS_REGISTER",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GOVERMENT_MONITORING": true,
+    "ROLE_AGENT_USER": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_SUBJECT_USER_VIEW_FILIAL": true,
+    "ROLE_ELEVATOR_USER_VIEW_FILIAL": true,
+    "MANAGE_SEED_PROGRESS": true
+  },
+  {
+    "action": "FILTER_SEED_PROGRESS_REGISTER",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GOVERMENT_MONITORING": true,
+    "ROLE_AGENT_USER": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_SUBJECT_USER_VIEW_FILIAL": true,
+    "ROLE_ELEVATOR_USER_VIEW_FILIAL": true,
+    "MANAGE_SEED_PROGRESS": true
+  },
+  {
+    "action": "READ_SEED_PROGRESS",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GOVERMENT_MONITORING": true,
+    "ROLE_AGENT_USER": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_RSHN": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_SUBJECT_USER_VIEW_FILIAL": true,
+    "ROLE_ELEVATOR_USER_VIEW_FILIAL": true,
+    "MANAGE_SEED_PROGRESS": true
+  },
+  {
+    "action": "MANAGE_SEED_AKT",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_RSHN": true,
+    "ROLE_OPERATOR": true,
+    "MANAGE_SEED_AKT": true,
+    "VIEW_SEED_AKT": true
+  },
+  {
+    "action": "CANCEL_SEED_AKT",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "MANAGE_SEED_AKT": true
+  },
+  {
+    "action": "MANAGE_ORGANIZATION_MANUFACTURER",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_PILOT": true,
+    "MANAGE_ORGANIZATION_MANUFACTURER": true
+  },
+  {
+    "action": "READ_OWN_INVENTORIZATION_ACT",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GROWS_GRAIN": true,
+    "MANAGE_INVENTORIZATION_ACT": true
+  },
+  {
+    "action": "READ_INVENTORIZATION_ACT",
+    "ROLE_MCX_USER": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_RSHN": true,
+    "ROLE_OPERATOR": true,
+    "VIEW_INVENTORIZATION_ACT": true
+  },
+  {
+    "action": "CREATE_INVENTORIZATION_ACT",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GROWS_GRAIN": true,
+    "MANAGE_INVENTORIZATION_ACT": true
+  },
+  {
+    "action": "UPDATE_INVENTORIZATION_ACT",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GROWS_GRAIN": true,
+    "MANAGE_INVENTORIZATION_ACT": true
+  },
+  {
+    "action": "DELETE_INVENTORIZATION_ACT",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GROWS_GRAIN": true,
+    "MANAGE_INVENTORIZATION_ACT": true
+  },
+  {
+    "action": "SIGN_INVENTORIZATION_ACT",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GROWS_GRAIN": true,
+    "MANAGE_INVENTORIZATION_ACT": true
+  },
+  {
+    "action": "CANCEL_INVENTORIZATION_ACT",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GROWS_GRAIN": true,
+    "MANAGE_INVENTORIZATION_ACT": true
+  },
+  {
+    "action": "CREATE_GRAIN_LOT_FROM_INVENTORIZATION",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GROWS_GRAIN": true,
+    "MANAGE_GRAIN_BATCH": true
+  },
+  {
+    "action": "CREATE_GRAIN_STORAGE_LOT_FROM_INVENTORIZATION",
+    "ROLE_ELEVATOR_USER": true,
+    "MANAGE_STORED_GRAIN_BATCH": true
+  },
+  {
+    "action": "CREATE_GPB_LOT_FROM_INVENTORIZATION",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GROWS_GRAIN": true,
+    "MANAGE_GRAIN_PRODUCTS_BATCH": true
+  },
+  {
+    "action": "READ_ELEVATOR_CONTROL",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_RSHN": true,
+    "ROLE_ROU_APK": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_AGENT": true,
+    "ROLE_SUBJECT_USER_VIEW_FILIAL": true,
+    "ROLE_ELEVATOR_USER_VIEW_FILIAL": true,
+    "ROLE_GROWS_GRAIN_VIEW_FILIAL": true,
+    "ROLE_ROSSTAT": true,
+    "MANAGE_ELEVATOR_CONTROL": true
+  },
+  {
+    "action": "READ_INCOMING_REGISTER_EMISS",
+    "ROLE_ADMIN": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_OPERATOR": true,
+    "MANAGE_EMISS": true
+  },
+  {
+    "action": "READ_OUTGOING_REGISTER_EMISS",
+    "ROLE_ADMIN": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_OPERATOR": true,
+    "MANAGE_EMISS": true
+  },
+  {
+    "action": "RISK_ACCESS",
+    "ROLE_RSHN": true,
+    "ROLE_METHODOLOGIST": true,
+    "ROLE_OPERATOR_RISK": true,
+    "RISK_MANAGE_PROFILE_REGISTRY": true,
+    "RISK_VIEW_PROFILE_REGISTRY": true,
+    "RISK_MANAGE_IDENT_RISKS_REGISTRY": true,
+    "RISK_VIEW_IDENT_RISKS_REGISTRY": true,
+    "RISK_MANAGE_IDENT_INT_RISKS_REGISTRY": true,
+    "RISK_VIEW_IDENT_INT_RISKS_REGISTRY": true,
+    "RISK_MANAGE_PARAMETERS_REGISTRY": true,
+    "RISK_VIEW_PARAMETERS_REGISTRY": true,
+    "RISK_MANAGE_CRITERIA_REGISTRY": true,
+    "RISK_VIEW_CRITERIA_REGISTRY": true
+  },
+  {
+    "action": "RISK_READ_PROFILE_REGISTRY",
+    "ROLE_METHODOLOGIST": true,
+    "RISK_MANAGE_PROFILE_REGISTRY": true,
+    "RISK_VIEW_PROFILE_REGISTRY": true
+  },
+  {
+    "action": "RISK_FILTER_PROFILE_REGISTRY",
+    "ROLE_METHODOLOGIST": true,
+    "RISK_MANAGE_PROFILE_REGISTRY": true,
+    "RISK_VIEW_PROFILE_REGISTRY": true
+  },
+  {
+    "action": "RISK_READ_PROFILE",
+    "ROLE_RSHN": true,
+    "ROLE_METHODOLOGIST": true,
+    "ROLE_OPERATOR_RISK": true,
+    "RISK_MANAGE_PROFILE_REGISTRY": true,
+    "RISK_VIEW_PROFILE_REGISTRY": true
+  },
+  {
+    "action": "RISK_READ_PROFILE_LAUNCH",
+    "ROLE_METHODOLOGIST": true,
+    "RISK_MANAGE_PROFILE_REGISTRY": true,
+    "RISK_VIEW_PROFILE_REGISTRY": true
+  },
+  {
+    "action": "RISK_CREATE_PROFILE",
+    "ROLE_METHODOLOGIST": true,
+    "RISK_MANAGE_PROFILE_REGISTRY": true
+  },
+  {
+    "action": "RISK_UPDATE_PROFILE",
+    "ROLE_METHODOLOGIST": true,
+    "RISK_MANAGE_PROFILE_REGISTRY": true
+  },
+  {
+    "action": "RISK_DELETE_PROFILE",
+    "ROLE_METHODOLOGIST": true,
+    "RISK_MANAGE_PROFILE_REGISTRY": true
+  },
+  {
+    "action": "RISK_LAUNCH_TEST",
+    "ROLE_METHODOLOGIST": true,
+    "RISK_MANAGE_PROFILE_REGISTRY": true
+  },
+  {
+    "action": "RISK_LAUNCH",
+    "ROLE_METHODOLOGIST": true,
+    "RISK_MANAGE_PROFILE_REGISTRY": true
+  },
+  {
+    "action": "RISK_READ_IDENTIFIED_RISKS_REGISTRY",
+    "ROLE_RSHN": true,
+    "ROLE_METHODOLOGIST": true,
+    "ROLE_OPERATOR_RISK": true,
+    "RISK_MANAGE_IDENT_RISKS_REGISTRY": true,
+    "RISK_VIEW_IDENT_RISKS_REGISTRY": true
+  },
+  {
+    "action": "RISK_FILTER_IDENTIFIED_RISKS_REGISTRY",
+    "ROLE_RSHN": true,
+    "ROLE_METHODOLOGIST": true,
+    "ROLE_OPERATOR_RISK": true,
+    "RISK_MANAGE_IDENT_RISKS_REGISTRY": true,
+    "RISK_VIEW_IDENT_RISKS_REGISTRY": true
+  },
+  {
+    "action": "RISK_EXPORT_IDENTIFIED_RISKS_REGISTRY",
+    "ROLE_RSHN": true,
+    "ROLE_METHODOLOGIST": true,
+    "ROLE_OPERATOR_RISK": true,
+    "RISK_MANAGE_IDENT_RISKS_REGISTRY": true,
+    "RISK_VIEW_IDENT_RISKS_REGISTRY": true
+  },
+  {
+    "action": "RISK_READ_IDENTIFIED_RISKS",
+    "ROLE_RSHN": true,
+    "ROLE_METHODOLOGIST": true,
+    "ROLE_OPERATOR_RISK": true,
+    "RISK_MANAGE_IDENT_RISKS_REGISTRY": true,
+    "RISK_VIEW_IDENT_RISKS_REGISTRY": true
+  },
+  {
+    "action": "RISK_UPDATE_IDENTIFIED_RISKS",
+    "ROLE_RSHN": true,
+    "ROLE_METHODOLOGIST": true,
+    "RISK_MANAGE_IDENT_RISKS_REGISTRY": true
+  },
+  {
+    "action": "RISK_READ_INTEGRAL_RISKS_LOT_REGISTRY",
+    "ROLE_METHODOLOGIST": true,
+    "ROLE_OPERATOR_RISK": true,
+    "RISK_MANAGE_IDENT_INT_RISKS_REGISTRY": true,
+    "RISK_VIEW_IDENT_INT_RISKS_REGISTRY": true
+  },
+  {
+    "action": "RISK_READ_INTEGRAL_RISKS_SDIZ_REGISTRY",
+    "ROLE_METHODOLOGIST": true,
+    "ROLE_OPERATOR_RISK": true,
+    "RISK_MANAGE_IDENT_INT_RISKS_REGISTRY": true,
+    "RISK_VIEW_IDENT_INT_RISKS_REGISTRY": true
+  },
+  {
+    "action": "RISK_READ_INTEGRAL_RISKS_CHAIN_REGISTRY",
+    "ROLE_METHODOLOGIST": true,
+    "ROLE_OPERATOR_RISK": true,
+    "RISK_MANAGE_IDENT_INT_RISKS_REGISTRY": true,
+    "RISK_VIEW_IDENT_INT_RISKS_REGISTRY": true
+  },
+  {
+    "action": "RISK_READ_INTEGRAL_RISKS_SHTP_REGISTRY",
+    "ROLE_METHODOLOGIST": true,
+    "ROLE_OPERATOR_RISK": true,
+    "RISK_MANAGE_IDENT_INT_RISKS_REGISTRY": true,
+    "RISK_VIEW_IDENT_INT_RISKS_REGISTRY": true
+  },
+  {
+    "action": "RISK_READ_PARAMETER_REGISTRY",
+    "ROLE_METHODOLOGIST": true,
+    "RISK_MANAGE_PARAMETERS_REGISTRY": true,
+    "RISK_VIEW_PARAMETERS_REGISTRY": true
+  },
+  {
+    "action": "RISK_FILTER_PARAMETER_REGISTRY",
+    "ROLE_METHODOLOGIST": true,
+    "RISK_MANAGE_PARAMETERS_REGISTRY": true,
+    "RISK_VIEW_PARAMETERS_REGISTRY": true
+  },
+  {
+    "action": "RISK_READ_PARAMETER",
+    "ROLE_METHODOLOGIST": true,
+    "RISK_MANAGE_PARAMETERS_REGISTRY": true,
+    "RISK_VIEW_PARAMETERS_REGISTRY": true
+  },
+  {
+    "action": "RISK_CREATE_PARAMETER",
+    "ROLE_METHODOLOGIST": true,
+    "RISK_MANAGE_PARAMETERS_REGISTRY": true
+  },
+  {
+    "action": "RISK_UPDATE_PARAMETER",
+    "ROLE_METHODOLOGIST": true,
+    "RISK_MANAGE_PARAMETERS_REGISTRY": true
+  },
+  {
+    "action": "RISK_DELETE_PARAMETER",
+    "ROLE_METHODOLOGIST": true,
+    "RISK_MANAGE_PARAMETERS_REGISTRY": true
+  },
+  {
+    "action": "RISK_READ_CRITERIA_REGISTRY",
+    "ROLE_METHODOLOGIST": true,
+    "RISK_MANAGE_CRITERIA_REGISTRY": true,
+    "RISK_VIEW_CRITERIA_REGISTRY": true
+  },
+  {
+    "action": "RISK_FILTER_CRITERIA_REGISTRY",
+    "ROLE_METHODOLOGIST": true,
+    "RISK_MANAGE_CRITERIA_REGISTRY": true,
+    "RISK_VIEW_CRITERIA_REGISTRY": true
+  },
+  {
+    "action": "RISK_READ_CRITERIA",
+    "ROLE_METHODOLOGIST": true,
+    "RISK_MANAGE_CRITERIA_REGISTRY": true,
+    "RISK_VIEW_CRITERIA_REGISTRY": true
+  },
+  {
+    "action": "RISK_CREATE_CRITERIA",
+    "ROLE_METHODOLOGIST": true,
+    "RISK_MANAGE_CRITERIA_REGISTRY": true
+  },
+  {
+    "action": "RISK_UPDATE_CRITERIA",
+    "ROLE_METHODOLOGIST": true,
+    "RISK_MANAGE_CRITERIA_REGISTRY": true
+  },
+  {
+    "action": "RISK_DELETE_CRITERIA",
+    "ROLE_METHODOLOGIST": true,
+    "RISK_MANAGE_CRITERIA_REGISTRY": true
+  },
+  {
+    "action": "READ_NOTIFICATION_SDIZ",
+    "ROLE_ADMIN": true,
+    "ROLE_SECURITY_ADMIN": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_OPERATOR": true,
+    "MANAGE_NOTIFICATION_SDIZ": true
+  },
+  {
+    "action": "UPDATE_NOTIFICATION_SDIZ",
+    "ROLE_SECURITY_ADMIN": true,
+    "ROLE_OPERATOR": true,
+    "MANAGE_NOTIFICATION_SDIZ": true
+  },
+  {
+    "action": "READ_RSHN_SDIZ_CHECK_DATA",
+    "ROLE_MCX_USER": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_RSHN": true,
+    "ROLE_OPERATOR": true,
+    "VIEW_RSHN_SDIZ_CHECK": true,
+    "MANAGE_RSHN_SDIZ_CHECK": true
+  },
+  {
+    "action": "READ_RSHN_SDIZ_CHECK_REGISTRY",
+    "ROLE_MCX_USER": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_RSHN": true,
+    "ROLE_OPERATOR": true,
+    "VIEW_RSHN_SDIZ_CHECK": true,
+    "MANAGE_RSHN_SDIZ_CHECK": true
+  },
+  {
+    "action": "UPDATE_RSHN_SDIZ_CHECK",
+    "ROLE_RSHN": true,
+    "MANAGE_RSHN_SDIZ_CHECK": true
+  },
+  {
+    "action": "READ_PURCHASE_FROM_INDIVIDUAL_DATA",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_RSHN": true,
+    "ROLE_GROWS_GRAIN": true,
+    "VIEW_PURCHASE_FROM_INDIVIDUAL": true,
+    "MANAGE_PURCHASE_FROM_INDIVIDUAL": true
+  },
+  {
+    "action": "READ_PURCHASE_FROM_INDIVIDUAL_REGISTRY",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_RSHN": true,
+    "ROLE_GROWS_GRAIN": true,
+    "VIEW_PURCHASE_FROM_INDIVIDUAL": true,
+    "MANAGE_PURCHASE_FROM_INDIVIDUAL": true
+  },
+  {
+    "action": "CREATE_PURCHASE_FROM_INDIVIDUAL",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GROWS_GRAIN": true,
+    "MANAGE_PURCHASE_FROM_INDIVIDUAL": true
+  },
+  {
+    "action": "CANCEL_PURCHASE_FROM_INDIVIDUAL",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GROWS_GRAIN": true,
+    "MANAGE_PURCHASE_FROM_INDIVIDUAL": true
+  },
+  {
+    "action": "CREATE_PURCHASE_FROM_INDIVIDUAL_GRAIN_LOT",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GROWS_GRAIN": true,
+    "MANAGE_GRAIN_BATCH": true
+  },
+  {
+    "action": "EXPORT_REPORT_SHTP",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "MANAGE_DATA_REPORT": true
+  },
+  {
+    "action": "EXPORT_REPORT_DECLARATION_CONFORMITY",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "MANAGE_DATA_REPORT": true
+  },
+  {
+    "action": "EXPORT_REPORT_WRITEOFF_LOT_GPB",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "MANAGE_DATA_REPORT": true
+  },
+  {
+    "action": "CREATE_LOT_PUBLICATION_DOCUMENT",
+    "ROLE_MARKETPLACE_PUBLISHER": true,
+    "MANAGE_LOT_PUBLICATION_DOCUMENT": true
+  },
+  {
+    "action": "READ_LOT_PUBLICATION_DOCUMENT_DATA",
+    "ROLE_MCX_USER": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_MARKETPLACE_PUBLISHER": true,
+    "MANAGE_LOT_PUBLICATION_DOCUMENT": true,
+    "VIEW_LOT_PUBLICATION_DOCUMENT": true
+  },
+  {
+    "action": "READ_LOT_PUBLICATION_DOCUMENT_REGISTRY",
+    "ROLE_MCX_USER": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_MARKETPLACE_PUBLISHER": true,
+    "MANAGE_LOT_PUBLICATION_DOCUMENT": true,
+    "VIEW_LOT_PUBLICATION_DOCUMENT": true
+  },
+  {
+    "action": "READ_PUBLISHED_LOT_DATA",
+    "ROLE_MCX_USER": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_MARKETPLACE_PUBLISHER": true,
+    "ROLE_MARKETPLACE_VIEWER": true,
+    "VIEW_PUBLISHED_LOT": true,
+    "VIEW_OWN_PUBLISHED_LOT": true
+  },
+  {
+    "action": "READ_PUBLISHED_LOT_REGISTRY",
+    "ROLE_MCX_USER": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_MARKETPLACE_PUBLISHER": true,
+    "ROLE_MARKETPLACE_VIEWER": true,
+    "VIEW_PUBLISHED_LOT": true,
+    "VIEW_OWN_PUBLISHED_LOT": true
+  },
+  {
+    "action": "READ_PUBLISHED_GPB_LOT_DATA",
+    "ROLE_MCX_USER": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_MARKETPLACE_PUBLISHER": true,
+    "ROLE_MARKETPLACE_VIEWER": true,
+    "VIEW_PUBLISHED_GPB_LOT": true,
+    "VIEW_OWN_PUBLISHED_GPB_LOT": true
+  },
+  {
+    "action": "READ_PUBLISHED_GPB_LOT_REGISTRY",
+    "ROLE_MCX_USER": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_MARKETPLACE_PUBLISHER": true,
+    "ROLE_MARKETPLACE_VIEWER": true,
+    "VIEW_PUBLISHED_GPB_LOT": true,
+    "VIEW_OWN_PUBLISHED_GPB_LOT": true
+  },
+  {
+    "action": "READ_TARIFF_QUOTA_SECTION",
+    "ROLE_ADMIN": true,
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_OPERATOR": true,
+    "VIEW_TARIFF_QOUTAS": true
+  },
+  {
+    "action": "FILTER_TARIFF_QUOTA_SECTION",
+    "ROLE_ADMIN": true,
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_OPERATOR": true,
+    "VIEW_TARIFF_QOUTAS": true
+  },
+  {
+    "action": "CUSTOMIZE_TARIFF_QUOTA_SECTION",
+    "ROLE_ADMIN": true,
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_OPERATOR": true,
+    "VIEW_TARIFF_QOUTAS": true
+  },
+  {
+    "action": "READ_TARIFF_QUOTA_ALLOCATION_SECTION",
+    "ROLE_ADMIN": true,
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_OPERATOR": true,
+    "VIEW_TARIFF_QOUTAS_ALLOCATION": true,
+    "VIEW_OWN_TARIFF_QOUTAS_ALLOCATION": true
+  },
+  {
+    "action": "FILTER_TARIFF_QUOTA_ALLOCATION_SECTION",
+    "ROLE_ADMIN": true,
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_OPERATOR": true,
+    "VIEW_TARIFF_QOUTAS_ALLOCATION": true,
+    "VIEW_OWN_TARIFF_QOUTAS_ALLOCATION": true
+  },
+  {
+    "action": "CUSTOMIZE_TARIFF_QUOTA_ALLOCATION_SECTION",
+    "ROLE_ADMIN": true,
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_OPERATOR": true,
+    "VIEW_TARIFF_QOUTAS_ALLOCATION": true,
+    "VIEW_OWN_TARIFF_QOUTAS_ALLOCATION": true
+  },
+  {
+    "action": "READ_TARIFF_QOUTAS_LOADIND_SECTION",
+    "ROLE_ADMIN": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_OPERATOR": true,
+    "VIEW_TARIFF_QOUTAS_LOADIND": true
+  },
+  {
+    "action": "FILTER_TARIFF_QOUTAS_LOADIND_SECTION",
+    "ROLE_ADMIN": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_OPERATOR": true,
+    "VIEW_TARIFF_QOUTAS_LOADIND": true
+  },
+  {
+    "action": "LOAD_TARIFF_QOUTAS",
+    "ROLE_ADMIN": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_OPERATOR": true,
+    "LOAD_TARIFF_QOUTAS": true
+  },
+  {
+    "action": "LOAD_TARIFF_QOUTAS_ALLOCATION",
+    "ROLE_ADMIN": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_OPERATOR": true,
+    "LOAD_TARIFF_QOUTAS_ALLOCATION": true
+  },
+  {
+    "action": "READ_TRANSFER_OF_BALANCES_DATA",
+    "ROLE_MCX_USER": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_ADMIN_TRANSFER": true,
+    "MANAGE_TRANSFER_OF_BALANCES": true,
+    "VIEW_TRANSFER_OF_BALANCES": true
+  },
+  {
+    "action": "READ_TRANSFER_OF_BALANCES_REGISTRY",
+    "ROLE_MCX_USER": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_ADMIN_TRANSFER": true,
+    "MANAGE_TRANSFER_OF_BALANCES": true,
+    "VIEW_TRANSFER_OF_BALANCES": true
+  },
+  {
+    "action": "EXECUTE_TRANSFER_OF_BALANCES",
+    "ROLE_ADMIN_TRANSFER": true,
+    "MANAGE_TRANSFER_OF_BALANCES": true
+  },
+  {
+    "action": "READ_VED_CONTRACT_RECORD",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_RSHN": true,
+    "VIEW_VED_CONTRACT": true,
+    "MANAGE_VED_CONTRACT": true
+  },
+  {
+    "action": "READ_VED_CONTRACT_LIST",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_RSHN": true,
+    "VIEW_VED_CONTRACT": true,
+    "MANAGE_VED_CONTRACT": true
+  },
+  {
+    "action": "CREATE_VED_CONTRACT",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "MANAGE_VED_CONTRACT": true
+  },
+  {
+    "action": "EDIT_VED_CONTRACT",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "MANAGE_VED_CONTRACT": true
+  },
+  {
+    "action": "DELETE_VED_CONTRACT",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "MANAGE_VED_CONTRACT": true
+  },
+  {
+    "action": "SIGN_VED_CONTRACT",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "MANAGE_VED_CONTRACT": true
+  },
+  {
+    "action": "CANCEL_VED_CONTRACT",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "MANAGE_VED_CONTRACT": true
+  },
+  {
+    "action": "CHANGE_STATUS_VED_CONTRACT",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "MANAGE_VED_CONTRACT": true
+  },
+  {
+    "action": "READ_POA_REGISTRY",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GOVERMENT_MONITORING": true,
+    "ROLE_FEDERAL_RESERVE": true,
+    "ROLE_AGENT_USER": true,
+    "ROLE_RSHN": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_AGENT": true,
+    "MANAGE_POA": true
+  },
+  {
+    "action": "READ_POA",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GOVERMENT_MONITORING": true,
+    "ROLE_FEDERAL_RESERVE": true,
+    "ROLE_AGENT_USER": true,
+    "ROLE_RSHN": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_AGENT": true,
+    "MANAGE_POA": true
+  },
+  {
+    "action": "CREATE_POA",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GOVERMENT_MONITORING": true,
+    "ROLE_FEDERAL_RESERVE": true,
+    "ROLE_AGENT_USER": true,
+    "ROLE_RSHN": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_AGENT": true,
+    "MANAGE_POA": true
+  },
+  {
+    "action": "DELETE_POA",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GOVERMENT_MONITORING": true,
+    "ROLE_FEDERAL_RESERVE": true,
+    "ROLE_AGENT_USER": true,
+    "ROLE_RSHN": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_AGENT": true,
+    "MANAGE_POA": true
+  },
+  {
+    "action": "CHECK_POA",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_GOVERMENT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GOVERMENT_MONITORING": true,
+    "ROLE_FEDERAL_RESERVE": true,
+    "ROLE_AGENT_USER": true,
+    "ROLE_RSHN": true,
+    "ROLE_OPERATOR": true,
+    "ROLE_GROWS_GRAIN": true,
+    "ROLE_SUBJECT_AGENT": true,
+    "MANAGE_POA": true
+  },
+  {
+    "action": "READ_GISP_LICENSE",
+    "ROLE_ADMIN": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_OPERATOR": true,
+    "VIEW_GISP_LICENSE": true
+  },
+  {
+    "action": "FILTER_GISP_LICENSE",
+    "ROLE_ADMIN": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_OPERATOR": true,
+    "VIEW_GISP_LICENSE": true
+  },
+  {
+    "action": "CUSTOMIZE_GISP_LICENSE",
+    "ROLE_ADMIN": true,
+    "ROLE_MCX_USER": true,
+    "ROLE_AUDITOR": true,
+    "ROLE_OPERATOR": true,
+    "VIEW_GISP_LICENSE": true
+  },
+  {
+    "action": "READ_OWN_GISP_LICENSE",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "VIEW_OWN_GISP_LICENSE": true
+  },
+  {
+    "action": "FILTER_OWN_GISP_LICENSE",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "VIEW_OWN_GISP_LICENSE": true
+  },
+  {
+    "action": "CUSTOMIZE_OWN_GISP_LICENSE",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "VIEW_OWN_GISP_LICENSE": true
+  },
+  {
+    "action": "READ_MY_ADDRESS_LIST",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GROWS_GRAIN": true,
+    "VIEW_MY_ADDRESS_LIST": true
+  },
+  {
+    "action": "CREATE_ADDRESS__IN_LIST",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GROWS_GRAIN": true,
+    "MANAGE_MY_ADDRESS_LIST": true
+  },
+  {
+    "action": "DELETE_ADDRESS_FROM_LIST",
+    "ROLE_SUBJECT_USER": true,
+    "ROLE_ELEVATOR_USER": true,
+    "ROLE_GROWS_GRAIN": true,
+    "MANAGE_MY_ADDRESS_LIST": true
+  }
+]
