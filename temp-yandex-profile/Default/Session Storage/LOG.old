@@ -1,7 +1,0 @@
-2026/04/09-11:57:48.381 2128 File C:\Users\user\AppData\Local\Yandex\YandexBrowser\User Data\Default\Session Storage is locked for recovering successfully
-2026/04/09-11:57:48.383 2128 Reusing MANIFEST C:\Users\user\AppData\Local\Yandex\YandexBrowser\User Data\Default\Session Storage/MANIFEST-000001
-2026/04/09-11:57:48.383 2128 Recovering log #3
-2026/04/09-11:57:48.385 2128 Reusing old log C:\Users\user\AppData\Local\Yandex\YandexBrowser\User Data\Default\Session Storage/000003.log 
-2026/04/09-12:00:06.122 7294 Deletion DBImpl for C:\Users\user\AppData\Local\Yandex\YandexBrowser\User Data\Default\Session Storage, waiting for background work finished
-2026/04/09-12:00:06.122 7294 Deletion DBImpl for C:\Users\user\AppData\Local\Yandex\YandexBrowser\User Data\Default\Session Storage, background work finished
-2026/04/09-12:00:06.123 7294 File C:\Users\user\AppData\Local\Yandex\YandexBrowser\User Data\Default\Session Storage unlocked successfully
