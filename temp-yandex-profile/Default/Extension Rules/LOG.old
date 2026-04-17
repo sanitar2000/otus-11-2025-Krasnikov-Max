@@ -1,7 +1,0 @@
-2026/04/08-20:00:45.484 a89c File C:\Users\user\AppData\Local\Yandex\YandexBrowser\User Data\Default\Extension Rules is locked for recovering successfully
-2026/04/08-20:00:45.484 a89c Reusing MANIFEST C:\Users\user\AppData\Local\Yandex\YandexBrowser\User Data\Default\Extension Rules/MANIFEST-000001
-2026/04/08-20:00:45.484 a89c Recovering log #3
-2026/04/08-20:00:45.485 a89c Reusing old log C:\Users\user\AppData\Local\Yandex\YandexBrowser\User Data\Default\Extension Rules/000003.log 
-2026/04/08-20:20:42.779 bc44 Deletion DBImpl for C:\Users\user\AppData\Local\Yandex\YandexBrowser\User Data\Default\Extension Rules, waiting for background work finished
-2026/04/08-20:20:42.779 bc44 Deletion DBImpl for C:\Users\user\AppData\Local\Yandex\YandexBrowser\User Data\Default\Extension Rules, background work finished
-2026/04/08-20:20:42.779 bc44 File C:\Users\user\AppData\Local\Yandex\YandexBrowser\User Data\Default\Extension Rules unlocked successfully

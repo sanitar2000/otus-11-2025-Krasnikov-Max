@@ -1,7 +1,0 @@
-2026/04/08-20:26:43.125 bcf0 File C:\Users\user\AppData\Local\Yandex\YandexBrowser\User Data\Default\GCM Store\Encryption is locked for recovering successfully
-2026/04/08-20:26:43.125 bcf0 Reusing MANIFEST C:\Users\user\AppData\Local\Yandex\YandexBrowser\User Data\Default\GCM Store\Encryption/MANIFEST-000001
-2026/04/08-20:26:43.125 bcf0 Recovering log #3
-2026/04/08-20:26:43.125 bcf0 Reusing old log C:\Users\user\AppData\Local\Yandex\YandexBrowser\User Data\Default\GCM Store\Encryption/000003.log 
-2026/04/08-20:28:29.005 bcf0 Deletion DBImpl for C:\Users\user\AppData\Local\Yandex\YandexBrowser\User Data\Default\GCM Store\Encryption, waiting for background work finished
-2026/04/08-20:28:29.005 bcf0 Deletion DBImpl for C:\Users\user\AppData\Local\Yandex\YandexBrowser\User Data\Default\GCM Store\Encryption, background work finished
-2026/04/08-20:28:29.020 bcf0 File C:\Users\user\AppData\Local\Yandex\YandexBrowser\User Data\Default\GCM Store\Encryption unlocked successfully

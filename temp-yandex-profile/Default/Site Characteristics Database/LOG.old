@@ -1,7 +1,0 @@
-2026/04/09-11:57:48.271 78dc File C:\Users\user\AppData\Local\Yandex\YandexBrowser\User Data\Default\Site Characteristics Database is locked for recovering successfully
-2026/04/09-11:57:48.271 78dc Reusing MANIFEST C:\Users\user\AppData\Local\Yandex\YandexBrowser\User Data\Default\Site Characteristics Database/MANIFEST-000001
-2026/04/09-11:57:48.271 78dc Recovering log #3
-2026/04/09-11:57:48.271 78dc Reusing old log C:\Users\user\AppData\Local\Yandex\YandexBrowser\User Data\Default\Site Characteristics Database/000003.log 
-2026/04/09-12:00:06.120 7700 Deletion DBImpl for C:\Users\user\AppData\Local\Yandex\YandexBrowser\User Data\Default\Site Characteristics Database, waiting for background work finished
-2026/04/09-12:00:06.120 7700 Deletion DBImpl for C:\Users\user\AppData\Local\Yandex\YandexBrowser\User Data\Default\Site Characteristics Database, background work finished
-2026/04/09-12:00:06.121 7700 File C:\Users\user\AppData\Local\Yandex\YandexBrowser\User Data\Default\Site Characteristics Database unlocked successfully
