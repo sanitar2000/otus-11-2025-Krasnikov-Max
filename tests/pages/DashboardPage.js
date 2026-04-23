@@ -19,6 +19,8 @@ class DashboardPage {
   async closeModalsIfPresent() {
     if (await this.welcomeButton.isVisible()) {
       await this.welcomeButton.click();
+      // Ждём, пока появится текст "Предупреждение"
+      await this.warningPopup.waitFor({ state: 'visible', timeout: 5000 });
     }
     if (await this.warningPopup.isVisible()) {
       await this.warningCloseIcon.click();

@@ -57,6 +57,7 @@
   "dependencies": {
     "axios": "^1.13.6",
     "core-js": "^3.47.0",
+    "crypto-pro": "^2.5.2",
     "dotenv": "^17.3.1",
     "uuid": "^13.0.0"
   }
