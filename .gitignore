@@ -12,3 +12,4 @@ build
 /playwright/.cache/
 /playwright/.auth/
 /temp-yandex-profile/
+/downloads/

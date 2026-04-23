@@ -21,7 +21,7 @@ test.beforeEach(async ({ playwright }) => {
   tempProfileDir = path.join(__dirname, '..', `temp-profile-${uniqueId}`);
   fs.cpSync(ORIGINAL_PROFILE_DIR, tempProfileDir, { recursive: true });
 
-  const executablePath = `C:\\Program Files (x86)\\Yandex\\YandexBrowser\\Application\\browser.exe`;
+  const executablePath = `C:\\Program Files\\Yandex\\YandexBrowser\\Application\\browser.exe`;
   context = await playwright.chromium.launchPersistentContext(tempProfileDir, {
     executablePath,
     headless: false,
@@ -48,7 +48,7 @@ test.afterEach(async () => {
   }
 });
 
-test.describe('UI функциональные тесты авторизации (Page Object Model)', () => {
+test.describe('UI функциональные тесты авторизации', () => {
 
   test('Тест №1: Успешный вход с валидными учетными данными', async () => {
     const page = context.pages()[0];
