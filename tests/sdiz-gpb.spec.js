@@ -41,10 +41,8 @@ test.describe('Работа с реестром СДИЗ продуктов пе
 
       const targetStatusId = Object.keys(statusMap).find(key => statusMap[key] === status);
       const filteredList = sdizList.filter(item => item.status_id === parseInt(targetStatusId));
-
-      if (filteredList.length === 0) {
-        throw new Error(`Нет СДИЗ продуктов переработки со статусом "${status}" (status_id = ${targetStatusId})`);
-      }
+  
+      expect(filteredList.length, `Нет СДИЗ продуктов переработки со статусом "${status}" (status_id = ${targetStatusId})`).toBeGreaterThan(0);
 
       const selected = sdizGpbRegistryPage.selectRandomSdizGpb(filteredList);
       const statusName = statusMap[selected.status_id];

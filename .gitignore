@@ -13,3 +13,5 @@ build
 /playwright/.auth/
 /temp-yandex-profile/
 /downloads/
+/allure-report/
+/allure-results/

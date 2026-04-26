@@ -37,16 +37,12 @@ test.describe('Работа с реестром СДИЗ', () => {
       await sdizRegistryPage.openSdizRegistry();
       await sdizRegistryPage.filterByStatus(status);
 
-      // Получаем список СДИЗ через API
       const sdizList = await sdizRegistryPage.getSdizListFromApi();
 
-      // Фильтруем по status_id, используя обратный маппинг
       const targetStatusId = Object.keys(statusMap).find(key => statusMap[key] === status);
       const filteredList = sdizList.filter(item => item.status_id === parseInt(targetStatusId));
-
-      if (filteredList.length === 0) {
-        throw new Error(`Нет СДИЗ со статусом "${status}" (status_id = ${targetStatusId})`);
-      }
+      
+      expect(filteredList.length, `Нет СДИЗ со статусом "${status}" (status_id = ${targetStatusId})`).toBeGreaterThan(0);
 
       const selected = sdizRegistryPage.selectRandomSdiz(filteredList);
       const statusName = statusMap[selected.status_id];
