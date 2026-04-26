@@ -5,14 +5,15 @@ const EXTENSION_PATH = path.resolve('framework/fixtures/my-extension');
 
 export default defineConfig({
   testDir: './tests',
-  fullyParallel: false,      // отключаем параллельность между файлами
-  workers: 1,                // один рабочий процесс – файлы идут строго по очереди
-  reporter: 'html',
+  fullyParallel: false,
+  workers: 1,
+  reporter: [
+    ['html'],                 // <- Стандартный HTML-отчёт
+    ['allure-playwright']     // <- Новый отчёт Allure
+  ],
   timeout: 120000,
-  use: {
-    trace: 'on-first-retry',
-  },
-  // Явный порядок файлов 
+  use: { trace: 'on-first-retry' },
+  // Явный порядок файлов (укажите реальные имена файлов в папке tests)
   testMatch: [
     'tests/auth.spec.js',
     'tests/lots.spec.js',
@@ -25,7 +26,7 @@ export default defineConfig({
   projects: [
     {
       name: 'yandex-with-extension',
-      use: {        
+      use: {
         executablePath: 'C:/Program Files/Yandex/YandexBrowser/Application/browser.exe',
         headless: false,
         viewport: { width: 1280, height: 720 },
